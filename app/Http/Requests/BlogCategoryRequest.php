@@ -6,7 +6,7 @@ use Illuminate\Foundation\Http\FormRequest;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Validation\Rule;
 
-class DisabledDayRequest extends FormRequest
+class BlogCategoryRequest extends FormRequest
 {
     /**
      * Determine if the user is authorized to make this request.
@@ -24,8 +24,8 @@ class DisabledDayRequest extends FormRequest
     public function rules(): array
     {
         return [
-            'day' => ['required', 'string'],
-            'type' => ['required', 'string', Rule::In(['0', '1'])],
+            'name' => ['required', 'string', 'max:255'],
+            'isVisible' => ['nullable', 'string', Rule::in(['on', 'off'])],
         ];
     }
 }

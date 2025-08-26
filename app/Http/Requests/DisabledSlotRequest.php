@@ -25,7 +25,7 @@ class DisabledSlotRequest extends FormRequest
     {
         return [
             'slot' => ['required', 'numeric', 'exists:time_slots,id'],
-            'type' => ['required', 'string', Rule::In(['0', '1'])],
+            'type' => ['required', 'string', Rule::In(['0'])],
             'date' => ['required', Rule::date()->format('Y-m-d')],
         ];
     }

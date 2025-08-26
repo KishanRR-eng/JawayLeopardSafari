@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use App\Http\Requests\InquiryRequest;
 use App\Http\Requests\StoreBookingDetailRequest;
 use App\Http\Requests\StoreFormRequest;
+use App\Models\Blog;
+use App\Models\BlogCategory;
 use App\Models\Booking;
 use App\Models\BookingDetail;
 use App\Models\DisabledSlot;
@@ -246,6 +248,26 @@ class FrontendController
         } else {
             return back()->with('error', 'Payment failed. Please try again.');
         }
+    }
+
+    public function blogs()
+    {
+        $blogData = BlogCategory::with(['blogs:blogs.id,blogs.slug,blogs.created_by,blogs.title,blogs.header_image_path,blogs.created_at'])->whereHas(
+            'blogs',
+            function ($q) {
+                $q->where('isVisible', 1);
+            }
+        )->where('isVisible', 1)->get(['id', 'name']);
+        return view('frontend.blogs', [
+            'data' => $blogData
+        ]);
+    }
+
+    public function blogDetails($id)
+    {
+        return view('frontend.blogDetails', [
+            'data' => Blog::where('slug', $id)->first()
+        ]);
     }
 
     public function inquiry(InquiryRequest $request)

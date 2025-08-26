@@ -1,20 +1,21 @@
 <?php
 
+use App\Models\Blog;
+use App\Models\BlogCategory;
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-return new class extends Migration
-{
+return new class extends Migration {
     /**
      * Run the migrations.
      */
     public function up(): void
     {
-        Schema::create('disabled_days', function (Blueprint $table) {
+        Schema::create('blog_category_maps', function (Blueprint $table) {
             $table->id();
-            $table->string('day');
-            $table->enum('type',[0,1])->default(0)->comment("0-Gir Safari,1-Gir Devalia");
+            $table->foreignIdFor(Blog::class)->constrained()->restrictOnDelete()->cascadeOnUpdate();
+            $table->foreignIdFor(BlogCategory::class)->constrained()->restrictOnDelete()->cascadeOnUpdate();
             $table->timestamp('created_at')->useCurrent();
             $table->timestamp('updated_at')->useCurrent()->useCurrentOnUpdate();
         });
@@ -25,6 +26,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('disabled_days');
+        Schema::dropIfExists('blog_category_maps');
     }
 };

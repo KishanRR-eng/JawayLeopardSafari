@@ -28,7 +28,7 @@ class InquiryRequest extends FormRequest
             'phone_code' => ['required', 'numeric'],
             'mobile_no' => ['required', 'string'],
             'email' => ['nullable', 'email:rfc,spoof,strict'],
-            'type' => ['required', 'string', Rule::In(['0', '1'])],
+            'type' => ['required', 'string', Rule::In(['0'])],
         ];
     }
 }

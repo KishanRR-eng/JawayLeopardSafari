@@ -17,19 +17,7 @@
                     <li class="menu-label pt-0 mt-0">
                         <span>Main Menu</span>
                     </li>
-                    {{-- <li class="nav-item">
-                        <a class="nav-link" href="{{ route('backend.day.index') }}">
-                            <i class="far fa-calendar-minus menu-icon"></i>
-                            <span>Disabled Days</span>
-                        </a>
-                    </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="{{ route('backend.date.index') }}">
-                            <i class="far fa-calendar-times menu-icon"></i>
-                            <span>Disabled Dates</span>
-                        </a>
-                    </li> --}}
-                     <li class="nav-item">
                         <a class="nav-link" href="{{ route('backend.disabled.slot.index') }}">
                             <i class="iconoir-timer-off menu-icon"></i>
                             <span>Disabled Slots</span>
@@ -52,6 +40,22 @@
                             <i class="fa-solid fa-suitcase-rolling menu-icon"></i>
                             <span>Bookings</span>
                         </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#blogMenuItem" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="blogMenuItem">
+                            <i class="fa-solid fa-rss menu-icon"></i>
+                            <span>Blog</span>
+                        </a>
+                        <div class="collapse " id="blogMenuItem">
+                            <ul class="nav flex-column">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="{{ route('backend.blog.category.index') }}">Category</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="{{ route('backend.blog.index') }}">Blog</a>
+                                </li>
+                            </ul>
+                        </div>
                     </li>
                 </ul><!--end navbar-nav--->
 

@@ -28,7 +28,7 @@ class PackageRequest extends FormRequest
             'price' => ['required', 'numeric'],
             'tourist_type' => ['required', 'string', Rule::In(['0', '1'])],
             'day_type' => ['required', 'string', Rule::In(['0', '1'])],
-            'type' => ['required', 'string', Rule::In(['0', '1'])],
+            'type' => ['required', 'string', Rule::In(['0'])],
             'status' => ['nullable', 'string', Rule::in(['on', 'off'])],
             'vehicles' => ['required', 'array', 'min:1'],
         ];

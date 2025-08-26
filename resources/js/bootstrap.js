@@ -31,13 +31,18 @@ window.fileUploader = ({ input, maxFiles, maxSize, maxFileSize, allowedTypes = [
         png: ["image/png"],
         jpg: ["image/jpeg"],
         jpeg: ["image/jpeg"],
-        pdf: ["application/pdf"],
+        // pdf: ["application/pdf"],
+        svg: ["image/svg+xml"],
+        webp: ["image/webp"],
+        ico: ["image/vnd.microsoft.icon"],
     };
     const types = [];
-    for (const key in typeMap) {
-        allowedTypes.forEach(ele => {
-            if (typeMap[key].includes(ele)) types.push(key);
-        });
+    if (allowedTypes.length == 0) {
+        for (const key in typeMap) {
+            allowedTypes.forEach(ele => {
+                if (typeMap[key].includes(ele)) types.push(key);
+            });
+        }
     }
     const errorMessages = {
         maxFiles: `You can upload a maximum of ${maxFiles} files.`,
@@ -79,11 +84,14 @@ window.fileUploader = ({ input, maxFiles, maxSize, maxFileSize, allowedTypes = [
             }
         },
         checkFilesSize: function () {
-            if (maxFileSize < Math.round(input.files[0].size / 1024)) {
-                errors.push(errorMessages.maxFileSize);
-                this.resetInput();
-                if (errorPopup) {
-                    toastr.error(errorMessages.maxFileSize);
+            for (let i = 0; i < newFiles; i++) {
+                if (maxFileSize < Math.round(input.files[i].size / 1024)) {
+                    errors.push(errorMessages.maxFileSize);
+                    this.resetInput();
+                    if (errorPopup) {
+                        toastr.error(errorMessages.maxFileSize);
+                        break;
+                    }
                 }
             }
         },
