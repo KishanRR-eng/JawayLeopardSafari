@@ -1,0 +1,79 @@
+/*
+Template Name: Rizz - Admin & Dashboard Template
+Author: Mannatthemes
+Version: 3.1.0
+File: App Css
+*/
+
+//Core files
+@import "bootstrap/scss/functions";
+@import "bootstrap/scss/variables";
+
+@import "config/variables";
+@import "config/variables-dark";
+
+@import "bootstrap/scss/mixins";
+@import "bootstrap/scss/bootstrap";
+
+@import "componets/alerts";
+@import "componets/breadcrumb";
+@import "componets/buttons";
+@import "componets/cards";
+@import "componets/dropdowns";
+@import "componets/forms";
+@import "componets/modals";
+@import "componets/pages";
+@import "componets/progress";
+@import "componets/root";
+@import "componets/spinner";
+@import "componets/tables";
+@import "componets/tab-tooltip";
+@import "componets/utilities";
+
+@import "structure/startbar";
+@import "structure/topbar";
+@import "structure/footer";
+
+@import "pages/chat";
+@import "pages/kanban";
+@import "pages/pricing";
+@import "pages/print";
+@import "pages/rating";
+@import "pages/ribbons";
+@import "pages/timeline";
+
+@import "plugins/calendar";
+@import "plugins/custom-scrollbar";
+@import "plugins/charts";
+@import "plugins/maps";
+@import "plugins/prismjs";
+@import "plugins/sweet-alert";
+@import "plugins/ui-slider";
+@import "plugins/tree";
+
+.image-delete-icon {
+    background-color: rgba(26, 42, 58, 0.94);
+    top: -5px;
+    color: #fff;
+    line-height: 1;
+    position: absolute;
+    right: 20px;
+    z-index: 99;
+    font-size: 1rem;
+    padding: 1px;
+    cursor: pointer;
+}
+
+.image-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.image-item {
+    flex: 0 1 calc(15% - 80px);
+    box-sizing: border-box;
+    position: relative;
+    margin-bottom: 0.5rem;
+}
