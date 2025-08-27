@@ -23,8 +23,8 @@
       <nav id="navbar" class="navbar">
          <ul>
             <li><a href="{{ url('/') }}" class="active">Home</a></li>
-            <li><a href="{{route('girJungle')}}" class="">Gir Jungle Safari</a></li>
-            <li><a href="{{ route('girDevaliya')}}" class="">Devalia Gypsy Safari</a></li>
+            <li><a href="{{route('girJungle')}}" class="">Leapord Safari</a></li>
+            <li><a href="{{route('blog')}}" class="">Blog</a></li>
             <li><a href="{{ route('contactUs')}}" class="">Contact us</a></li>
          </ul>
       </nav>

@@ -10,7 +10,7 @@
                      <p><b>We specialize in organizing safari bookings for visitors to Gir Safari Booking. </b>
                      </p>
                      <p class="text-light" style="font-size: 14px; margin-top:15px;"><b>Gir Safari Booking </b>
-                        </br> Tel: +91 8619880581 </br> Email:girsafaribooking.in@gmail.com
+                        </br> Tel: +91 8619880581 </br> Email:girsafaribooking.in@gmail.com <br/> Address: Sasan – Talala Road, Chitrod Gir, Gir National Park, Gujarat, India – 362135
                      </p>
                   </div>
                   <!-- Sasan Gir Road Near sasan gir bus stand <br>Sasan Gir junagadh-Gujarat indian -->

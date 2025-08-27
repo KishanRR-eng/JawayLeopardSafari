@@ -63,15 +63,7 @@
                         @csrf
                         <h3>Check Availability & Book</h3>
                         <div class="row">
-                            <div class="col-md-12 mb-2">
-                                <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
-                                    <input type="radio" class="btn-check" name="type" id="gir_jungle_safari" value="0" autocomplete="off" @if (old('type') != '1') checked @endif>
-                                    <label class="btn btn-outline-secondary" for="gir_jungle_safari">Gir Jungle Safari</label>
 
-                                    <input type="radio" class="btn-check" name="type" id="devalia_safari" value="1" autocomplete="off" @if (old('type') == '1') checked @endif>
-                                    <label class="btn btn-outline-secondary" for="devalia_safari">Devalia Safari</label>
-                                </div>
-                            </div>
                             <div class="col-md-6 mb-2">
                                 <input type="text" class="form-control" id="first_name" name="first_name" placeholder="Enter First Name*" value="{{ old('first_name') ?? '' }}" required>
                                 <div class="text-sm text-danger">{{ $errors->first('first_name') ?? '' }}</div>

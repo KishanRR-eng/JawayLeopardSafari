@@ -40,8 +40,12 @@
                         <label class="form-label">Module</label>
                         <div class="d-flex">
                             <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="type" id="jawayLeopardSafari" value="0" @if ((isset($data->type) && $data->type != 1) || old('type') != '1') checked @endif>
-                                <label class="form-check-label" for="jawayLeopardSafari">Jaway Leopard Safari</label>
+                                <input class="form-check-input" type="radio" name="type" id="girSafari" value="0" @if ((isset($data->type) && $data->type != 1) || old('type') != '1') checked @endif>
+                                <label class="form-check-label" for="girSafari">Gir Safari</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="type" id="girDevalia" value="1" @if ((isset($data->type) && $data->type == 1) || old('type') == '1') checked @endif>
+                                <label class="form-check-label" for="girDevalia">Gir Devalia</label>
                             </div>
                         </div>
                         <div class="invalid-feedback">{{ $errors->first('type') ?? '' }}</div>

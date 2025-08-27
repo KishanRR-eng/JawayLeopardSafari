@@ -1,7 +1,5 @@
 <?php
 
-use App\Http\Controllers\BlogCategoryController;
-use App\Http\Controllers\BlogController;
 use App\Http\Controllers\BookingController;
 use App\Http\Controllers\DisabledDateController;
 use App\Http\Controllers\DisabledDayController;
@@ -33,6 +31,8 @@ Route::get('/privacy-policy', [FrontendController::class, 'privacy'])->name('pri
 Route::get('/faq', [FrontendController::class, 'faq'])->name('faq');
 Route::get('/how_to_reach', [FrontendController::class, 'howtoreach'])->name('howtoreach');
 Route::get('/dosanddonts', [FrontendController::class, 'dosdonts'])->name('dosdonts');
+Route::get('/Blogs', [FrontendController::class, 'blog'])->name('blog');
+Route::get('/blog-details', [FrontendController::class, 'bdetails'])->name('bdetails');
 Route::get('/cancellation-policy', [FrontendController::class, 'cancellationpolicy'])->name('cancellationpolicy');
 Route::post('/booking', [FrontendController::class, 'booking'])->name('booking');
 Route::get('/booking-details/{id}', [FrontendController::class, 'bookingDetails'])->name('booking.details');
@@ -40,13 +40,26 @@ Route::get('/booking/{id}/payment', [FrontendController::class, 'bookingPayment'
 Route::post('/booking/{id}/callback', [FrontendController::class, 'bookingCallback'])->name('booking.callback');
 Route::post('/save-details/{id}', [FrontendController::class, 'saveDetails'])->name('details');
 Route::post('/inquiry', [FrontendController::class, 'inquiry'])->name('inquiry');
-Route::get('/blogs', [FrontendController::class, 'blogs'])->name('blogs');
-Route::get('/blogs/{id}', [FrontendController::class, 'blogDetails'])->name('blogDetails');
+
 
 
 Route::group(['prefix' => '/backend', 'middleware' => 'auth', 'as' => 'backend.'], function () {
 
     Route::post('/download-attachment', [FrontendController::class, 'download'])->name('download');
+
+    Route::group(['prefix' => '/days', 'as' => 'day.'], function () {
+        Route::get('/', [DisabledDayController::class, 'index'])->name('index');
+        Route::get('/create', [DisabledDayController::class, 'create'])->name('create');
+        Route::post('/', [DisabledDayController::class, 'store'])->name('store');
+        Route::delete('/{id}', [DisabledDayController::class, 'destroy'])->name('destroy');
+    });
+
+    Route::group(['prefix' => '/dates', 'as' => 'date.'], function () {
+        Route::get('/', [DisabledDateController::class, 'index'])->name('index');
+        Route::get('/create', [DisabledDateController::class, 'create'])->name('create');
+        Route::post('/', [DisabledDateController::class, 'store'])->name('store');
+        Route::delete('/{id}', [DisabledDateController::class, 'destroy'])->name('destroy');
+    });
 
     Route::group(['prefix' => '/disabled-slots', 'as' => 'disabled.slot.'], function () {
         Route::get('/', [DisabledSlotController::class, 'index'])->name('index');
@@ -79,24 +92,6 @@ Route::group(['prefix' => '/backend', 'middleware' => 'auth', 'as' => 'backend.'
         Route::get('/{id}', [BookingController::class, 'edit'])->name('edit');
         Route::post('/{id}', [BookingController::class, 'update'])->name('update');
         Route::delete('/{id}', [BookingController::class, 'destroy'])->name('destroy');
-    });
-
-    Route::group(['prefix' => '/blog-category', 'as' => 'blog.category.'], function () {
-        Route::get('/', [BlogCategoryController::class, 'index'])->name('index');
-        Route::get('/create', [BlogCategoryController::class, 'create'])->name('create');
-        Route::post('/', [BlogCategoryController::class, 'store'])->name('store');
-        Route::get('/{id}', [BlogCategoryController::class, 'edit'])->name('edit');
-        Route::post('/{id}', [BlogCategoryController::class, 'update'])->name('update');
-        Route::delete('/{id}', [BlogCategoryController::class, 'destroy'])->name('destroy');
-    });
-
-    Route::group(['prefix' => '/blog', 'as' => 'blog.'], function () {
-        Route::get('/', [BlogController::class, 'index'])->name('index');
-        Route::get('/create', [BlogController::class, 'create'])->name('create');
-        Route::post('/', [BlogController::class, 'store'])->name('store');
-        Route::get('/{id}', [BlogController::class, 'edit'])->name('edit');
-        Route::post('/{id}', [BlogController::class, 'update'])->name('update');
-        Route::delete('/{id}', [BlogController::class, 'destroy'])->name('destroy');
     });
 });
 

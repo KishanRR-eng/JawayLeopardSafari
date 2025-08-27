@@ -1,4 +1,4 @@
-@extends('layouts.vertical', ['title' => 'Add Disabled Slot'])
+@extends('layouts.vertical', ['title' => 'Create Disabled Date'])
 @section('css')
     @vite(['node_modules/mobius1-selectr/dist/selectr.min.css', 'node_modules/vanillajs-datepicker/dist/css/datepicker.min.css'])
 @endsection
@@ -8,10 +8,10 @@
             <div class="card-header">
                 <div class="row align-items-center">
                     <div class="col">
-                        <h4 class="card-title">{{ 'Add Disabled Slot' }}</h4>
+                        <h4 class="card-title">{{ 'Create Disabled Date' }}</h4>
                     </div>
                     <div class="col text-end">
-                        <a href="{{ route('backend.disabled.slot.index') }}" type="button" class="btn rounded-pill btn-outline-danger"><i class="fa-solid fa-xmark"></i></a>
+                        <a href="{{ route('backend.date.index') }}" type="button" class="btn rounded-pill btn-outline-danger"><i class="fa-solid fa-xmark"></i></a>
                     </div>
                     <!--end col-->
                 </div>
@@ -19,7 +19,7 @@
             </div>
             <!--end card-header-->
             <div class="card-body pt-0">
-                <form method="POST" action="{{ route('backend.disabled.slot.store') }}" class="row g-3 needs-validation" novalidate>
+                <form method="POST" action="{{ route('backend.date.store') }}" class="row g-3 needs-validation" novalidate>
                     @csrf
                     @method('POST')
                     <div class="col-md-6 has-validation">
@@ -43,19 +43,6 @@
                         <div class="invalid-feedback">{{ $errors->first('type') ?? '' }}</div>
                     </div>
 
-                    <div class="col-md-6 has-validation">
-                        <label for="slot" class="form-label">Time Slot</label>
-                        <select id="slot" name="slot" class="form-select">
-                            <option value="0" selected>Select Time Slot</option>
-                            @foreach ($slots as $slot)
-                                @if ($slot->type == old('type') || (old('type') == null && $slot->type == '0'))
-                                    <option value="{{ $slot->id }}" @if (old('slot') != null && old('slot') == $slot->id) selected @endif>{{ $slot->name }}</option>
-                                @endif
-                            @endforeach
-                        </select>
-                        <div class="invalid-feedback {{ $errors->first('slot') ? 'd-block' : '' }}">{{ $errors->first('slot') ?? '' }}</div>
-                    </div>
-
                     <div class="col-md-12 text-end">
                         <button class="btn btn-primary" type="submit">Save</button>
                     </div>
@@ -66,17 +53,7 @@
         <!--end card-->
     </div>
 @endsection
+
 @section('script')
     @vite(['resources/js/pages/forms-advanced.js'])
-    <script type="module">
-        $(document).off('change', 'input[name="type"]').on('change', 'input[name="type"]', function() {
-            var type = $(this).val();
-            $('#slot').html('<option value="0" selected>Select Time Slot</option>');
-            @foreach ($slots as $slot)
-                if ({{ $slot->type }} == type) {
-                    $('#slot').append('<option value="{{ $slot->id }}">{{ $slot->name }}</option>');
-                }
-            @endforeach
-        });
-    </script>
 @endsection

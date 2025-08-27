@@ -4,5 +4,5 @@ import 'simple-datatables/dist/umd/simple-datatables'
 new DataTable("#datatable_1", {
   searchable: true,
   fixedHeight: false,
-  scrollY: "350px"
+  scrollY: "300px"
 })
