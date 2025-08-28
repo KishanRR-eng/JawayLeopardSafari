@@ -1,8 +1,8 @@
 @extends('frontend.layout.main')
-@section('title', 'FAQ')
+@section('title', 'FAQ - Jaway Leapord Safari')
 @section('content')
 <!-- ======= Breadcrumbs ======= -->
-<div class="breadcrumbs_faq d-flex align-items-center mt-3">
+<div class="breadcrumbs_faq d-flex align-items-center">
    <div class="container position-relative d-flex flex-column align-items-center"></div>
 </div>
 <div id="faq" class="faq">
@@ -11,86 +11,82 @@
       <div class="accordion">
          <div class="accordion-item">
             <input type="checkbox" id="accordion1">
-            <label for="accordion1" class="accordion-item-title"><span class="icon"></span>Curious about how to reserve a safari at Gir National Park? Here’s what to do.
+            <label for="accordion1" class="accordion-item-title">
+                <span class="icon"></span>How can I book a Jawai Leopard Safari online at www.jawaileopardsafaribooking.in?
             </label>
             <div class="accordion-item-desc">
-               To book your safari, simply visit the official Gir Safari Online Booking Portal at https://www.girsafaribooking.in. Just complete the payment and submit valid ID details to confirm your reservation.
-            </div>
+              You can easily book your Jawai Leopard Safari through our official website www.jawaileopardsafaribooking.in. Select your preferred safari slot (morning or evening), enter the number of guests, and complete the booking securely online.
          </div>
          <div class="accordion-item">
             <input type="checkbox" id="accordion2">
             <label for="accordion2" class="accordion-item-title"><span class="icon"></span>
-            Are safaris in Gir National Park considered safe for visitors?
+            What is the cost of a Jawai Leopard Safari?
             </label>
             <div class="accordion-item-desc">
-              Yes, going on a Gir Safari is safe. Each safari is accompanied by a trained guide who is well-versed in the jungle’s terrain and wildlife behavior. The safaris are organized under government supervision, and the forest is monitored with wired cameras to ensure visitor safety at all times.
+              The cost of a Jawai Leopard Safari typically ranges from ₹4,000 to ₹6,000 per jeep. Each jeep can accommodate up to 6 people, making it affordable for families and groups.
             </div>
          </div>
          <div class="accordion-item">
             <input type="checkbox" id="accordion3">
-            <label for="accordion3" class="accordion-item-title"><span class="icon"></span>What is the ideal time to explore Gir Forest?
+            <label for="accordion3" class="accordion-item-title"><span class="icon"></span>
+                What is included in the Jawai Safari package?
             </label>
             <div class="accordion-item-desc">
-               The ideal period to explore this region is between December and March.
+               Our Jawai Safari package includes a 3-hour guided jeep safari, professional driver, and naturalist. Depending on the package, it may also include refreshments, pick-up and drop, and photography support.
             </div>
          </div>
          <div class="accordion-item">
             <input type="checkbox" id="accordion4">
-            <label for="accordion4" class="accordion-item-title"><span class="icon"></span>How does Gir Jungle Safari differ from Devalia Safari Park?
+            <label for="accordion4" class="accordion-item-title"><span class="icon"></span>
+               Where is Jawai Leopard Safari located?
             </label>
             <div class="accordion-item-desc">
-               Gir Jungle Safari takes place in the core area of the park, it
-               gives a natural vibe of the jungle. Whereas in Devalia Safari
-               you will get a chance to explore a fenced area of the park that
-               is more like a Zoo.
+               Jawai Leopard Safari is located in Bera, Pali District, Rajasthan. The area is famous for its leopard sightings near Jawai Dam and granite hills, and is accessible from Udaipur, Jodhpur, and Mount Abu.
             </div>
          </div>
          <div class="accordion-item">
             <input type="checkbox" id="accordion5">
-            <label for="accordion5" class="accordion-item-title"><span class="icon"></span>What are the ways to travel from Somnath to Gir National Park?
+            <label for="accordion5" class="accordion-item-title"><span class="icon"></span>
+                What is the best time to visit Jawai Leopard Safari?
             </label>
             <div class="accordion-item-desc">
-               The distance between Somnath and Gir is around 57 km. You can travel this route using government or private buses, hire a cab, or use any local mode of transport.
+               The best time to visit Jawai is between October and April. During this period, the weather is pleasant, and leopards are more frequently sighted.
             </div>
          </div>
          <div class="accordion-item">
             <input type="checkbox" id="accordion6">
-            <label for="accordion6" class="accordion-item-title"><span class="icon"></span>Is it permitted to use a private vehicle for touring inside Gir National Park?
+            <label for="accordion6" class="accordion-item-title"><span class="icon"></span>
+                How long is the Jawai Jeep Safari?
             </label>
             <div class="accordion-item-desc">
-               Yes, private vehicles are allowed inside the forest, but they must be petrol-driven. Additionally, you are required to be accompanied by a government-authorized guide and driver.
+               Each Jawai Jeep Safari lasts around 3 hours, with both morning and evening slots available. This ensures maximum chances of leopard sightings in their natural habitat.
             </div>
          </div>
          <div class="accordion-item">
             <input type="checkbox" id="accordion7">
-            <label for="accordion7" class="accordion-item-title"><span class="icon"></span>What are the train travel options to reach Gir National Park?
+            <label for="accordion7" class="accordion-item-title"><span class="icon"></span>
+               Is Jawai open throughout the year?
             </label>
             <div class="accordion-item-desc">
-               To reach Gir National Park smoothly, book your train ticket to either Veraval or Junagadh Railway Station, as they are the closest. From there, you can hire a taxi to get to the park.
+               Yes, Jawai is open throughout the year, but the best leopard sightings and pleasant weather are usually between October and April.
             </div>
          </div>
          <div class="accordion-item">
             <input type="checkbox" id="accordion8">
-            <label for="accordion8" class="accordion-item-title"><span class="icon"></span>How far is Gir National Park from Ahmedabad?
+            <label for="accordion8" class="accordion-item-title"><span class="icon"></span>
+                Can I combine Jawai Safari with nearby destinations?
             </label>
             <div class="accordion-item-desc">
-               The journey from Ahmedabad to Gir National Park spans approximately 328 kilometers.
+              Yes, you can combine Jawai Safari with visits to Udaipur, Jodhpur, Mount Abu, Kumbhalgarh, and Ranakpur temples to create a complete Rajasthan tour.
             </div>
          </div>
          <div class="accordion-item">
             <input type="checkbox" id="accordion9">
-            <label for="accordion9" class="accordion-item-title"><span class="icon"></span>Gir National Park: What Makes It So Special?
+            <label for="accordion9" class="accordion-item-title"><span class="icon"></span>
+                Why should I book through www.jawaileopardsafaribooking.in?
             </label>
             <div class="accordion-item-desc">
-               Gir National Park is renowned as the only natural habitat of the Asiatic lions. It offers visitors a rare opportunity to observe these majestic creatures in the wild. The Forest Department organizes guided safaris, allowing tourists to explore the park and witness not just lions, but a variety of other wildlife species in their natural environment.
-            </div>
-         </div>
-         <div class="accordion-item">
-            <input type="checkbox" id="accordion10">
-            <label for="accordion10" class="accordion-item-title"><span class="icon"></span>What is the Gir Safari experience like?
-            </label>
-            <div class="accordion-item-desc">
-               Gir Jungle Safari is an open gypsy ride that takes visitors deep into the forest, offering a chance to witness a rich variety of wildlife and plant species in their natural surroundings. These safaris are specially organized for tourists to experience the true essence of the jungle.
+              By booking through www.jawaileopardsafaribooking.in, you get authentic safari experiences, verified local drivers, transparent pricing, and 24/7 booking support.
             </div>
          </div>
       </div>

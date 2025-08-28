@@ -1,11 +1,10 @@
 @extends('frontend.layout.main')
-@section('title', 'cancellation-policy - Jaway Leapord Safari')
+@section('title', 'Terms-of-Use - Jaway Leapord Safari')
 @section('content')
 <!-- ======= Breadcrumbs ======= -->
-<div class="breadcrumbs_cancellation d-flex align-items-center">
+<div class="breadcrumbs_privacy d-flex align-items-center">
    <div class="container position-relative d-flex flex-column align-items-center" data-aos="fade"></div>
 </div>
-<!-- End Breadcrumbs -->
 <div class="section--sm section--top">
    <div class="container">
       <div class="row g-4">
@@ -13,9 +12,9 @@
             <ul class="list p-design" style="--gap: 2rem">
                <li>
                   <div class="zoo-box">
-                     <h5 class="mt-0">Refund-Policy</h5>
+                     <h5 class="mt-0">Terms of Use</h5>
                      <p class="mb-0">
-                        At Wildlife Safari Tourism, customer satisfaction is important. Please review our refund policy:
+                        Welcome to Wildlife Safari Tourism’s website. By accessing or using https://jawaileopardsafaribooking.in, you agree to comply with the following terms and conditions:
                      </p>
                   </div>
                </li>
@@ -30,34 +29,37 @@
                </li>
                <li>
                   <div class="zoo-box">
-                     <h5 class="mt-0">Cancellation by Customer</h5>
+                     <h5 class="mt-0">Booking and Payments</h5>
                      <ul class="list list--base" style="--gap: 0.5rem">
-                        <li>Cancellations made 7 days or more prior to the safari date are eligible for a full refund minus any payment processing fees.</li>
-                        <li>Cancellations made within 7 days of the safari date are non-refundable.</li>
+                        <li>Safari bookings made via this website are subject to availability and confirmation.</li>
+                        <li>Payments must be completed as per booking terms to confirm your reservation.</li>
                      </ul>
                   </div>
                </li>
                <li>
                   <div class="zoo-box">
-                     <h5 class="mt-0">Cancellation by Wildlife Safari Tourism</h5>
+                     <h5 class="mt-0">Accuracy of Information</h5>
                      <p>
-                        In case of cancellation due to unforeseen circumstances such as extreme weather, natural disasters, or government restrictions, you will receive a full refund or an option to reschedule.
+                        We strive to provide accurate and up-to-date information about our safari services, prices, and schedules. However, we reserve the right to modify content without prior notice.
                      </p>
                   </div>
                   <div class="zoo-box">
-                     <h5 class="mt-0">Rescheduling</h5>
-                     <p>Requests to reschedule must be made at least 5 days in advance and are subject to availability. Additional charges may apply.</p>
+                     <h5 class="mt-0">Liability</h5>
+                     <ul class="list list--base" style="--gap: 0.5rem">
+                        <li>Wildlife Safari Tourism is not liable for any direct or indirect damages arising from use of the website or safari services.</li>
+                        <li>Wildlife sightings cannot be guaranteed as they depend on natural animal behaviour.</li>
+                     </ul>
                   </div>
                   <div class="zoo-box">
-                     <h5 class="mt-0">No Show Policy</h5>
+                     <h5 class="mt-0">External Links</h5>
                      <p>
-                        Failure to show up for a booked safari without prior notice will result in forfeiture of the booking amount.
+                        Our website may contain links to third-party sites. We are not responsible for their content or privacy practices.
                      </p>
                   </div>
                   <div class="zoo-box">
-                     <h5 class="mt-0">How to Request a Refund</h5>
+                     <h5 class="mt-0">Changes to Terms</h5>
                      <p>
-                        Refund requests must be made via email to info@jawaileopardsafaribooking.in with booking details.
+                        We reserve the right to update these Terms of Use at any time. Continued use of the site constitutes acceptance of changes.
                      </p>
                   </div>
                </li>

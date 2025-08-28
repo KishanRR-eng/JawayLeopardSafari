@@ -1,112 +1,98 @@
 @extends('frontend.layout.main')
-@section('title', 'Privacy Policy')
+@section('title', 'Privacy Policy - Jaway Leapord Safari')
 @section('content')
 <!-- ======= Breadcrumbs ======= -->
 <div class="breadcrumbs_privacy d-flex align-items-center">
    <div class="container position-relative d-flex flex-column align-items-center" data-aos="fade"></div>
 </div>
 <!-- End Breadcrumbs -->
-<div id="terms" class="terms">
+<div class="section--sm section--top">
    <div class="container">
-      <h1>
-         Privacy policy:
-      </h1>
-      <p>Welcome to Journey to Gujarat. By booking a tour or using our services, you agree to the following terms and conditions. Please read them carefully before making any bookings.</p>
-      <h3>1. Company Information </h3>
-      <p>Gir Safari Booking is owned by Wildlife Safari Tourism is operated by Lakshyadeep Singh, a
-private tour operator based in Rajasthan, India.
-We are not affiliated with the Gujarat Tourism or Forest Department or any government
-authority. </p>
-<h5>GSTIN : <span>08EKKPS7156F1ZL</span></h5>
-        <h3>2. Booking Policy </h3>
-        <ul>
-            <li>All bookings must be confirmed in writing via email, WhatsApp, or our officialbooking form.</li>
-            <li>A booking is considered confirmed only after receipt of the advance payment ascommunicated at the time of booking.</li>
-            <li>The balance payment must be made before the start of the tour, unless otherwise agreed.</li>
-        </ul>
-        <h3>3. Payment Terms  </h3>
-        <ul>
-            <li>Payments can be made via bank transfer, UPI, credit/debit card, or other approvedpayment methods. </li>
-            <li>All prices are quoted in Indian Rupees (INR) and are inclusive/exclusive of taxes as mentioned in the package details. </li>
-            <li>Any bank charges, payment gateway fees, or currency conversion charges will be borne by the customer.</li>
-        </ul>
-         <h3>4. Pricing Policy</h3>
-        <ul>
-            <li>Prices mentioned are based on current rates of hotels, transportation, and otherinclusions. </li>
-            <li>In case of tax revisions, fuel price hikes, or supplier rate changes, package costsmay be adjusted with prior notice. </li>
-            <li>Any special offers or discounts are valid only for the period mentioned.</li>
-        </ul>
-        <h3>5. Inclusions & Exclusions</h3>
-        <p>Each tour package clearly states what is included and excluded.Typical inclusions: </p>
-        <ul>
-            <li>Accommodation as per itinerary </li>
-            <li>Transportation as per itinerary</li>
-            <li>Meals as mentioned</li>
-            <li>Sightseeing as per itinerary</li>
-        </ul>
-        <h5>Typical exclusions: </h5>
-        <ul>
-            <li>Airfare/train tickets (unless specified)</li>
-            <li>Entrance fees to monuments, parks, or events </li>
-            <li>Personal expenses, tips, laundry, phone calls </li>
-            <li>Travel insurance </li>
-        </ul>
-        <h5>6. Cancellation & Refund Policy </h5>
-        <ul>
-            <li>Cancellation requests must be made in writing (email/WhatsApp). </li>
-            <li>Cancellation charges apply as per the following: </li>
-                <ol>
-                    <li>30 days or more before travel date: Full refund minus administrative fees</li>
-                    <li>15–29 days before travel date: 50% of total booking cost </li>
-                    <li>Less than 15 days before travel date: No refund </li>
-                </ol>
-            </li>
-            <li>Refunds will be processed within 10–15 working days of approval.</li>
-        </ul>
-         <h5>7. Changes to Itinerary </h5>
-        <ul>
-            <li>We reserve the right to modify itineraries due to unforeseen circumstances such as weather, road closures, strikes, or government regulations. </li>
-            <li>Any changes will be communicated in advance wherever possible. </li>
-        </ul>
-         <h5>8. Travel Insurance </h5>
-         <p>We strongly recommend purchasing comprehensive travel insurance to cover: </p>
-        <ul>
-            <li>Medical expenses </li>
-            <li>Trip cancellations</li>
-            <li>Lost luggage </li>
-            <li>Personal accidents</li>
-        </ul>
-        <h5>9. Liability </h5>
-        <ul>
-            <li>Wildlife Safari Tourism acts only as an agent between the traveler and hotels,transport providers, and other service suppliers. </li>
-            <li>We are not responsible for:
-                <ol>
-                    <li>Delays or cancellations due to weather, road conditions, strikes, or force
-majeure events</li>
-                    <li>Loss or damage to personal belongings</li>
-                    <li>Injury, illness, or death during the tour </li>
-                </ol>
-            </li>
-        </ul>
-        <h5>10. Travel Documents </h5>
-        <ul>
-            <li>The traveler is responsible for carrying valid identification (Aadhar card, passport,visa, etc.).</li>
-            <li>For foreign travelers, valid Indian visas are required.  </li>
-        </ul>
-        <h5>11. Governing Law  </h5>
-        <ul>
-            <li>These terms are governed by the laws of India</li>
-            <li>Any disputes will be subject to the jurisdiction of the courts in Bali, Rajasthan.</li>
-        </ul>
-        <h5>12. Contact Information  </h5>
-        <ul>
-            <li>For questions or concerns, please contact:</li>
-            <li><b> Office Address: </b>GROUND, 00, C/O FULARAM S/O BHIMA RAM JI, Bali Road, Shri Krishna
-Sweets and Restaurant, NEAR UNION BANK, Bali, Pali, Rajasthan, 306701</li>
-            <li><b>  Phone: </b>+91 8619880581</li>
-            <li><b> Email:  </b>girsafaribooking.in@gmail.com</li>
-            <li><b> Website:: </b>http://www.girsafaribooking.in//li>
-        </ul>
+      <div class="row g-4">
+         <div class="col-md-12">
+            <ul class="list p-design">
+               <li>
+                  <div class="zoo-box">
+                     <h5 class="mt-0">Privacy Policy</h5>
+                     <p class="mb-0">
+                        Wildlife Safari Tourism ("we," "our," or "us") values your privacy and is committed to protecting your personal information. This Privacy Policy explains how we collect, use, and safeguard your data when you visit or book our services on https://jawaileopardsafaribooking.in
+                     </p>
+                  </div>
+               </li>
+               <li>
+                  <div class="zoo-box">
+                     <h5 class="mt-0">Information We Collect</h5>
+                     <ul class="list list--base" style="--gap: 0.5rem">
+                        <li>Personal Information: When you book a safari or contact us, we collect your name, email address, phone number, payment details, and other necessary information to provide our services</li>
+                        <li>Usage Data: We automatically collect information on how you use our website, including IP address, browser type, pages visited, and time spent on the site, through cookies and similar technologies.</li>
+                     </ul>
+                  </div>
+               </li>
+               <li>
+                  <div class="zoo-box">
+                     <h5 class="mt-0">How We Use Your Information</h5>
+                     <ul class="list list--base" style="--gap: 0.5rem">
+                        <li>To process your safari bookings and payments efficiently</li>
+                        <li>To communicate with you about your bookings, inquiries, and updates.</li>
+                        <li>To improve our website, services, and customer experience.</li>
+                        <li>To send promotional offers or newsletters only if you opt-in.</li>
+                        <li>To comply with legal and regulatory requirements</li>
+                     </ul>
+                  </div>
+               </li>
+               <li>
+                  <div class="zoo-box">
+                     <h5 class="mt-0">Cookies and Tracking Technologies</h5>
+                     <p>
+                        Our website uses cookies to enhance user experience, analyze site traffic, and customize content. You can control cookie preferences via your browser settings, but disabling cookies may affect site functionality.
+                     </p>
+                  </div>
+                  <div class="zoo-box">
+                     <h5 class="mt-0">Sharing Your Information</h5>
+                     <p>
+                        We do not sell, rent, or trade your personal information to third parties. We may share data with trusted service providers solely for booking facilitation and customer service, under strict confidentiality agreements.
+                     </p>
+                  </div>
+                  <div class="zoo-box">
+                     <h5 class="mt-0">Data Security</h5>
+                     <p>
+                        We implement appropriate technical and organizational measures to protect your personal data from unauthorized access, alteration, disclosure, or destruction.
+                     </p>
+                  </div>
+                  <div class="zoo-box">
+                     <h5 class="mt-0">Your Rights</h5>
+                     <p>
+                        You have the right to access, correct, or delete your personal information held by us. You may also unsubscribe from marketing communications at any time.
+                     </p>
+                  </div>
+                  <div class="zoo-box">
+                     <h5 class="mt-0">Children’s Privacy</h5>
+                     <p>
+                        Our services are not intended for individuals under 18 years of age. We do not knowingly collect personal data from minors.
+                     </p>
+                  </div>
+                  <div class="zoo-box">
+                     <h5 class="mt-0">Changes to This Privacy Policy</h5>
+                     <p>
+                        We may update this policy occasionally. The latest version will be posted on our website with the revision date.
+                     </p>
+                  </div>
+                  <div class="zoo-box">
+                     <h5 class="mt-0">Contact Us   </h5>
+                     <p>
+                        If you have any questions or concerns about this Privacy Policy, please contact us at:<br/>
+                        <b>Wildlife Safari Tourism</b>
+                        <br/>
+                        Registered Address: GROUND, 00, C/O FULARAM S/O BHIMA RAM JI, Bali Road,
+                        Shri Krishna Sweets and Restaurant, Near Union Bank, Bali, Pali, Rajasthan, 306701
+                        Email: info@jawaileopardsafaribooking.in
+                        Phone: +91-73399 19554
+                     </p>
+                  </div>
+               </li>
+            </ul>
+         </div>
+      </div>
    </div>
 </div>
 @endsection

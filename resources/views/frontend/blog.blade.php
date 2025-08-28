@@ -1,37 +1,70 @@
 @extends('frontend.layout.main')
-@section('title', 'Blogs')
+@section('title', 'Blogs - Jaway Leapord Safari')
 @section('content')
-<div class="breadcrumbs d-flex align-items-center" style="background-image: url('assets/img/breadcrumbs-bg.html')">
-   <div class="container position-relative d-flex flex-column align-items-center">
-      <h1>Blogs</h1>
-   </div>
+<div class="breadcrumbs d-flex align-items-center">
 </div>
-<section>
+<section class="blog-section py-5">
    <div class="container">
-      <div class="row">
-         <div class="col-lg-12">
-            <div class="row">
-               <div class="latest-outer col-md-4 mb-3">
-                  <div style="border: 1px solid #c1782a">
-                     <div class="latest-left">
-                        <a href="{{route('bdetails')}}">
-                        <img src="{{asset('frontend/img//blogs1/jpg')}}" alt="text"
-                           class="img-fluid" height="182">
-                        </a>
-                     </div>
-                     <div class="latest-right p-2">
-                        <a href="{{route('bdetails')}}">
-                           <h5>Gujarat High Court Cancels Lion Disturbance Case</h5>
-                        </a>
-                        <p class="truncate-text">
-                        <p><span style="font-size:11pt"><span style="font-family:Arial,sans-serif">The case against the television journalist charged with disturbing a lion near Gir National Park has been cancelled...
-                        </p>
-                        <a href="{{route('bdetails')}}"
-                           class="btn btn-outline-warning">
-                        Read More
-                        </a>
-                     </div>
-                  </div>
+      <div class="section-title text-center mb-5">
+         <h2 class="fw-bold">Latest Blogs</h2>
+         <p class="text-muted">Stay updated with the latest news and stories from Jaway Leapord Safari</p>
+      </div>
+      <div class="row g-4">
+         <!-- Blog Card -->
+         <div class="col-md-6 col-lg-4">
+            <div class="blog-card shadow-sm h-100">
+               <div class="blog-img">
+                  <a href="{{route('bdetails')}}">
+                  <img src="{{asset('frontend/img/jawai-leopard-safari.jpg')}}" alt="Blog" class="img-fluid rounded-top w-100">
+                  </a>
+               </div>
+               <div class="blog-content p-3">
+                  <a href="{{route('bdetails')}}" class="text-decoration-none">
+                     <h5 class="fw-bold mb-2">Safari Experience Guide</h5>
+                  </a>
+                  <p class="text-muted mb-3 truncate-text">
+                     Make the most of your wildlife adventure with these essential do’s and don’ts.
+                     Exploring the jungle is a once-in-a-lifetime experience, but it comes with responsibilities. To ensure your safety, respect for wildlife, and a smooth journey, please follow the guidelines below
+                  </p>
+                  <a href="{{route('bdetails')}}" class="btn btn-outline-warning btn-sm">Read More</a>
+               </div>
+            </div>
+         </div>
+         <!-- Repeat Cards -->
+         <div class="col-md-6 col-lg-4">
+            <div class="blog-card shadow-sm h-100">
+               <div class="blog-img">
+                  <a href="{{route('bdetails')}}">
+                  <img src="{{asset('frontend/img/jawai-leopard-safari.jpg')}}" alt="Blog" class="img-fluid rounded-top w-100">
+                  </a>
+               </div>
+               <div class="blog-content p-3">
+                  <a href="{{route('bdetails')}}" class="text-decoration-none">
+                     <h5 class="fw-bold mb-2">Safari Experience Guide</h5>
+                  </a>
+                  <p class="text-muted mb-3 truncate-text">
+                     Learn about the latest conservation initiatives protecting the Asiatic lion and biodiversity of Gir National Park...
+                  </p>
+                  <a href="{{route('bdetails')}}" class="btn btn-outline-warning btn-sm">Read More</a>
+               </div>
+            </div>
+         </div>
+         <div class="col-md-6 col-lg-4">
+            <div class="blog-card shadow-sm h-100">
+               <div class="blog-img">
+                  <a href="{{route('bdetails')}}">
+                  <img src="{{asset('frontend/img/jawai-leopard-safari.jpg')}}" alt="Blog" class="img-fluid rounded-top w-100">
+                  </a>
+               </div>
+               <div class="blog-content p-3">
+                  <a href="{{route('bdetails')}}" class="text-decoration-none">
+                     <h5 class="fw-bold mb-2">Safari Experience Guide</h5>
+                  </a>
+                  <p class="text-muted mb-3 truncate-text">
+                     Make the most of your wildlife adventure with these essential do’s and don’ts.
+                     Exploring the jungle is a once-in-a-lifetime experience, but it comes with responsibilities. To ensure your safety, respect for wildlife, and a smooth journey, please follow the guidelines below
+                  </p>
+                  <a href="{{route('bdetails')}}" class="btn btn-outline-warning btn-sm">Read More</a>
                </div>
             </div>
          </div>

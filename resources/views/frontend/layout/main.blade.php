@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
@@ -43,7 +42,7 @@
     @endif
 </head>
 
-<body>
+<body class="bg-light">
     @if (config('app.env') == 'production')
         <!-- Google Tag Manager (noscript) -->
         <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5J95Z5QT" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>

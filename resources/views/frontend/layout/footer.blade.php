@@ -5,12 +5,12 @@
          <div class="row">
             <div class="col-lg-4 col-md-6">
                <div class="footer-info">
-                  <h3>Gir Safari Booking</h3>
+                  <h4>Information</h4>
                   <div style="margin-bottom:15px !important; color:white !important;" id="footer-notice">
-                     <p><b>We specialize in organizing safari bookings for visitors to Gir Safari Booking. </b>
-                     </p>
-                     <p class="text-light" style="font-size: 14px; margin-top:15px;"><b>Gir Safari Booking </b>
-                        </br> Tel: +91 8619880581 </br> Email:girsafaribooking.in@gmail.com <br/> Address: Sasan – Talala Road, Chitrod Gir, Gir National Park, Gujarat, India – 362135
+                     <p class="text-light" style="font-size: 14px; margin-top:15px;">
+                        <i class="fa-solid fa-phone"></i> Tel: +91-73399 19554 <br/>
+                        <i class="fa-solid fa-envelope"></i> Email: info@jawaileopardsafaribooking.in <br/>
+                        <i class="fa-solid fa-location-dot"></i> Address: GROUND, 00, C/O FULARAM S/O BHIMA RAM JI, Bali Road, Shri Krishna Sweets and Restaurant, Near Union Bank, Bali, Pali, Rajasthan, 306701
                      </p>
                   </div>
                   <!-- Sasan Gir Road Near sasan gir bus stand <br>Sasan Gir junagadh-Gujarat indian -->
@@ -19,7 +19,7 @@
             </div>
             <!-- End footer info column-->
             <div class="col-lg-3 col-md-4 footer-links">
-               <h4>Our Services</h4>
+               <h4>Information</h4>
                <ul>
                   <li><a href="{{ route('dosdonts')}}">Do's & Don'ts</a></li>
                   <li><a href="{{ route('howtoreach')}}">How to Reach</a></li>
@@ -30,6 +30,7 @@
                <h4>QUICK LINKS</h4>
                <ul>
                   <li><a href="{{ url('/') }}">Home</a></li>
+                  <li><a href="{{ route('terms')}}">Terms of Use</a></li>
                   <li><a href="{{ route('privacy')}}">Privacy Policy</a></li>
                   <li><a href="{{ route('cancellationpolicy')}}">Cancellation & Refund</a></li>
                </ul>
@@ -38,8 +39,7 @@
             <div class="col-lg-2 col-md-3 footer-links">
                <h4>EXPLORE SAFARI</h4>
                <ul>
-                  <li><a href="{{ route('girJungle')}}">Gir Jungle Safari</a></li>
-                  <li><a href="{{ route('girDevaliya')}}">Gir Devalia Safari</a></li>
+                  <li><a href="{{ route('girJungle')}}">Jaway Leopard Safari</a></li>
                   <li><a href="{{ route('contactUs')}}">Contact Us</a></li>
                </ul>
             </div>
@@ -48,19 +48,20 @@
       </div>
    </div>
    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-<a href="https://api.whatsapp.com/send?phone=8619880581&text=Welcome to girsafari booking." class="float" target="_blank">
-<i class="fa fa-whatsapp my-float"></i>
-<a id="callus" href="tel:8619880581">
-    <svg xmlns="http://www.w3.org/2000/svg" fill="#ffffff" viewBox="0 0 512 512">
-        <!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
-        <path d="M164.9 24.6c-7.7-18.6-28-28.5-47.4-23.2l-88 24C12.1 30.2 0 46 0 64C0 311.4 200.6 512 448 512c18 0 33.8-12.1 38.6-29.5l24-88c5.3-19.4-4.6-39.7-23.2-47.4l-96-40c-16.3-6.8-35.2-2.1-46.3 11.6L304.7 368C234.3 334.7 177.3 277.7 144 207.3L193.3 167c13.7-11.2 18.4-30 11.6-46.3l-40-96z"/>
-    </svg>
+   <a href="https://wa.me/917339919554?text=Welcome Jaway Leopard Safari" class="float" target="_blank">
+    <i class="fa fa-whatsapp my-float"></i>
 </a>
-</a>
+   <a id="callus" href="tel:7339919554">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="#ffffff" viewBox="0 0 512 512">
+         <!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+         <path d="M164.9 24.6c-7.7-18.6-28-28.5-47.4-23.2l-88 24C12.1 30.2 0 46 0 64C0 311.4 200.6 512 448 512c18 0 33.8-12.1 38.6-29.5l24-88c5.3-19.4-4.6-39.7-23.2-47.4l-96-40c-16.3-6.8-35.2-2.1-46.3 11.6L304.7 368C234.3 334.7 177.3 277.7 144 207.3L193.3 167c13.7-11.2 18.4-30 11.6-46.3l-40-96z"/>
+      </svg>
+   </a>
+   </a>
    <div class="footer-legal text-center position-relative">
       <div class="container">
          <div class="copyright">
-            &copy; Copyright <strong><span> Gir safari booking </span></strong>All
+            &copy; Copyright <strong><span> Jaway Leopard Safari </span></strong>All
             Rights Reserved
          </div>
       </div>

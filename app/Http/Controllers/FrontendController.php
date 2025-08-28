@@ -103,7 +103,10 @@ class FrontendController
     {
         return view('frontend.bdetails');
     }
-
+    public function terms()
+    {
+        return view('frontend.terms');
+    }
     public function booking(StoreFormRequest $request)
     {
         try {

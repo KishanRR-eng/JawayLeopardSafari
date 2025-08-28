@@ -18,15 +18,15 @@
             <input type="text" class="form-control" id="last_name" name="last_name" placeholder="Enter Last Name*" value="{{ old('last_name') ?? (session()->get('last_name') ?? '') }}" required>
             <div class="text-sm text-danger">{{ $errors->first('last_name') ?? '' }}</div>
         </div>
-        <div class="col-md-12">
+        <div class="col-md-6">
             <input type="text" class="form-control" id="mobile_no" name="mobile_no" value="{{ old('mobile_no') ?? (session()->get('mobile_no') ?? '') }}" required>
             <input type="hidden" name="phone_code" id="phone_code" value="{{ old('phone_code') ?? '91' }}">
         </div>
-        <div class="col-md-12">
+        <div class="col-md-6">
             <input type="text" class="form-control" id="email" name="email" placeholder="Enter Email" value="{{ old('email') ?? (session()->get('email') ?? '') }}">
             <div class="text-sm text-danger">{{ $errors->first('email') ?? '' }}</div>
         </div>
-        <div class="col-md-12">
+        <div class="col-md-6">
             <input class="form-control" type="text" name="date" id="date" placeholder="Select Date*" value="{{ old('date') ?? '' }}" required>
             <div class="text-sm text-danger">{{ $errors->first('date') ?? '' }}</div>
         </div>
@@ -39,7 +39,7 @@
             </select>
             <div class="text-sm text-danger">{{ $errors->first('timing') ?? '' }}</div>
         </div>
-        <div class="col-md-6">
+        {{-- <div class="col-md-6">
             <select class="form-control" name="vehicle" id="vehicle">
                 <option value="0" selected>Select Gypsy</option>
                 @php
@@ -58,7 +58,7 @@
                 @endforeach
             </select>
             <div class="text-sm text-danger">{{ $errors->first('vehicle') ?? '' }}</div>
-        </div>
+        </div> --}}
         <div class="col-md-6">
             <div class="numberboxes">
                 <div class="numberbox">

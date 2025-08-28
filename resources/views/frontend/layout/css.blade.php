@@ -1,6 +1,6 @@
 <!-- Favicons -->
-<link href="{{ asset('frontend/css/img/favicon.ico') }}" rel="icon" />
-<link href="{{ asset('frontend/css/img/fav-apple-touch.jpg') }}" rel="apple-touch-icon" />
+<link href="{{ asset('frontend/img/fav.jpg') }}" rel="icon" />
+<link href="{{ asset('frontend/img/fav.jpg') }}" rel="apple-touch-icon" />
 <link rel="canonical" href="index.html" />
 <!-- Google Fonts -->
 <link rel="preconnect" href="https://fonts.googleapis.com/" />

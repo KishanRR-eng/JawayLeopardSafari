@@ -31,6 +31,7 @@ Route::get('/privacy-policy', [FrontendController::class, 'privacy'])->name('pri
 Route::get('/faq', [FrontendController::class, 'faq'])->name('faq');
 Route::get('/how_to_reach', [FrontendController::class, 'howtoreach'])->name('howtoreach');
 Route::get('/dosanddonts', [FrontendController::class, 'dosdonts'])->name('dosdonts');
+Route::get('/Terms-of-Use', [FrontendController::class, 'terms'])->name('terms');
 Route::get('/Blogs', [FrontendController::class, 'blog'])->name('blog');
 Route::get('/blog-details', [FrontendController::class, 'bdetails'])->name('bdetails');
 Route::get('/cancellation-policy', [FrontendController::class, 'cancellationpolicy'])->name('cancellationpolicy');
