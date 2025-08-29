@@ -59,11 +59,11 @@
                     @for ($i = 0; $i < $data->adult; $i++)
                         <div class="col-md-12 m-0 row mb-4">
                             <div class="col-md-3">
-                                <input type="text" class="form-control" name="adult_first_name[]" placeholder="Enter First Name*" value="{{ old('adult_first_name')[$i] ?? ($data->first_name ?? '') }}" required>
+                                <input type="text" class="form-control" name="adult_first_name[]" placeholder="Enter First Name*" value="{{ old('adult_first_name')[$i] ?? ($i == 0 ? $data->first_name : '') }}" required>
                                 <div class="text-sm text-danger">{{ $errors->first('adult_first_name.' . $i) ?? '' }}</div>
                             </div>
                             <div class="col-md-3">
-                                <input type="text" class="form-control" name="adult_last_name[]" placeholder="Enter Last Name*" value="{{ old('adult_last_name')[$i] ?? ($data->last_name ?? '') }}" required>
+                                <input type="text" class="form-control" name="adult_last_name[]" placeholder="Enter Last Name*" value="{{ old('adult_last_name')[$i] ?? ($i == 0 ? $data->last_name : '') }}" required>
                                 <div class="text-sm text-danger">{{ $errors->first('adult_last_name.' . $i) ?? '' }}</div>
                             </div>
                             <div class="col-md-3">
