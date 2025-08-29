@@ -32,16 +32,14 @@ class FrontendController
     {
         return view('frontend.safari', [
             'weekday' => (object)[
-                'indian' => Package::with(['timeSlots'])->where(['status' => true, 'type' => '0', 'tourist_type' => '0', 'day_type' => '0'])->first(),
-                'foreigner' => Package::with(['timeSlots'])->where(['status' => true, 'type' => '0', 'tourist_type' => '1', 'day_type' => '0'])->first(),
+                'indian' => Package::with(['timeSlots'])->where(['status' => true, 'tourist_type' => '0', 'day_type' => '0'])->first(),
+                'foreigner' => Package::with(['timeSlots'])->where(['status' => true, 'tourist_type' => '1', 'day_type' => '0'])->first(),
             ],
             'weekend' => (object)[
-                'indian' => Package::with(['timeSlots'])->where(['status' => true, 'type' => '0', 'tourist_type' => '0', 'day_type' => '1'])->first(),
-                'foreigner' => Package::with(['timeSlots'])->where(['status' => true, 'type' => '0', 'tourist_type' => '1', 'day_type' => '1'])->first(),
+                'indian' => Package::with(['timeSlots'])->where(['status' => true, 'tourist_type' => '0', 'day_type' => '1'])->first(),
+                'foreigner' => Package::with(['timeSlots'])->where(['status' => true, 'tourist_type' => '1', 'day_type' => '1'])->first(),
             ],
-            'disabledSlots' => DisabledSlot::whereHas('timeSlot', function ($q) {
-                $q->where('type', '0');
-            })->where('date', '>=', date('Y-m-d'))->get()
+            'disabledSlots' => DisabledSlot::where('date', '>=', date('Y-m-d'))->get()
         ]);
     }
 
@@ -207,7 +205,6 @@ class FrontendController
     {
         try {
             $request->mobile_no = preg_replace('/\s+/', "", $request->phone_code == '91' ? ltrim($request->mobile_no, '0') : $request->mobile_no);;
-            $type = $request->type == '0' ? 'Gir Jungle Safari' : 'Devalia Safari';
 
             $mail = new PHPMailer(true);
             $mail->SMTPDebug = 0;
@@ -230,7 +227,6 @@ class FrontendController
                         <li><b>Name :</b> {$request->first_name} {$request->last_name}</li>
                         <li><b>Email :</b> {$request->email}</li>
                         <li><b>Phone Number :</b> +{$request->phone_code} {$request->mobile_no}</li>
-                        <li><b>Safari :</b> {$type}</li>
                     </ul>
                 </div>
             ";
