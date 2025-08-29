@@ -64,7 +64,7 @@ class PackageController extends Controller
         try {
             $id = Crypt::decrypt($id);
             return view('backend.tour-packages.form', [
-                'data' => Package::with(['vehiclesMap'])->find($id),
+                'data' => Package::with(['timeSlots'])->find($id),
                 'timeSlots' => TimeSlot::all(['id', 'name']),
             ]);
         } catch (\Throwable $th) {
@@ -81,26 +81,26 @@ class PackageController extends Controller
     {
         try {
             $package = Package::find(Crypt::decrypt($id));
-            $vehicles = $request->vehicles;
+            $timeSlots = $request->timeSlots;
             $package->name = $request->name;
             $package->price = $request->price;
             $package->tourist_type = $request->tourist_type;
             $package->day_type = $request->day_type;
             $package->status = $request->status == 'on';
             $package->save();
-            foreach ($package->vehiclesMap as $map) {
-                if (in_array($map->transportation_vehicle_id, $vehicles)) {
-                    array_splice($vehicles, array_search($map->transportation_vehicle_id, $vehicles), 1);
+            foreach ($package->timeSlotMap as $map) {
+                if (in_array($map->time_slot_id, $timeSlots)) {
+                    array_splice($timeSlots, array_search($map->time_slot_id, $timeSlots), 1);
                 } else {
                     $map->delete();
                 }
             }
-            if (count($vehicles) > 0) {
+            if (count($timeSlots) > 0) {
                 $data = [];
-                foreach ($vehicles as $value) {
-                    $data[] = ['package_id' => $package->id, 'transportation_vehicle_id' => $value];
+                foreach ($timeSlots as $value) {
+                    $data[] = ['package_id' => $package->id, 'time_slot_id' => $value];
                 }
-                VehiclesMap::insert($data);
+                TimeSlotMap::insert($data);
             }
             return redirect()->route('backend.package.index');
         } catch (\Throwable $th) {
