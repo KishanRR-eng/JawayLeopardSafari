@@ -1,12 +1,9 @@
 <?php
 
 use App\Http\Controllers\BookingController;
-use App\Http\Controllers\DisabledDateController;
-use App\Http\Controllers\DisabledDayController;
 use App\Http\Controllers\DisabledSlotController;
 use App\Http\Controllers\FrontendController;
 use App\Http\Controllers\PackageController;
-use App\Http\Controllers\TransportationVehicleController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -24,8 +21,7 @@ use Illuminate\Support\Facades\Route;
 require __DIR__ . '/auth.php';
 
 Route::get('/', [FrontendController::class, 'index'])->name('root');
-Route::get('/gir-jungle', [FrontendController::class, 'girJungle'])->name('girJungle');
-Route::get('/gir-devaliya', [FrontendController::class, 'girDevaliya'])->name('girDevaliya');
+Route::get('/safari', [FrontendController::class, 'safari'])->name('safari');
 Route::get('/contact-us', [FrontendController::class, 'contactUs'])->name('contactUs');
 Route::get('/privacy-policy', [FrontendController::class, 'privacy'])->name('privacy');
 Route::get('/faq', [FrontendController::class, 'faq'])->name('faq');
@@ -48,32 +44,11 @@ Route::group(['prefix' => '/backend', 'middleware' => 'auth', 'as' => 'backend.'
 
     Route::post('/download-attachment', [FrontendController::class, 'download'])->name('download');
 
-    Route::group(['prefix' => '/days', 'as' => 'day.'], function () {
-        Route::get('/', [DisabledDayController::class, 'index'])->name('index');
-        Route::get('/create', [DisabledDayController::class, 'create'])->name('create');
-        Route::post('/', [DisabledDayController::class, 'store'])->name('store');
-        Route::delete('/{id}', [DisabledDayController::class, 'destroy'])->name('destroy');
-    });
-
-    Route::group(['prefix' => '/dates', 'as' => 'date.'], function () {
-        Route::get('/', [DisabledDateController::class, 'index'])->name('index');
-        Route::get('/create', [DisabledDateController::class, 'create'])->name('create');
-        Route::post('/', [DisabledDateController::class, 'store'])->name('store');
-        Route::delete('/{id}', [DisabledDateController::class, 'destroy'])->name('destroy');
-    });
-
     Route::group(['prefix' => '/disabled-slots', 'as' => 'disabled.slot.'], function () {
         Route::get('/', [DisabledSlotController::class, 'index'])->name('index');
         Route::get('/create', [DisabledSlotController::class, 'create'])->name('create');
         Route::post('/', [DisabledSlotController::class, 'store'])->name('store');
         Route::delete('/{id}', [DisabledSlotController::class, 'destroy'])->name('destroy');
-    });
-
-    Route::group(['prefix' => '/transportation-vehicle', 'as' => 'transportation.vehicle.'], function () {
-        Route::get('/', [TransportationVehicleController::class, 'index'])->name('index');
-        Route::get('/create', [TransportationVehicleController::class, 'create'])->name('create');
-        Route::post('/', [TransportationVehicleController::class, 'store'])->name('store');
-        Route::delete('/{id}', [TransportationVehicleController::class, 'destroy'])->name('destroy');
     });
 
     Route::group(['prefix' => '/packages', 'as' => 'package.'], function () {

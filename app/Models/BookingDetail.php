@@ -15,9 +15,6 @@ class BookingDetail extends Model
         'last_name',
         'age',
         'gender',
-        'identity_proof_type',
-        'identity_proof_id',
-        'identity_proof',
         'type',
     ];
 
@@ -29,9 +26,6 @@ class BookingDetail extends Model
         'last_name' => 'string',
         'age' => 'integer',
         'gender' => 'string',
-        'identity_proof_type' => 'string',
-        'identity_proof_id' => 'string',
-        'identity_proof' => 'string',
         'type' => 'string',
     ];
 
@@ -41,17 +35,10 @@ class BookingDetail extends Model
         'last_name',
         'age',
         'gender',
-        'identity_proof_type',
-        'identity_proof_id',
-        'identity_proof',
         'type',
     ];
 
     protected $appends = [];
-
-    public static $path = 'uploads/identityProofs';
-
-    public static $downloadPath = 'uploads/identityProofs/zips';
 
     public function booking()
     {

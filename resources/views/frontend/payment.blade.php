@@ -1,5 +1,5 @@
 @extends('frontend.layout.main')
-@section('title', 'Gir Jungle Safari Booking')
+@section('title', 'Jaway Leopard Safari Booking')
 
 @section('content')
     <div class="breadcrumbs d-flex align-items-center" style="background-image: url('assets/img/breadcrumbs-bg.html')">
@@ -44,8 +44,6 @@
                                 <th>Name</th>
                                 <th>Age</th>
                                 <th>Gender</th>
-                                <th>Identity Proof</th>
-                                <th>Identity Proof ID</th>
                                 <th>Person</th>
                             </tr>
                         </thead>
@@ -55,8 +53,6 @@
                                     <td>{{ $person->first_name }} {{ $person->last_name }}</td>
                                     <td>{{ $person->age }}</td>
                                     <td>{{ $genders[$person->gender] }}</td>
-                                    <td>{{ $identityProofTypes[$person->identity_proof_type] }}</td>
-                                    <td>{{ $person->identity_proof_id ?? '-' }}</td>
                                     <td>{{ $person->type == 0 ? 'Adult' : 'Child' }}</td>
                                 </tr>
                             @endforeach
@@ -98,7 +94,7 @@
                 key: "{{ env('RAZORPAY_KEY_ID') }}",
                 amount: "{{ $data->price * 100 }}", // Amount in paisa
                 currency: "INR",
-                name: "Gir Safari Booking",
+                name: "Jaway Leopard Safari",
                 description: "Booking Payment",
                 handler: function(response) {
                     // Handle successful payment here
@@ -106,9 +102,9 @@
                     $('form#paymentForm').submit();
                 },
                 prefill: {
-                    name: "Gir Safari Booking",
-                    email: "girsafaribooking.in@gmail.com",
-                    contact: "+91 8619880581"
+                    name: "Jaway Leopard Safari",
+                    email: "jawaijunglecamp2019@gmail.com",
+                    contact: "+91 7339919554"
                 },
             });
             razor.open();

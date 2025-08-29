@@ -17,28 +17,10 @@
                     <li class="menu-label pt-0 mt-0">
                         <span>Main Menu</span>
                     </li>
-                    {{-- <li class="nav-item">
-                        <a class="nav-link" href="{{ route('backend.day.index') }}">
-                            <i class="far fa-calendar-minus menu-icon"></i>
-                            <span>Disabled Days</span>
-                        </a>
-                    </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="{{ route('backend.date.index') }}">
-                            <i class="far fa-calendar-times menu-icon"></i>
-                            <span>Disabled Dates</span>
-                        </a>
-                    </li> --}}
-                     <li class="nav-item">
                         <a class="nav-link" href="{{ route('backend.disabled.slot.index') }}">
                             <i class="iconoir-timer-off menu-icon"></i>
                             <span>Disabled Slots</span>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{ route('backend.transportation.vehicle.index') }}">
-                            <i class="fas fa-car menu-icon"></i>
-                            <span>Transport Vehicles</span>
                         </a>
                     </li>
                     <li class="nav-item">

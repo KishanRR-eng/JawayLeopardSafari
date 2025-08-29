@@ -37,21 +37,6 @@
                     </div>
 
                     <div class="col-md-4 has-validation">
-                        <label class="form-label">Module</label>
-                        <div class="d-flex">
-                            <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="type" id="girSafari" value="0" @if ((isset($data->type) && $data->type != 1) || old('type') != '1') checked @endif>
-                                <label class="form-check-label" for="girSafari">Gir Safari</label>
-                            </div>
-                            <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="type" id="girDevalia" value="1" @if ((isset($data->type) && $data->type == 1) || old('type') == '1') checked @endif>
-                                <label class="form-check-label" for="girDevalia">Gir Devalia</label>
-                            </div>
-                        </div>
-                        <div class="invalid-feedback">{{ $errors->first('type') ?? '' }}</div>
-                    </div>
-
-                    <div class="col-md-4 has-validation">
                         <label class="form-label">Day Type</label>
                         <div class="d-flex">
                             <div class="form-check form-check-inline">
@@ -83,15 +68,15 @@
 
 
                     <div class="col-md-6 has-validation">
-                        <label for="vehicles" class="form-label">Transportation Vehicles</label>
-                        <select id="vehicles" name="vehicles[]" class="form-select" multiple>
-                            @foreach ($vehicles as $vehicle)
-                                <option value="{{ $vehicle->id }}" @if ((old('_token') == null && isset($data->vehiclesMap) && $data->vehiclesMap->pluck('transportation_vehicle_id')->contains($vehicle->id)) || (old('vehicles') != null && in_array($vehicle->id, old('vehicles')))) selected @endif>
-                                    {{ $vehicle->name }} ({{ $vehicle->price }})
+                        <label for="timeSlots" class="form-label">Time Slots</label>
+                        <select id="timeSlots" name="timeSlots[]" class="form-select" multiple>
+                            @foreach ($timeSlots as $slot)
+                                <option value="{{ $slot->id }}" @if ((old('_token') == null && isset($data->timeSlotMap) && $data->timeSlotMap->pluck('time_slot_id')->contains($slot->id)) || (old('timeSlots') != null && in_array($slot->id, old('timeSlots')))) selected @endif>
+                                    {{ $slot->name }}
                                 </option>
                             @endforeach
                         </select>
-                        <div class="invalid-feedback {{ $errors->first('vehicles') ? 'd-block' : '' }}">{{ $errors->first('vehicles') ?? '' }}</div>
+                        <div class="invalid-feedback {{ $errors->first('timeSlots') ? 'd-block' : '' }}">{{ $errors->first('timeSlots') ?? '' }}</div>
                     </div>
                     
                     <div class="col-md has-validation">

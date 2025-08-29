@@ -4,7 +4,8 @@ namespace App\Http\Controllers;
 
 use App\Http\Requests\PackageRequest;
 use App\Models\Package;
-use App\Models\TransportationVehicle;
+use App\Models\TimeSlot;
+use App\Models\TimeSlotMap;
 use App\Models\VehiclesMap;
 use Illuminate\Support\Facades\Crypt;
 use Illuminate\Support\Facades\Log;
@@ -16,7 +17,7 @@ class PackageController extends Controller
      */
     public function index()
     {
-        return view('backend.tour-packages.index', ['data' => Package::with(['transportationVehicles'])->get()]);
+        return view('backend.tour-packages.index', ['data' => Package::with(['timeSlots'])->get()]);
     }
 
     /**
@@ -25,7 +26,7 @@ class PackageController extends Controller
     public function create()
     {
         return view('backend.tour-packages.form', [
-            'vehicles' => TransportationVehicle::all(['id', 'name', 'price']),
+            'timeSlots' => TimeSlot::all(['id', 'name']),
         ]);
     }
 
@@ -40,14 +41,13 @@ class PackageController extends Controller
                 'price' => $request->price,
                 'tourist_type' => $request->tourist_type,
                 'day_type' => $request->day_type,
-                'type' => $request->type,
                 'status' => $request->status == 'on',
             ]);
             $data = [];
-            foreach ($request->vehicles as $value) {
-                $data[] = ['package_id' => $package->id, 'transportation_vehicle_id' => $value];
+            foreach ($request->timeSlots as $value) {
+                $data[] = ['package_id' => $package->id, 'time_slot_id' => $value];
             }
-            VehiclesMap::insert($data);
+            TimeSlotMap::insert($data);
             return redirect()->route('backend.package.index');
         } catch (\Throwable $th) {
             //throw $th;
@@ -65,7 +65,7 @@ class PackageController extends Controller
             $id = Crypt::decrypt($id);
             return view('backend.tour-packages.form', [
                 'data' => Package::with(['vehiclesMap'])->find($id),
-                'vehicles' => TransportationVehicle::all(['id', 'name', 'price']),
+                'timeSlots' => TimeSlot::all(['id', 'name']),
             ]);
         } catch (\Throwable $th) {
             //throw $th;
@@ -86,7 +86,6 @@ class PackageController extends Controller
             $package->price = $request->price;
             $package->tourist_type = $request->tourist_type;
             $package->day_type = $request->day_type;
-            $package->type = $request->type;
             $package->status = $request->status == 'on';
             $package->save();
             foreach ($package->vehiclesMap as $map) {

@@ -26,7 +26,6 @@
                                 <th>#</th>
                                 <th>Date</th>
                                 <th>Time Slot</th>
-                                <th>Module</th>
                                 <th width="11%">Action</th>
                             </tr>
                         </thead>
@@ -36,7 +35,6 @@
                                     <td>{{ $key + 1 }}</td>
                                     <td>{{ date('Y-m-d', strtotime($value->date)) }}</td>
                                     <td>{{ $value->timeSlot->name }}</td>
-                                    <td>{{ $value->type == 0 ? 'Gir Safari' : 'Gir Devalia' }}</td>
                                     <td>
                                         @php
                                             $id = Crypt::encrypt($value->id);

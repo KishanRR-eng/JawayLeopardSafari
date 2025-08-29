@@ -31,34 +31,25 @@
             <div class="text-sm text-danger">{{ $errors->first('date') ?? '' }}</div>
         </div>
         <div class="col-md-6">
-            <select class="form-control" name="timing" id="timings">
+            <select class="form-control" name="timing" id="timing">
                 <option value="0" selected>Select Time Slot</option>
-                @foreach ($slots as $slot)
-                    <option value="{{ $slot->id }}" @if (old('slot') != null && old('timing') == $slot->id) selected @endif>{{ $slot->name }}</option>
-                @endforeach
-            </select>
-            <div class="text-sm text-danger">{{ $errors->first('timing') ?? '' }}</div>
-        </div>
-        {{-- <div class="col-md-6">
-            <select class="form-control" name="vehicle" id="vehicle">
-                <option value="0" selected>Select Gypsy</option>
                 @php
                     $phoneCode = old('phone_code') != null && old('phone_code') ? old('phone_code') : '91';
                     $date = old('date') != null && old('date') ? old('date') : date('Y-m-d');
                     $isWeekend = in_array(date('N', strtotime($date)), [6, 7]);
-                    $data = (object) ['transportationVehicles' => []];
+                    $data = (object) ['timeSlots' => []];
                     if ($phoneCode == '91') {
                         $data = $isWeekend ? $weekend->indian : $weekday->indian;
                     } else {
                         $data = $isWeekend ? $weekend->foreigner : $weekday->foreigner;
                     }
                 @endphp
-                @foreach ($data->transportationVehicles as $vehicle)
-                    <option value="{{ $data->id }}-{{ $vehicle->id }}" @if (old('vehicle') == "{$data->id}-{$vehicle->id}") selected @endif>{{ $vehicle->name }}</option>
+                @foreach ($data->timeSlots as $slot)
+                    <option value="{{ $data->id }}-{{ $slot->id }}" @if (old('timing') == "{$data->id}-{$slot->id}") selected @endif>{{ $slot->name }}</option>
                 @endforeach
             </select>
-            <div class="text-sm text-danger">{{ $errors->first('vehicle') ?? '' }}</div>
-        </div> --}}
+            <div class="text-sm text-danger">{{ $errors->first('timing') ?? '' }}</div>
+        </div>
         <div class="col-md-6">
             <div class="numberboxes">
                 <div class="numberbox">
@@ -103,7 +94,7 @@
     <script>
         const getPackage = () => {
             let data = {
-                transportation_vehicles: []
+                time_slots: []
             };
             const date = $('input#date').val();
             const phoneCode = $('input#phone_code').val();
@@ -116,67 +107,47 @@
             return data;
         }
         $(document).off('changeDate', 'input#date').on('changeDate', 'input#date', function() {
+            $(`select#timing option`).prop('disabled', false);
             const data = getPackage();
-            let html = `<option value="0" selected>Select Gypsy</option>`;
-            for (const ele of data.transportation_vehicles) {
-                html += `<option value="${data.id}-${ele.id}">${ele.name}</option>`;
-            }
-            $('select#vehicle').empty();
-            $('select#vehicle').append(html);
-            $(`select#timings option`).prop('disabled', false);
-
             const disabledSlots = @json($disabledSlots ?? []);
             for (const slot of disabledSlots) {
                 const slotDate = new Date(slot.date);
                 const formattedDate = `${slotDate.getFullYear()}-${String(slotDate.getMonth()+1).padStart(2,'0')}-${String(slotDate.getDate()).padStart(2,'0')}`;
                 if (formattedDate == $(this).val()) {
-                    $(`select#timings option[value='${slot.time_slot_id}']`).prop('disabled', true);
+                    $(`select#timing option[value='${data.id}-${slot.time_slot_id}']`).prop('disabled', true);
                 }
 
             }
         });
-        $(document).off('change', 'select#vehicle').on('change', 'select#vehicle', function() {
-            $('input#adultInput').val(0);
-            $('input#childInput').val(0);
-        });
         $(document).off('click', 'a#adultIncrease').on('click', 'a#adultIncrease', function(e) {
-            const data = getPackage();
-            const vehicle = data.transportation_vehicles.filter(item => `${data.id}-${item.id}` == $('select#vehicle').val());
-            if (vehicle.length > 0) {
-                let adultInput = parseInt($('input#adultInput').val());
-                let childInput = parseInt($('input#childInput').val());
-                if (childInput > 0) childInput -= 1
-                let currentValue = adultInput + childInput;
-                if (currentValue > vehicle[0].seats) {
-                    adultInput--;
-                    $('input#adultInput').val(adultInput);
-                }
+            let adultInput = parseInt($('input#adultInput').val());
+            let childInput = parseInt($('input#childInput').val());
+            if (childInput > 0) childInput -= 1
+            let currentValue = adultInput + childInput;
+            if (currentValue > 6) {
+                adultInput--;
+                $('input#adultInput').val(adultInput);
             }
         });
         $(document).off('click', 'a#childIncrease').on('click', 'a#childIncrease', function(e) {
-            const data = getPackage();
-            const vehicle = data.transportation_vehicles.filter(item => `${data.id}-${item.id}` == $('select#vehicle').val());
-            if (vehicle.length > 0) {
-                const adultInput = parseInt($('input#adultInput').val());
-                let childInput = parseInt($('input#childInput').val());
-                let currentValue = adultInput + childInput;
-                if (currentValue > vehicle[0].seats + 1) {
-                    childInput--;
-                    $('input#childInput').val(childInput);
-                }
+            const adultInput = parseInt($('input#adultInput').val());
+            let childInput = parseInt($('input#childInput').val());
+            let currentValue = adultInput + childInput;
+            if (currentValue > 7) {
+                childInput--;
+                $('input#childInput').val(childInput);
             }
         });
         $(document).off('countrychange', 'input#mobile_no').on('countrychange', 'input#mobile_no', function() {
             $('input#adultInput').val(0);
             $('input#childInput').val(0);
-            $('input#vehicle').val(0);
             const data = getPackage();
-            let html = `<option value="0" selected>Select Gypsy</option>`;
-            for (const ele of data.transportation_vehicles) {
+            let html = `<option value="0" selected>Select Time Slot</option>`;
+            for (const ele of data.time_slots) {
                 html += `<option value="${data.id}-${ele.id}">${ele.name}</option>`;
             }
-            $('select#vehicle').empty();
-            $('select#vehicle').append(html);
+            $('select#timing').empty();
+            $('select#timing').append(html);
         })
     </script>
 @endsection

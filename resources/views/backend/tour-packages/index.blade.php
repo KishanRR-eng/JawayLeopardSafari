@@ -25,11 +25,10 @@
                             <tr>
                                 <th>#</th>
                                 <th>Name</th>
-                                <th>Module</th>
                                 <th>Day Type</th>
                                 <th>Tourist Type</th>
                                 <th>Price</th>
-                                <th>Transportation Vehicles</th>
+                                <th>Time Slots</th>
                                 <th>Status</th>
                                 <th width="11%">Action</th>
                             </tr>
@@ -39,14 +38,13 @@
                                 <tr>
                                     <td>{{ $key + 1 }}</td>
                                     <td>{{ $value->name }}</td>
-                                    <td>{{ $value->type == 0 ? 'Gir Safari' : 'Gir Devalia' }}</td>
                                     <td>{{ $value->day_type == 0 ? 'Weekday' : 'Weekend' }}</td>
                                      <td>{{ $value->tourist_type == 0 ? 'Indian' : 'Foreigner' }}</td>
                                     <td>{{ $value->price }}/-</td>
                                     <td>
                                         <ul>
-                                            @foreach ($value->transportationVehicles as $vehicle)
-                                                <li>{{ $vehicle->name }} ({{ $vehicle->price }})</li>
+                                            @foreach ($value->timeSlots as $slot)
+                                                <li>{{ $slot->name }}</li>
                                             @endforeach
                                         </ul>
                                     </td>

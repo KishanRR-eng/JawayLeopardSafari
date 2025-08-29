@@ -1,4 +1,4 @@
-@extends('layouts.auth', ['title' => 'Gir Safari Ticket'])
+@extends('layouts.auth', ['title' => 'Jaway Leopard Safari'])
 
 @section('content')
 
@@ -9,7 +9,7 @@
                 <a href="{{ route('login')}}" class="logo logo-admin">
                     <img src="{{ asset('frontend/img/gir_logo.png') }}" width="180px" alt="logo" class="auth-logo">
                 </a>
-                <h4 class="mt-3 mb-1 fw-semibold text-gray fs-18">Let's Get Started Gir Safari Ticket</h4>
+                <h4 class="mt-3 mb-1 fw-semibold text-gray fs-18">Let's Get Started Jaway Leopard Safari</h4>
                 <p class="text-muted fw-medium mb-0">Sign in to continue to Admin.</p>
             </div>
         </div>

@@ -14,7 +14,6 @@ class Package extends Model
         'price',
         'tourist_type',
         'day_type',
-        'type',
         'status',
     ];
 
@@ -25,7 +24,6 @@ class Package extends Model
         'price' => 'double',
         'tourist_type' => 'string',
         'day_type' => 'string',
-        'type' => 'string',
         'status' => 'boolean',
     ];
 
@@ -34,20 +32,19 @@ class Package extends Model
         'price',
         'tourist_type',
         'day_type',
-        'type',
         'status',
     ];
 
     protected $appends = [];
 
 
-    public function transportationVehicles()
+    public function timeSlots()
     {
-        return $this->hasManyThrough(TransportationVehicle::class, VehiclesMap::class, null, 'id', null, 'transportation_vehicle_id');
+        return $this->hasManyThrough(TimeSlot::class, TimeSlotMap::class, null, 'id', null, 'time_slot_id');
     }
 
-    public function vehiclesMap()
+    public function timeSlotMap()
     {
-        return $this->hasMany(VehiclesMap::class, 'package_id');
+        return $this->hasMany(TimeSlotMap::class, 'package_id');
     }
 }

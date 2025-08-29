@@ -51,9 +51,8 @@
                                     <td>
                                         <ul>
                                             <li>
-                                                {{ $value->type == 0 ? 'Gir Safari' : 'Gir Devalia' }} ({{ $value->price }})
+                                                {{ $value->price }}
                                                 <ul>
-                                                    <li>{{ $value->vehicle_name }} ({{ $value->vehicle_price }})</li>
                                                     <li>Adults : {{ $value->adult }}</li>
                                                     <li>Children : {{ $value->child }}</li>
                                                 </ul>

@@ -14,7 +14,6 @@ return new class extends Migration
         Schema::create('time_slots', function (Blueprint $table) {
             $table->id();
             $table->string('name');
-            $table->enum('type',[0,1])->default(0)->comment("0-Gir Safari,1-Gir Devalia");
             $table->timestamp('created_at')->useCurrent();
             $table->timestamp('updated_at')->useCurrent()->useCurrentOnUpdate();
         });

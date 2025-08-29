@@ -27,18 +27,7 @@ if ($('#date').length > 0) {
     format: 'yyyy-mm-dd',
     minDate: new Date(),
     autohide: true,
-    datesDisabled: (date) => {
-      if (location.pathname.includes('gir-jungle')) {
-        if ((date.getMonth() == 5 && date.getDate() > 15) || (date.getMonth() == 9 && date.getDate() < 16)) return true;
-        if (date.getMonth() > 5 && date.getMonth() < 9) return true;
-      }
-      return false;
-    }
   };
-
-  if (location.pathname.includes('gir-devaliya')) {
-    options.daysOfWeekDisabled = [3];
-  }
   window.datePicker = new Datepicker(document.getElementById('date'), options);
 }
 

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <title> @yield('title', 'Gir National Park Safari Booking Online') </title>
+    <title> @yield('title', 'Jaway Leopard Safari Booking Online') </title>
     <link rel=" shortcut icon" type="image/png" sizes="16x16" href="{{ asset('frontend/img/gir_logo.png') }}">
     @yield('css')
     @include('frontend.layout.css')

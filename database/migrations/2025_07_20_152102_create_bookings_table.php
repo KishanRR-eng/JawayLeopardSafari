@@ -21,9 +21,6 @@ return new class extends Migration
             $table->string('email')->nullable()->default(null);
             $table->double('price');
             $table->foreignIdFor(TimeSlot::class);
-            $table->string('vehicle_name');
-            $table->integer('seats');
-            $table->double('vehicle_price');
             $table->integer('adult')->default(0);
             $table->integer('child')->default(0);
             $table->enum('tourist_type', [0, 1])->default(0)->comment("0-Indian,1-Foreigner");

@@ -13,9 +13,9 @@ class TimeSlotSeeder extends Seeder
     public function run(): void
     {
         TimeSlot::insert([
-            ['type' => '0', 'name' => '5:30 AM to 8:30 AM'],
-            ['type' => '0', 'name' => '11:00 AM to 2:00 PM'],
-            ['type' => '0', 'name' => '4:30 PM to 7:30 PM'],
+            ['name' => '5:30 AM to 8:30 AM'],
+            ['name' => '11:00 AM to 2:00 PM'],
+            ['name' => '4:30 PM to 7:30 PM'],
         ]);
     }
 }

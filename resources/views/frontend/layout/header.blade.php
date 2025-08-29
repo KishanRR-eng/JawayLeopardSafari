@@ -6,7 +6,7 @@
          <div class="ticker-container d-flex align-items-center">
             <h3 class="ticker-title fs-6 mb-0 me-2">Latest Updates</h3>
             <div class="ticker-text">
-               <p class="mb-0 small">This Website is Owned by Jungle Safari India, Visitors Can Book Safari For Gir Jungle Safari, Devalia Safari Park and Kankai Nature Ride.</p>
+               <p class="mb-0 small">This Website is Owned by Jungle Safari India, Visitors Can Book Safari For Jaway Leopard Safari, Devalia Safari Park and Kankai Nature Ride.</p>
             </div>
          </div>
       </div>
@@ -23,7 +23,7 @@
       <nav id="navbar" class="navbar">
          <ul>
             <li><a href="{{ url('/') }}" class="active">Home</a></li>
-            <li><a href="{{route('girJungle')}}" class=""> Book Safari</a></li>
+            <li><a href="{{route('safari')}}" class=""> Book Safari</a></li>
             <li><a href="{{route('blog')}}" class="">Blog</a></li>
             <li><a href="{{ route('contactUs')}}" class="">Contact us</a></li>
          </ul>

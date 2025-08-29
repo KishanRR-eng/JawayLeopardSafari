@@ -29,28 +29,11 @@
                     </div>
 
                     <div class="col-md-6 has-validation">
-                        <label class="form-label">Module</label>
-                        <div class="d-flex">
-                            <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="type" id="girSafari" value="0" @if ((isset($data->type) && $data->type != 1) || old('type') != '1') checked @endif>
-                                <label class="form-check-label" for="girSafari">Gir Safari</label>
-                            </div>
-                            <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="type" id="girDevalia" value="1" @if ((isset($data->type) && $data->type == 1) || old('type') == '1') checked @endif>
-                                <label class="form-check-label" for="girDevalia">Gir Devalia</label>
-                            </div>
-                        </div>
-                        <div class="invalid-feedback">{{ $errors->first('type') ?? '' }}</div>
-                    </div>
-
-                    <div class="col-md-6 has-validation">
                         <label for="slot" class="form-label">Time Slot</label>
                         <select id="slot" name="slot" class="form-select">
                             <option value="0" selected>Select Time Slot</option>
                             @foreach ($slots as $slot)
-                                @if ($slot->type == old('type') || (old('type') == null && $slot->type == '0'))
-                                    <option value="{{ $slot->id }}" @if (old('slot') != null && old('slot') == $slot->id) selected @endif>{{ $slot->name }}</option>
-                                @endif
+                                <option value="{{ $slot->id }}" @if (old('slot') != null && old('slot') == $slot->id) selected @endif>{{ $slot->name }}</option>
                             @endforeach
                         </select>
                         <div class="invalid-feedback {{ $errors->first('slot') ? 'd-block' : '' }}">{{ $errors->first('slot') ?? '' }}</div>

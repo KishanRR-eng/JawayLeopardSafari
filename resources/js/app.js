@@ -33,7 +33,7 @@ selectrSingle.forEach((ele) => {
     }
 });
 
-const selectrMultiple = ['vehicles'];
+const selectrMultiple = ['timeSlots'];
 selectrMultiple.forEach((ele) => {
     if ($(`#${ele}`).length > 0) {
         const options = {};

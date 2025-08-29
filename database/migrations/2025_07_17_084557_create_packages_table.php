@@ -17,7 +17,6 @@ return new class extends Migration
             $table->double('price');
             $table->enum('tourist_type', [0, 1])->default(0)->comment("0-Indian,1-Foreigner");
             $table->enum('day_type', [0, 1])->default(0)->comment("0-Weekday,1-Weekend");
-            $table->enum('type', [0])->default(0)->comment("0-Jaway Leopard Safari");
             $table->boolean('status')->default(false);
             $table->timestamp('created_at')->useCurrent();
             $table->timestamp('updated_at')->useCurrent()->useCurrentOnUpdate();

@@ -18,7 +18,6 @@ return new class extends Migration
             $table->string('last_name');
             $table->integer('age');
             $table->enum('gender', [0, 1])->comment("0-Male,1-Female,2-Other");
-            $table->string('identity_proof')->nullable()->default(null);
             $table->enum('type', [0, 1])->comment("0-Adult,1-Child");
             $table->timestamp('created_at')->useCurrent();
             $table->timestamp('updated_at')->useCurrent()->useCurrentOnUpdate();

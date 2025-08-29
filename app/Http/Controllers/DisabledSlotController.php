@@ -35,7 +35,6 @@ class DisabledSlotController extends Controller
             DisabledSlot::create([
                 'time_slot_id' => intval($request->slot),
                 'date' => $request->date,
-                'type' => $request->type,
             ]);
             return redirect()->route('backend.disabled.slot.index');
         } catch (\Throwable $th) {

@@ -31,8 +31,7 @@ class StoreFormRequest extends FormRequest
             'children' => ['required', 'numeric', 'min:0'],
             'email' => ['nullable', 'email:rfc,spoof,strict', 'max:255'],
             'date' => ['required', Rule::date()->format('Y-m-d')],
-            'timing' => ['required', 'string', 'exists:time_slots,id'],
-            'vehicle' => ['required', 'string', Rule::notIn(['0'])],
+            'timing' => ['required', 'string', Rule::notIn(['0'])],
         ];
     }
 }

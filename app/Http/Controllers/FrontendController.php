@@ -10,7 +10,6 @@ use App\Models\BookingDetail;
 use App\Models\DisabledSlot;
 use App\Models\Package;
 use App\Models\TimeSlot;
-use App\Models\TransportationVehicle;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Crypt;
 use Illuminate\Support\Facades\File;
@@ -23,45 +22,25 @@ use ZipArchive;
 class FrontendController
 {
     protected $genders = ['Male', 'Female', 'Other'];
-    protected $identityProofTypes = ['None', 'Aadhar Card', 'Pan Card', 'Driving License', 'Passport'];
 
     public function index()
     {
         return view('frontend.index')->with('error', 'Booking details already submitted.');
     }
 
-    public function girJungle()
+    public function safari()
     {
-        return view('frontend.girJungle', [
+        return view('frontend.safari', [
             'weekday' => (object)[
-                'indian' => Package::with(['transportationVehicles'])->where(['status' => true, 'type' => '0', 'tourist_type' => '0', 'day_type' => '0'])->first(),
-                'foreigner' => Package::with(['transportationVehicles'])->where(['status' => true, 'type' => '0', 'tourist_type' => '1', 'day_type' => '0'])->first(),
+                'indian' => Package::with(['timeSlots'])->where(['status' => true, 'type' => '0', 'tourist_type' => '0', 'day_type' => '0'])->first(),
+                'foreigner' => Package::with(['timeSlots'])->where(['status' => true, 'type' => '0', 'tourist_type' => '1', 'day_type' => '0'])->first(),
             ],
             'weekend' => (object)[
-                'indian' => Package::with(['transportationVehicles'])->where(['status' => true, 'type' => '0', 'tourist_type' => '0', 'day_type' => '1'])->first(),
-                'foreigner' => Package::with(['transportationVehicles'])->where(['status' => true, 'type' => '0', 'tourist_type' => '1', 'day_type' => '1'])->first(),
+                'indian' => Package::with(['timeSlots'])->where(['status' => true, 'type' => '0', 'tourist_type' => '0', 'day_type' => '1'])->first(),
+                'foreigner' => Package::with(['timeSlots'])->where(['status' => true, 'type' => '0', 'tourist_type' => '1', 'day_type' => '1'])->first(),
             ],
-            'slots' => TimeSlot::where('type', '0')->get(),
             'disabledSlots' => DisabledSlot::whereHas('timeSlot', function ($q) {
                 $q->where('type', '0');
-            })->where('date', '>=', date('Y-m-d'))->get()
-        ]);
-    }
-
-    public function girDevaliya()
-    {
-        return view('frontend.girDevaliya', [
-            'weekday' => (object)[
-                'indian' => Package::with(['transportationVehicles'])->where(['status' => true, 'type' => '1', 'tourist_type' => '0', 'day_type' => '0'])->first(),
-                'foreigner' => Package::with(['transportationVehicles'])->where(['status' => true, 'type' => '1', 'tourist_type' => '1', 'day_type' => '0'])->first(),
-            ],
-            'weekend' => (object)[
-                'indian' => Package::with(['transportationVehicles'])->where(['status' => true, 'type' => '1', 'tourist_type' => '0', 'day_type' => '1'])->first(),
-                'foreigner' => Package::with(['transportationVehicles'])->where(['status' => true, 'type' => '1', 'tourist_type' => '1', 'day_type' => '1'])->first(),
-            ],
-            'slots' => TimeSlot::where('type', '1')->get(),
-            'disabledSlots' => DisabledSlot::whereHas('timeSlot', function ($q) {
-                $q->where('type', '1');
             })->where('date', '>=', date('Y-m-d'))->get()
         ]);
     }
@@ -112,7 +91,6 @@ class FrontendController
         try {
             $id = explode('-', $request->vehicle);
             $package = Package::find($id[0]);
-            $vehicle = TransportationVehicle::find($id[1]);
             $request->mobile_no = preg_replace('/\s+/', "", $request->phone_code == '91' ? ltrim($request->mobile_no, '0') : $request->mobile_no);
 
             $booking = Booking::create([
@@ -122,15 +100,11 @@ class FrontendController
                 'mobile_no' => $request->mobile_no,
                 'email' => $request->email,
                 'price' => $package->price,
-                'time_slot_id' => $request->timing,
-                'vehicle_name' => $vehicle->name,
-                'seats' => $vehicle->seats,
-                'vehicle_price' => $vehicle->price,
+                'time_slot_id' => $id[1],
                 'adult' => $request->adults,
                 'child' => $request->children,
                 'tourist_type' => $package->tourist_type,
                 'day_type' => $package->day_type,
-                'type' => $package->type,
                 'booking_date' => $request->date,
             ]);
             return redirect()->route('booking.details', ['id' => Crypt::encrypt($booking->id)])->with('success', 'Booking created successfully.');
@@ -157,23 +131,12 @@ class FrontendController
             $id = Crypt::decrypt($id);
             $adultBookingDetails = BookingDetail::where(['booking_id' => $id, 'type' => '0'])->get();
             foreach ($request->adult_first_name as $key => $value) {
-                $filePath = null;
-                // if (isset($request->adult_identity[$key]) && !empty($request->adult_identity[$key])) {
-                //     $fileName = $request->adult_identity[$key]->getClientOriginalName();
-                //     $fileName = File::name($fileName) . '_' . time() . '.' . File::extension($fileName);
-                //     $filePath = BookingDetail::$path . '/' . $id . '/' . $fileName;
-                //     $request->adult_identity[$key]->move(Storage::disk('public')->path(BookingDetail::$path), $fileName);
-                // }
                 if (isset($adultBookingDetails[$key])) {
-                    // Storage::disk('public')->delete($adultBookingDetails[$key]->identity_proof);
 
                     $adultBookingDetails[$key]->first_name = $value;
                     $adultBookingDetails[$key]->last_name = $request->adult_last_name[$key];
                     $adultBookingDetails[$key]->age = $request->adult_age[$key];
                     $adultBookingDetails[$key]->gender = $request->adult_gender[$key];
-                    $adultBookingDetails[$key]->identity_proof_type = $request->adult_identity_proof_type[$key];
-                    $adultBookingDetails[$key]->identity_proof_id = empty($request->adult_identity_proof_id[$key]) ? null : $request->adult_identity_proof_id[$key];
-                    $adultBookingDetails[$key]->identity_proof = $filePath;
                     $adultBookingDetails[$key]->save();
                 } else {
                     BookingDetail::create([
@@ -182,9 +145,6 @@ class FrontendController
                         'last_name' => $request->adult_last_name[$key],
                         'age' => $request->adult_age[$key],
                         'gender' => $request->adult_gender[$key],
-                        'identity_proof_type' => $request->adult_identity_proof_type[$key],
-                        'identity_proof_id' => empty($request->adult_identity_proof_id[$key]) ? null : $request->adult_identity_proof_id[$key],
-                        'identity_proof' => $filePath,
                         'type' => '0',
                     ]);
                 }
@@ -193,23 +153,11 @@ class FrontendController
             if (isset($request->child_first_name)) {
                 $childBookingDetails = BookingDetail::where(['booking_id' => $id, 'type' => '1'])->get();
                 foreach ($request->child_first_name as $key => $value) {
-                    $filePath = null;
-                    // if (isset($request->child_identity[$key]) && !empty($request->child_identity[$key])) {
-                    //     $fileName = $request->child_identity[$key]->getClientOriginalName();
-                    //     $fileName = File::name($fileName) . '_' . time() . '.' . File::extension($fileName);
-                    //     $filePath = BookingDetail::$path . '/' . $id . '/' . $fileName;
-                    //     $request->child_identity[$key]->move(Storage::disk('public')->path(BookingDetail::$path), $fileName);
-                    // }
                     if (isset($childBookingDetails[$key])) {
-                        // Storage::disk('public')->delete($childBookingDetails[$key]->identity_proof);
-
                         $childBookingDetails[$key]->first_name = $value;
                         $childBookingDetails[$key]->last_name = $request->child_last_name[$key];
                         $childBookingDetails[$key]->age = $request->child_age[$key];
                         $childBookingDetails[$key]->gender = $request->child_gender[$key];
-                        $childBookingDetails[$key]->child_identity_proof_type = $request->child_identity_proof_type[$key];
-                        $childBookingDetails[$key]->child_identity_proof_id = empty($request->child_identity_proof_id[$key]) ? null : $request->child_identity_proof_id[$key];
-                        $childBookingDetails[$key]->identity_proof = $filePath;
                         $childBookingDetails[$key]->save();
                     } else {
                         BookingDetail::create([
@@ -218,9 +166,6 @@ class FrontendController
                             'last_name' => $request->child_last_name[$key],
                             'age' => $request->child_age[$key],
                             'gender' => $request->child_gender[$key],
-                            'identity_proof_type' => $request->child_identity_proof_type[$key],
-                            'identity_proof_id' => empty($request->child_identity_proof_id[$key]) ? null : $request->child_identity_proof_id[$key],
-                            'identity_proof' => $filePath,
                             'type' => '1',
                         ]);
                     }
@@ -241,7 +186,6 @@ class FrontendController
         return view('frontend.payment', [
             'data' => $booking,
             'genders' => $this->genders,
-            'identityProofTypes' => $this->identityProofTypes
         ]);
     }
 
@@ -295,7 +239,7 @@ class FrontendController
             //throw $th;
             Log::critical($th);
         }
-        return redirect()->route($request->type == '0' ? 'girJungle' : 'girDevaliya')->with([
+        return redirect()->route('safari')->with([
             'first_name' => $request->first_name,
             'last_name' => $request->last_name,
             'email' => $request->email,
