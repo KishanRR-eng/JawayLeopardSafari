@@ -1,6 +1,6 @@
 <!-- ======= Header ======= -->
 <header id="header" class="header d-flex align-items-center header_class_name">
-   {{-- <div class="topbar">
+    {{-- <div class="topbar">
    <div class="container">
       <div class="d-flex align-items-center justify-content-between flex-wrap">
          <div class="ticker-container d-flex align-items-center">
@@ -13,22 +13,22 @@
    </div>
 </div> --}}
 
-   <div class="container-fluid container-xl d-flex align-items-center justify-content-between stickynav"
-      id="navcontainer">
-      <a href="{{ url('/') }}" class="logo d-flex align-items-center">
-      <img src="{{ asset('frontend/img/lpd.png')}}" alt="" />
-      </a>
-      <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
-      <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
-      <nav id="navbar" class="navbar">
-         <ul>
-            <li><a href="{{ url('/') }}" class="active">Home</a></li>
-            <li><a href="{{route('safari')}}" class=""> Book Safari</a></li>
-            <li><a href="{{route('blog')}}" class="">Blog</a></li>
-            <li><a href="{{ route('contactUs')}}" class="">Contact us</a></li>
-         </ul>
-      </nav>
-      <!-- .navbar -->
-   </div>
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-between stickynav"
+        id="navcontainer">
+        <a href="{{ url('/') }}" class="logo d-flex align-items-center">
+            <img src="{{ asset('frontend/img/lpd.png') }}" alt="" />
+        </a>
+        <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
+        <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
+        <nav id="navbar" class="navbar">
+            <ul>
+                <li><a href="{{ url('/') }}" class="active">Home</a></li>
+                <li><a href="{{ route('safari') }}" class=""> Book Safari</a></li>
+                <li><a href="{{ route('blogs') }}" class="">Blog</a></li>
+                <li><a href="{{ route('contactUs') }}" class="">Contact us</a></li>
+            </ul>
+        </nav>
+        <!-- .navbar -->
+    </div>
 </header>
 <!-- End Header -->

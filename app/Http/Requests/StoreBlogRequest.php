@@ -29,11 +29,6 @@ class StoreBlogRequest extends FormRequest
             'primary_media' => ['required', 'image', 'mimetypes:image/jpeg,image/png,image/svg+xml,image/webp'],
             'created_by' => ['required', 'string', 'max:255'],
             'content' => ['required', 'string'],
-            'category' => ['required', 'array', 'min:1'],
-            'meta_title' => ['nullable', 'string', 'max:255'],
-            'meta_url' => ['nullable', 'string', 'max:255'],
-            'meta_description' => ['nullable', 'string'],
-            'meta_keywords' => ['nullable', 'string'],
             'isVisible' => ['nullable', 'string', Rule::in(['on', 'off'])],
         ];
     }

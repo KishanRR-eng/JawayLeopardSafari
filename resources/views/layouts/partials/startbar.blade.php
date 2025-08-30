@@ -35,6 +35,12 @@
                             <span>Bookings</span>
                         </a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ route('backend.blog.index') }}">
+                            <i class="fa-solid fa-rss menu-icon"></i>
+                            <span>Blog</span>
+                        </a>
+                    </li>
                 </ul><!--end navbar-nav--->
 
             </div>

@@ -19,10 +19,6 @@ class Blog extends Model
         'header_image_path',
         'content',
         'created_by',
-        'meta_title',
-        'meta_url',
-        'meta_description',
-        'meta_keywords',
         'isVisible',
     ];
 
@@ -35,10 +31,6 @@ class Blog extends Model
         'header_image_path',
         'content',
         'created_by',
-        'meta_title',
-        'meta_url',
-        'meta_description',
-        'meta_keywords',
         'isVisible',
     ];
 

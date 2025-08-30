@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\BlogController;
 use App\Http\Controllers\BookingController;
 use App\Http\Controllers\DisabledSlotController;
 use App\Http\Controllers\FrontendController;
@@ -28,8 +29,6 @@ Route::get('/faq', [FrontendController::class, 'faq'])->name('faq');
 Route::get('/how_to_reach', [FrontendController::class, 'howtoreach'])->name('howtoreach');
 Route::get('/dosanddonts', [FrontendController::class, 'dosdonts'])->name('dosdonts');
 Route::get('/Terms-of-Use', [FrontendController::class, 'terms'])->name('terms');
-Route::get('/Blogs', [FrontendController::class, 'blog'])->name('blog');
-Route::get('/blog-details', [FrontendController::class, 'bdetails'])->name('bdetails');
 Route::get('/cancellation-policy', [FrontendController::class, 'cancellationpolicy'])->name('cancellationpolicy');
 Route::post('/booking', [FrontendController::class, 'booking'])->name('booking');
 Route::get('/booking-details/{id}', [FrontendController::class, 'bookingDetails'])->name('booking.details');
@@ -37,12 +36,12 @@ Route::get('/booking/{id}/payment', [FrontendController::class, 'bookingPayment'
 Route::post('/booking/{id}/callback', [FrontendController::class, 'bookingCallback'])->name('booking.callback');
 Route::post('/save-details/{id}', [FrontendController::class, 'saveDetails'])->name('details');
 Route::post('/inquiry', [FrontendController::class, 'inquiry'])->name('inquiry');
+Route::get('/blogs', [FrontendController::class, 'blogs'])->name('blogs');
+Route::get('/blogs/{id}', [FrontendController::class, 'blogDetails'])->name('blogDetails');
 
 
 
 Route::group(['prefix' => '/backend', 'middleware' => 'auth', 'as' => 'backend.'], function () {
-
-    Route::post('/download-attachment', [FrontendController::class, 'download'])->name('download');
 
     Route::group(['prefix' => '/disabled-slots', 'as' => 'disabled.slot.'], function () {
         Route::get('/', [DisabledSlotController::class, 'index'])->name('index');
@@ -68,6 +67,15 @@ Route::group(['prefix' => '/backend', 'middleware' => 'auth', 'as' => 'backend.'
         Route::get('/{id}', [BookingController::class, 'edit'])->name('edit');
         Route::post('/{id}', [BookingController::class, 'update'])->name('update');
         Route::delete('/{id}', [BookingController::class, 'destroy'])->name('destroy');
+    });
+
+    Route::group(['prefix' => '/blog', 'as' => 'blog.'], function () {
+        Route::get('/', [BlogController::class, 'index'])->name('index');
+        Route::get('/create', [BlogController::class, 'create'])->name('create');
+        Route::post('/', [BlogController::class, 'store'])->name('store');
+        Route::get('/{id}', [BlogController::class, 'edit'])->name('edit');
+        Route::post('/{id}', [BlogController::class, 'update'])->name('update');
+        Route::delete('/{id}', [BlogController::class, 'destroy'])->name('destroy');
     });
 });
 

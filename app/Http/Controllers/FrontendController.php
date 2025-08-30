@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Http\Requests\InquiryRequest;
 use App\Http\Requests\StoreBookingDetailRequest;
 use App\Http\Requests\StoreFormRequest;
+use App\Models\Blog;
 use App\Models\Booking;
 use App\Models\BookingDetail;
 use App\Models\DisabledSlot;
@@ -25,7 +26,9 @@ class FrontendController
 
     public function index()
     {
-        return view('frontend.index')->with('error', 'Booking details already submitted.');
+        return view('frontend.index', [
+            'blogs' => Blog::where('isVisible', true)->get()
+        ]);
     }
 
     public function safari()
@@ -72,13 +75,17 @@ class FrontendController
     {
         return view('frontend.cancellationpolicy');
     }
-    public function blog()
+    public function blogs()
     {
-        return view('frontend.blog');
+        return view('frontend.blog', [
+            'blogs' => Blog::where('isVisible', true)->get()
+        ]);
     }
-    public function bdetails()
+    public function blogDetails($id)
     {
-        return view('frontend.bdetails');
+        return view('frontend.blogDetails', [
+            'data' => Blog::where('slug', $id)->first()
+        ]);
     }
     public function terms()
     {
@@ -241,53 +248,5 @@ class FrontendController
             'email' => $request->email,
             'mobile_no' => $request->mobile_no,
         ]);
-    }
-
-    /**
-     * Download the specified resource from storage.
-     */
-    public function download(Request $request)
-    {
-        try {
-            if ($request->downloadType == 'single') {
-                $filePath = $request->id;
-                $fileNameExplode = explode('/', $filePath);
-                $fileName = end($fileNameExplode);
-                ob_end_clean();
-                $contentType = File::mimeType(Storage::path('/public/' . $filePath));
-                $headers = ['Content-Type' => $contentType, 'fileName' => $fileName];
-                return Storage::download('/public/' . $filePath, $fileName, $headers);
-            } else {
-                $zip = new ZipArchive();
-                $idExplode = explode('/', $request->id);
-                $attachments = BookingDetail::whereIn(['id' => $idExplode[0], 'type' => end($idExplode)])->get();
-
-                $fileName = 'attachments_' . time() . '.zip';
-                $filePath = BookingDetail::$downloadPath . '/' . $fileName;
-
-                if ($zip->open(Storage::path($filePath), ZipArchive::CREATE) === TRUE) {
-                    foreach ($attachments as $attachment) {
-                        $path = $attachment->identity_proof;
-                        $absolutePath = Storage::path("public/$path");
-                        $nameFolder = $attachment->type == 0 ? 'Adult' : 'Children';
-                        $fileNameInZip = $nameFolder . '/' . basename($absolutePath);
-                        $zip->addFile($absolutePath, $fileNameInZip);
-                    }
-                    $zip->close();
-
-                    ob_end_clean(); // Ensure clean output for download
-                    $contentType = File::mimeType(Storage::path($filePath));
-                    $headers = ['Content-Type' => $contentType, 'fileName' => $fileName];
-                    return response()->download(Storage::path($filePath), $fileName, $headers)->deleteFileAfterSend(true);
-                } else {
-                    return response()->json(['status' => 'error', 'message' => 'Could not create ZIP file'], 500);
-                    abort(404);
-                }
-            }
-        } catch (\Throwable $th) {
-            //throw $th;
-            Log::critical($th);
-            abort(404);
-        }
     }
 }

@@ -21,7 +21,7 @@ class BlogController extends Controller
      */
     public function index()
     {
-        return view('backend.blog.index', ['data' => Blog::with(['categories'])->get(['id', 'title', 'header_image_path', 'primary_media_path', 'created_by', 'isVisible'])]);
+        return view('backend.blog.index', ['data' => Blog::all(['id', 'title', 'header_image_path', 'primary_media_path', 'created_by', 'isVisible'])]);
     }
 
     /**
@@ -29,9 +29,7 @@ class BlogController extends Controller
      */
     public function create()
     {
-        return view('backend.blog.form', [
-            'categories' => BlogCategory::all(['id', 'name'])
-        ]);
+        return view('backend.blog.form');
     }
 
     /**
@@ -59,17 +57,8 @@ class BlogController extends Controller
                 'primary_media_path' => $mediaPath,
                 'content' => $request->content,
                 'created_by' => $request->created_by,
-                'meta_title' => $request->meta_title ?? null,
-                'meta_url' => $request->meta_url ?? null,
-                'meta_description' => $request->meta_description ?? null,
-                'meta_keywords' => $request->meta_keywords ?? null,
                 'isVisible' => $request->isVisible == 'on',
             ]);
-            $data = [];
-            foreach ($request->category as $value) {
-                $data[] = ['blog_id' => $blog->id, 'blog_category_id' => $value];
-            }
-            BlogCategoryMap::insert($data);
             return redirect()->route('backend.blog.index');
         } catch (\Throwable $th) {
             //throw $th;
@@ -94,8 +83,7 @@ class BlogController extends Controller
         try {
             $id = Crypt::decrypt($id);
             return view('backend.blog.form', [
-                'data' => Blog::with(['categoryMap'])->find($id),
-                'categories' => BlogCategory::all(['id', 'name'])
+                'data' => Blog::find($id),
             ]);
         } catch (\Throwable $th) {
             //throw $th;
@@ -132,27 +120,9 @@ class BlogController extends Controller
             $blog->slug = Str::slug($request->title);
             $blog->content = $request->content;
             $blog->created_by = $request->created_by;
-            $blog->meta_title = $request->meta_title ?? null;
-            $blog->meta_url = $request->meta_url ?? null;
-            $blog->meta_description = $request->meta_description ?? null;
-            $blog->meta_keywords = $request->meta_keywords ?? null;
             $blog->isVisible = $request->isVisible == 'on';
             $blog->save();
-
-            foreach ($blog->categoryMap as $map) {
-                if (in_array($map->category_id, $categories)) {
-                    array_splice($categories, array_search($map->category_id, $categories), 1);
-                } else {
-                    $map->delete();
-                }
-            }
-            if (count($categories) > 0) {
-                $data = [];
-                foreach ($request->category as $value) {
-                    $data[] = ['blog_id' => $blog->id, 'blog_category_id' => $value];
-                }
-                BlogCategoryMap::insert($data);
-            }
+            
             return redirect()->route('backend.blog.index');
         } catch (\Throwable $th) {
             //throw $th;
