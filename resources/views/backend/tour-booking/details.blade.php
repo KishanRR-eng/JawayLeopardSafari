@@ -23,7 +23,7 @@
                 <tr>
                     <th>Payment :</th>
                     <td>
-                        @if (isset($value->payment_id))
+                        @if (isset($data->payment_id))
                             <span class="badge bg-success">Paid</span>
                         @else
                             <span class="badge bg-danger">Pending</span>
