@@ -18,8 +18,8 @@ class DatabaseSeeder extends Seeder
         if (env('APP_ENV') === 'production') {
             User::factory()->create([
                 'name' => 'Admin',
-                'email' => 'contact@girsafaribooking.in',
-                'password' => bcrypt('girsafaribooking@987513'),
+                'email' => 'contact@jawaileopardsafaribooking.in',
+                'password' => bcrypt('jawaileopardsafaribooking@733991'),
             ]);
         } else {
             User::factory()->create([
