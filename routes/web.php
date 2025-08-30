@@ -22,8 +22,10 @@ use Illuminate\Support\Facades\Route;
 require __DIR__ . '/auth.php';
 
 Route::get('/', [FrontendController::class, 'index'])->name('root');
+
 Route::get('/safari', [FrontendController::class, 'safari'])->name('safari');
 Route::get('/contact-us', [FrontendController::class, 'contactUs'])->name('contactUs');
+Route::get('/about-us', [FrontendController::class, 'about'])->name('about');
 Route::get('/privacy-policy', [FrontendController::class, 'privacy'])->name('privacy');
 Route::get('/faq', [FrontendController::class, 'faq'])->name('faq');
 Route::get('/how_to_reach', [FrontendController::class, 'howtoreach'])->name('howtoreach');

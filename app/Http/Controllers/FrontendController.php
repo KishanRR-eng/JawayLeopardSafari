@@ -55,7 +55,10 @@ class FrontendController
     {
         return view('frontend.faq');
     }
-
+    public function about()
+    {
+        return view('frontend.about');
+    }
     public function howtoreach()
     {
         return view('frontend.howtoreach');
