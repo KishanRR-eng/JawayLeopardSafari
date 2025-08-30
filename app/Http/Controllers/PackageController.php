@@ -6,7 +6,6 @@ use App\Http\Requests\PackageRequest;
 use App\Models\Package;
 use App\Models\TimeSlot;
 use App\Models\TimeSlotMap;
-use App\Models\VehiclesMap;
 use Illuminate\Support\Facades\Crypt;
 use Illuminate\Support\Facades\Log;
 

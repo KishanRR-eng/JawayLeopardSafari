@@ -32,9 +32,6 @@
                     <p><strong>Time slot:</strong> {{ $data->timeSlot->name }}</p>
                 </div>
                 <div class="col-md-4">
-                    <p><strong>Transportation Vehicle:</strong> {{ $data->vehicle_name }} ({{ $data->vehicle_price }} /-)</p>
-                </div>
-                <div class="col-md-4">
                     <p><strong>Price:</strong> {{ $data->price }} /-</p>
                 </div>
                 <div class="col-md-12 mt-4">

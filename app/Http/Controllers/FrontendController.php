@@ -94,7 +94,7 @@ class FrontendController
     public function booking(StoreFormRequest $request)
     {
         try {
-            $id = explode('-', $request->vehicle);
+            $id = explode('-', $request->timing);
             $package = Package::find($id[0]);
             $request->mobile_no = preg_replace('/\s+/', "", $request->phone_code == '91' ? ltrim($request->mobile_no, '0') : $request->mobile_no);
 
