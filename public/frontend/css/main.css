@@ -1850,16 +1850,34 @@ img.rounded.shadow {
 # Hero Section
 --------------------------------------------------------------*/
 
+.hero {
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
-.hero-overlay {
+.hero::before {
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   background: rgba(0,0,0,0.5); /* dark overlay */
+  box-shadow: inset 0 0 120px rgba(0,0,0,0.9); /* shadow inside */
   z-index: 1;
 }
+
+.hero > * {
+  position: relative;
+  z-index: 2; /* content stays above overlay */
+}
+
 
 .hero .container {
   position: relative;
@@ -1898,7 +1916,7 @@ img.rounded.shadow {
 }
 
 .button-29 {
-  background: #e16e0c;
+  background: #25d366;
   color: #fff;
   padding: 12px 25px;
   border-radius: 8px;
@@ -1908,7 +1926,7 @@ img.rounded.shadow {
 }
 
 .button-29:hover {
-  background: #c85d09;
+  background: #25d366;
 }
 
 /* Responsive */
@@ -3095,7 +3113,7 @@ blockquote:after {
     /* box-shadow: rgba(66, 43, 35, 0.4) 0 2px 4px, rgba(236, 145, 0, 0.3) 0 7px 13px -3px, rgba(250, 154, 0, 0.5) 0 -3px 0 inset; */
     box-sizing: border-box;
     color: #fff;
-    background: #D4A373;
+    background: #25d366;
     cursor: pointer;
     display: inline-flex;
     font-family: "JetBrains Mono", monospace;
