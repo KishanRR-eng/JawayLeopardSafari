@@ -7,7 +7,7 @@
         <div class="card-body p-0  auth-header-box rounded-top">
             <div class="text-center p-3">
                 <a href="{{ route('login')}}" class="logo logo-admin">
-                    <img src="{{ asset('frontend/img/gir_logo.png') }}" width="180px" alt="logo" class="auth-logo">
+                    <img src="{{ asset('frontend/img/lpd.png') }}" width="180px" alt="logo" class="auth-logo">
                 </a>
                 <h4 class="mt-3 mb-1 fw-semibold text-gray fs-18">Let's Get Started Jaway Leopard Safari</h4>
                 <p class="text-muted fw-medium mb-0">Sign in to continue to Admin.</p>

@@ -59,6 +59,11 @@ class FrontendController
     {
         return view('frontend.about');
     }
+    public function gallery()
+    {
+        return view('frontend.gallery');
+    }
+
     public function howtoreach()
     {
         return view('frontend.howtoreach');

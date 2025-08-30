@@ -22,9 +22,10 @@
         <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
         <nav id="navbar" class="navbar">
             <ul>
-                <li><a href="{{ url('/') }}" class="active">Home</a></li>
+                <li><a href="{{ url('/') }}">Home</a></li>
                  {{-- <li><a href="{{ route('about')}}">About Us</a></li> --}}
                 <li><a href="{{ route('safari') }}" class=""> Book Safari</a></li>
+                 <li><a href="{{ route('gallery') }}" class="">gallery</a></li>
                 <li><a href="{{ route('blogs') }}" class="">Blog</a></li>
                 <li><a href="{{ route('contactUs') }}" class="">Contact us</a></li>
             </ul>

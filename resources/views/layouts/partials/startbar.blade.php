@@ -3,7 +3,7 @@
     <div class="brand">
         <a href="{{ route('backend.booking.index') }}" class="logo">
             <span>
-                <img src="{{ asset('frontend/img/gir_logo.png') }}" width="100px" alt="logo-small" class="logo">
+                <img src="{{ asset('frontend/img/lpd.png') }}" width="100px" alt="logo-small" class="logo">
             </span>
         </a>
     </div>

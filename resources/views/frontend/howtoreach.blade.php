@@ -13,53 +13,52 @@
       <p class="subtitle">Explore different travel options to comfortably reach Jawai</p>
     </div>
 
-    <div class="row g-4">
-      <!-- By Air -->
-      <div class="col-lg-4 col-md-6">
-        <div class="reach-box h-100">
-          <h3 class="reach-title">By Air</h3>
-          <p class="reach-text">
-            The nearest airport is <strong>Udaipur Maharana Pratap Airport (UDR)</strong>, approximately 140 km from Jawai.
-            Udaipur is well-connected to major Indian cities like Delhi, Mumbai, and Jaipur.
-            From the airport, you can hire a taxi or take a pre-arranged transfer to Jawai.
-          </p>
-        </div>
-      </div>
-
-      <!-- By Train -->
-      <div class="col-lg-4 col-md-6">
-        <div class="reach-box h-100">
-          <h3 class="reach-title">By Train</h3>
-          <p class="reach-text">
-            The closest railway stations are <strong>Jawai Bandh Railway Station (20 km)</strong> and
-            <strong>Falna Railway Station (30 km)</strong>.
-            Both have good connectivity with major cities such as Mumbai, Delhi, Ahmedabad, and Jaipur.
-            Local taxis and jeeps are available at the stations for onward travel to Jawai.
-          </p>
-        </div>
-      </div>
-
-      <!-- By Road -->
-      <div class="col-lg-4 col-md-12">
-        <div class="reach-box h-100">
-          <h3 class="reach-title">By Road</h3>
-          <p class="reach-text">
-            Jawai is accessible via well-maintained highways from nearby cities:
-          </p>
-          <ul class="reach-list">
-            <li>Udaipur to Jawai: <strong>3.5 hours (140 km)</strong></li>
-            <li>Jodhpur to Jawai: <strong>3 hours (120 km)</strong></li>
-            <li>Ahmedabad to Jawai: <strong>6-7 hours (320 km)</strong></li>
-          </ul>
-          <p class="reach-text">
-            Private taxis, rental cars, and buses connect Jawai with these cities.
-            The drive offers scenic views of Rajasthan’s countryside.
-          </p>
-        </div>
-      </div>
+    <div class="table-responsive">
+      <table class="table table-bordered table-hover align-middle text-center reach-table">
+        <thead class="table-primary">
+          <tr>
+            <th scope="col">Mode</th>
+            <th scope="col">Nearest Point</th>
+            <th scope="col">Distance</th>
+            <th scope="col">Connectivity</th>
+            <th scope="col">Travel Option</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>By Air</strong></td>
+            <td>Udaipur Maharana Pratap Airport (UDR)</td>
+            <td>140 km</td>
+            <td>Delhi, Mumbai, Jaipur (Direct Flights)</td>
+            <td>Taxis / Pre-arranged Transfers</td>
+          </tr>
+          <tr>
+            <td><strong>By Train</strong></td>
+            <td>
+              Jawai Bandh (20 km) <br>
+              Falna (30 km)
+            </td>
+            <td>20–30 km</td>
+            <td>Mumbai, Delhi, Ahmedabad, Jaipur</td>
+            <td>Local Taxis / Jeeps</td>
+          </tr>
+          <tr>
+            <td><strong>By Road</strong></td>
+            <td>
+              Udaipur – 140 km <br>
+              Jodhpur – 120 km <br>
+              Ahmedabad – 320 km
+            </td>
+            <td>3–7 hours</td>
+            <td>Highways, Scenic Drive</td>
+            <td>Private Taxis / Cars / Buses</td>
+          </tr>
+        </tbody>
+      </table>
     </div>
   </div>
 </section>
+
 
 <!-- Best Time to Visit Section -->
 <section class="best-time py-5">

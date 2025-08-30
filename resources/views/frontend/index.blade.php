@@ -12,7 +12,7 @@
     <!-- ======= Hero Section ======= -->
     <!-- Hero Section -->
     <section id="hero" class="hero"
-        style="background-image: url('{{ asset('frontend/img/jawai-leopard-safari-booking-desktop-banner.webp') }}');
+        style="background-image: url('{{ asset('frontend/img/leopard.jpg') }}');
           background-size: cover;
           background-repeat: no-repeat;
           background-position: center;
@@ -25,15 +25,13 @@
 
                 <!-- Left Side Text -->
                 <div class="col-lg-6 col-md-12 text-white text-center text-lg-start mb-5 mb-lg-0">
-                    <h3 class="text-left">Updates</h3>
+                    <h3 class="text-left text-white">Updates</h3>
                     <ul class="updates mt-2">
-                        <li><span>Innovative Conservation Through Technology: Research and Monitoring in the Gir
-                                Ecosystem</span></li>
-                        <li><span>Exploring Gir’s Natural Colors</span></li>
-                        <li><span>World Lion Day: A Tribute to the King of the Jungle</span></li>
-                        <li><span>An Unlikely Standoff: Will the Turtle Survive the Lion Encounter?</span></li>
-                        <li><span>Early Insights into the Habitats and Migration Paths of Four Endangered Raptors in Central
-                                Asia</span></li>
+                        <li><span>Innovative Conservation Through Community and Culture: Safeguarding Leopards in Jawai</span></li>
+                        <li><span>Exploring the Natural Palette of Jawai’s Granite Hills and Rivers</span></li>
+                        <li><span>World Leopard Day: Celebrating the Mystique of Jawai’s Spotted Predator</span></li>
+                        <li><span>The Unexpected Encounter: Leopards and Shepherds Sharing the Same Landscape</span></li>
+                        <li><span>Early Discoveries into Jawai’s Unique Coexistence of Leopards, Birds, and Crocodiles</span></li>
                     </ul>
                 </div>
 
@@ -41,7 +39,7 @@
                 <div class="col-lg-5 col-md-12 offset-lg-1">
                     <form class="firststep_form" method="POST" action="{{ route('inquiry') }}">
                         @csrf
-                        <h3 class="form-title">Check Availability & Book</h3>
+                        <h3 class="form-title text-white">Check Availability & Book</h3>
                         <div class="row">
                             <div class="col-md-6 mb-2">
                                 <input type="text" class="form-control" id="first_name" name="first_name"
@@ -177,61 +175,58 @@
 
     {{-- END how to book --}}
     <!-- ======= how to reach ======= -->
-    <section class="how-to-reach py-5 bg-light">
-        <div class="container">
-            <div class="section-heading text-center mb-5">
-                <h2 class="title">How to Reach Jawai</h2>
-                <p class="subtitle">Explore different travel options to comfortably reach Jawai</p>
-            </div>
+   <section class="how-to-reach py-5 bg-light">
+  <div class="container">
+    <div class="section-heading text-center mb-5">
+      <h2 class="title">How to Reach Jawai</h2>
+      <p class="subtitle">Explore different travel options to comfortably reach Jawai</p>
+    </div>
 
-            <div class="row g-4">
-                <!-- By Air -->
-                <div class="col-lg-4 col-md-6">
-                    <div class="reach-box h-100">
-                        <h3 class="reach-title">By Air</h3>
-                        <p class="reach-text">
-                            The nearest airport is <strong>Udaipur Maharana Pratap Airport (UDR)</strong>, approximately 140
-                            km from Jawai.
-                            Udaipur is well-connected to major Indian cities like Delhi, Mumbai, and Jaipur.
-                            From the airport, you can hire a taxi or take a pre-arranged transfer to Jawai.
-                        </p>
-                    </div>
-                </div>
-
-                <!-- By Train -->
-                <div class="col-lg-4 col-md-6">
-                    <div class="reach-box h-100">
-                        <h3 class="reach-title">By Train</h3>
-                        <p class="reach-text">
-                            The closest railway stations are <strong>Jawai Bandh Railway Station (20 km)</strong> and
-                            <strong>Falna Railway Station (30 km)</strong>.
-                            Both have good connectivity with major cities such as Mumbai, Delhi, Ahmedabad, and Jaipur.
-                            Local taxis and jeeps are available at the stations for onward travel to Jawai.
-                        </p>
-                    </div>
-                </div>
-
-                <!-- By Road -->
-                <div class="col-lg-4 col-md-12">
-                    <div class="reach-box h-100">
-                        <h3 class="reach-title">By Road</h3>
-                        <p class="reach-text">
-                            Jawai is accessible via well-maintained highways from nearby cities:
-                        </p>
-                        <ul class="reach-list">
-                            <li>Udaipur to Jawai: <strong>3.5 hours (140 km)</strong></li>
-                            <li>Jodhpur to Jawai: <strong>3 hours (120 km)</strong></li>
-                            <li>Ahmedabad to Jawai: <strong>6-7 hours (320 km)</strong></li>
-                        </ul>
-                        <p class="reach-text">
-                            Private taxis, rental cars, and buses connect Jawai with these cities.
-                            The drive offers scenic views of Rajasthan’s countryside.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+    <div class="table-responsive">
+      <table class="table table-bordered table-hover align-middle text-center reach-table">
+        <thead class="table-primary">
+          <tr>
+            <th scope="col">Mode</th>
+            <th scope="col">Nearest Point</th>
+            <th scope="col">Distance</th>
+            <th scope="col">Connectivity</th>
+            <th scope="col">Travel Option</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>By Air</strong></td>
+            <td>Udaipur Maharana Pratap Airport (UDR)</td>
+            <td>140 km</td>
+            <td>Delhi, Mumbai, Jaipur (Direct Flights)</td>
+            <td>Taxis / Pre-arranged Transfers</td>
+          </tr>
+          <tr>
+            <td><strong>By Train</strong></td>
+            <td>
+              Jawai Bandh (20 km) <br>
+              Falna (30 km)
+            </td>
+            <td>20–30 km</td>
+            <td>Mumbai, Delhi, Ahmedabad, Jaipur</td>
+            <td>Local Taxis / Jeeps</td>
+          </tr>
+          <tr>
+            <td><strong>By Road</strong></td>
+            <td>
+              Udaipur – 140 km <br>
+              Jodhpur – 120 km <br>
+              Ahmedabad – 320 km
+            </td>
+            <td>3–7 hours</td>
+            <td>Highways, Scenic Drive</td>
+            <td>Private Taxis / Cars / Buses</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
     <!-- how to reach -->
     <section class="blog-section py-5">
         <div class="container">
