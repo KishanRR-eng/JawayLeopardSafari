@@ -33,7 +33,7 @@
                             @foreach ($data as $key => $value)
                                 <tr>
                                     <td>{{ $key + 1 }}</td>
-                                    <td>{{ date('Y-m-d', strtotime($value->date)) }}</td>
+                                    <td>{{ date('d-m-Y', strtotime($value->date)) }}</td>
                                     <td>{{ $value->timeSlot->name }}</td>
                                     <td>
                                         @php

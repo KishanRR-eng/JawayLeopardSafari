@@ -20,7 +20,7 @@
                     <p><strong>Email:</strong> {{ $data->email ?? '-' }}</p>
                 </div>
                 <div class="col-md-4">
-                    <p><strong>Booking Date:</strong> {{ date('Y-m-d', strtotime($data->booking_date)) }}</p>
+                    <p><strong>Booking Date:</strong> {{ date('d-m-Y', strtotime($data->booking_date)) }}</p>
                 </div>
                 <div class="col-md-4">
                     <p><strong>Adult:</strong> {{ $data->adult }}</p>
