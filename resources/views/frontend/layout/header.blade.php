@@ -23,6 +23,7 @@
         <nav id="navbar" class="navbar">
             <ul>
                 <li><a href="{{ url('/') }}" class="active">Home</a></li>
+                 {{-- <li><a href="{{ route('about')}}">About Us</a></li> --}}
                 <li><a href="{{ route('safari') }}" class=""> Book Safari</a></li>
                 <li><a href="{{ route('blogs') }}" class="">Blog</a></li>
                 <li><a href="{{ route('contactUs') }}" class="">Contact us</a></li>
