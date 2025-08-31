@@ -50,7 +50,10 @@ class FrontendController
     {
         return view('frontend.contactUs');
     }
-
+    public function gurentees()
+    {
+        return view('frontend.gurentees');
+    }
     public function faq()
     {
         return view('frontend.faq');

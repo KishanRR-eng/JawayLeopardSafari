@@ -73,9 +73,13 @@
          <div class="package-highlights">
             <strong>Highlights:</strong>
             <ul>
-               <li>High chance of leopard spotting</li>
-               <li>Birdwatching</li>
-               <li>Scenic sunrise views</li>
+               <li>Leopard Safari </li>
+               <li>Adventure hill ride</li>
+               <li>Dam visit</li>
+               <li>Bird Watching</li>
+               <li>Adventure hill ride</li>
+               <li>Sunrise point</li>
+               <li>Additional HI-TEA charges : 100/- per person</li>
             </ul>
          </div>
          <div class="package-includes">
@@ -96,9 +100,13 @@
          <div class="package-highlights">
             <strong>Highlights:</strong>
             <ul>
-               <li>Leopards at dusk</li>
-               <li>Golden hour photography</li>
-               <li>Nocturnal animals activity</li>
+               <li>Leopard Safari </li>
+               <li>Adventure hill ride</li>
+               <li>Dam visit</li>
+               <li>Bird Watching</li>
+               <li>Adventure hill ride</li>
+               <li>Sunrise point</li>
+               <li>Additional HI-TEA charges : 100/- per person</li>
             </ul>
          </div>
          <div class="package-includes">
@@ -119,9 +127,13 @@
          <div class="package-highlights">
             <strong>Highlights:</strong>
             <ul>
-               <li>Morning & evening safari</li>
-               <li>Deeper reserve exploration</li>
-               <li>Village & birding visits</li>
+               <li>Leopard Safari </li>
+               <li>Adventure hill ride</li>
+               <li>Dam visit</li>
+               <li>Bird Watching</li>
+               <li>Adventure hill ride</li>
+               <li>Sunrise point</li>
+               <li>Additional HI-TEA charges : 100/- per person</li>
             </ul>
          </div>
          <div class="package-includes">
