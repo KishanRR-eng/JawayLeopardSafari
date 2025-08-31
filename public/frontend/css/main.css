@@ -330,7 +330,7 @@ section {
   font-size: 14px;
   color: #666;
 }
-.packages-section {
+    .packages-section {
       max-width: 1200px;
       margin: 50px auto;
       padding: 20px;
@@ -365,6 +365,20 @@ section {
       margin-bottom: 15px;
       text-align: center;
     }
+    .menu-image {
+   margin-top: 15px; /* space between menu & image */
+   text-align: center; /* center align */
+}
+
+.menu-image img {
+   width: 100%;              /* responsive */
+   max-width: 1200px;        /* fixed max size for professionalism */
+   height: auto;             /* keeps aspect ratio */
+   border-radius: 10px;      /* soft corners for modern look */
+   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* professional shadow */
+   object-fit: cover;        /* ensures image always looks neat */
+}
+
     .package-info {
       margin: 12px 0;
       font-size: 14px;
@@ -530,7 +544,7 @@ section {
 }
 
 .header .logo img {
-    height: 50px;
+    height: 75px;
     margin-right: 32px;
 }
 
@@ -1103,7 +1117,7 @@ img.rounded.shadow {
 .let-started.section-bg {
   position: relative;
   background: url('/frontend/img/jawai-leopard-safari-booking-desktop-banner.webp') center center/cover no-repeat;
-  padding: 60px 0;
+  padding: 100px 0;
   color: #fff;
 }
 
@@ -1704,6 +1718,7 @@ img.rounded.shadow {
     background-position: center;
     background-repeat: no-repeat;
 }
+
 .contact .info-item i {
     display: flex;
     align-items: center;
@@ -1930,10 +1945,14 @@ img.rounded.shadow {
 /* ends */
 /* Responsive */
 @media (max-width: 991px) {
-  .hero {
+  /* .hero {
     padding: 60px 0;
     min-height: auto;
-  }
+  } */
+    section#hero\ mb-hero {
+    padding-top: 150px;
+}
+
   .firststep_form {
     margin-top: 30px;
   }
@@ -4871,7 +4890,9 @@ font-size: 16px !important;
     .breadcrumbs {
         padding: 120px 0 40px 0;
     }
-
+    .breadcrumbs_gir{
+        padding: 70px 0 40px 0;
+    }
     .breadcrumbs h1 {
         margin-top: 20px;
         font-size: 32px;
@@ -5428,7 +5449,7 @@ font-size: 16px !important;
     }
 }
 .breadcrumbs_faq{
-    padding: 0px 0 40px 0;
+    padding: 80px 0 40px 0;
     /* min-height: 30vh; */
     position: relative;
     background-size: cover;
@@ -5437,7 +5458,7 @@ font-size: 16px !important;
 }
 
 .breadcrumbs_privacy {
-    padding: 60px 0 40px 0;
+    padding: 80px 0 40px 0;
     /* min-height: 30vh; */
     position: relative;
     background-size: cover;
@@ -5445,7 +5466,7 @@ font-size: 16px !important;
     background-repeat: no-repeat;
 }
 .breadcrumbs_cancellation{
-     padding: 60px 0 40px 0;
+     padding: 80px 0 40px 0;
     /* min-height: 30vh; */
     position: relative;
     background-size: cover;
@@ -5453,7 +5474,7 @@ font-size: 16px !important;
     background-repeat: no-repeat;
 }
 .breadcrumbs_reach {
-    padding: 60px 0 40px 0;
+    padding: 80px 0 40px 0;
     /* min-height: 30vh; */
     position: relative;
     background-size: cover;
@@ -5461,7 +5482,7 @@ font-size: 16px !important;
     background-repeat: no-repeat;
 }
 .breadcrumbs_doNot {
-    padding: 60px 0 40px 0;
+    padding: 80px 0 40px 0;
     /* min-height: 30vh; */
     position: relative;
     background-size: cover;

@@ -10,11 +10,16 @@
                      <p class="text-light" style="font-size: 14px; margin-top:15px;">
                         <i class="fa-solid fa-phone"></i> Tel: +91-73399 19554 <br/>
                         <i class="fa-solid fa-envelope"></i> Email: info@jawaileopardsafaribooking.in <br/>
-                        <i class="fa-solid fa-location-dot"></i> Address: GROUND, 00, C/O FULARAM S/O BHIMA RAM JI, Bali Road, Shri Krishna Sweets and Restaurant, Near Union Bank, Bali, Pali, Rajasthan, 306701
+                        <i class="fa-solid fa-location-dot"></i> Address: Jawai Leopard Safari Booking, Jawai safari pickup point, Jawai region, Sena, Pali, Rajasthan 306126
+                     </p>
+
+                     <p class="text-light" style="font-size: 14px; margin-top:15px;">
+                        <h4>Follow us on:</h4>
+                        <a href="https://www.youtube.com/@JAWAILEOPARDSAFARI-007" target="_blank"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+                        <a href="https://www.instagram.com/jawaileopardsafari/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
                      </p>
                   </div>
-                  <!-- Sasan Gir Road Near sasan gir bus stand <br>Sasan Gir junagadh-Gujarat indian -->
-                  <!-- <br /> -->
+
                </div>
             </div>
             <!-- End footer info column-->
@@ -38,17 +43,20 @@
             <!-- End footer links column-->
             <div class="col-lg-2 col-md-3 footer-links">
                <h4>EXPLORE SAFARI</h4>
-               <ul>
-                  <li><a href="{{ route('safari')}}">Jaway Leopard Safari</a></li>
-                  <li><a href="{{ route('contactUs')}}">Contact Us</a></li>
-               </ul>
+              <ul>
+                <li><a href="{{ route('safari')}}">Jawai Leopard Safari</a></li>
+                <li><a href="{{ route('contactUs')}}">Contact Us</a></li>
+              </ul>
+            <div class="menu-image">
+            <img src="{{ asset('frontend/img/footer_secure.jpg') }}" alt="Jawai Leopard Safari" />
+            </div>
             </div>
             <!-- End footer links column-->
          </div>
       </div>
    </div>
    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-   <a href="https://wa.me/917339919554?text=Welcome Jaway Leopard Safari" class="float" target="_blank">
+   <a href="https://wa.me/917339919554?text=Welcome Jawai Leopard Safari" class="float" target="_blank">
     <i class="fa fa-whatsapp my-float"></i>
 </a>
    <a id="callus" href="tel:7339919554">
@@ -61,7 +69,7 @@
    <div class="footer-legal text-center position-relative">
       <div class="container">
          <div class="copyright">
-            &copy; Copyright <strong><span> Jaway Leopard Safari </span></strong>All
+            &copy; Copyright <strong><span> Jawai Leopard Safari </span></strong>All
             Rights Reserved
          </div>
       </div>

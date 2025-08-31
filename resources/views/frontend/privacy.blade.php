@@ -1,5 +1,5 @@
 @extends('frontend.layout.main')
-@section('title', 'Privacy Policy - Jaway Leapord Safari')
+@section('title', 'Privacy Policy - Jawai Leopard Safari')
 @section('content')
 <!-- ======= Breadcrumbs ======= -->
 <div class="breadcrumbs_privacy d-flex align-items-center">

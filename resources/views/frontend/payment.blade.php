@@ -1,8 +1,7 @@
 @extends('frontend.layout.main')
-@section('title', 'Jaway Leopard Safari Booking')
-
+@section('title', 'Payment - Jawai Leopard Safari Booking')
 @section('content')
-    <div class="breadcrumbs d-flex align-items-center" style="background-image: url('assets/img/breadcrumbs-bg.html')">
+    <div class="breadcrumbs_gir d-flex align-items-center">
         <div class="container position-relative d-flex flex-column align-items-center">
             <h1>Booking Details</h1>
         </div>
@@ -57,7 +56,7 @@
                     </table>
                 </div>
                 <div class="col-md-12">
-                    <p class="text-danger"><strong>Note:</strong> Vehicle charges have to be paid at the location.</p>
+                    <p class="text-danger"><strong>Note:</strong> Confirm your advance for Permit charges and rest payments payable at the location</p>
                 </div>
             </div>
             @if (@session('success') || isset($data->payment_id))

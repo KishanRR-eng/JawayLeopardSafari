@@ -1,22 +1,9 @@
 <!-- ======= Header ======= -->
 <header id="header" class="header d-flex align-items-center header_class_name">
-    {{-- <div class="topbar">
-   <div class="container">
-      <div class="d-flex align-items-center justify-content-between flex-wrap">
-         <div class="ticker-container d-flex align-items-center">
-            <h3 class="ticker-title fs-6 mb-0 me-2">Latest Updates</h3>
-            <div class="ticker-text">
-               <p class="mb-0 small">This Website is Owned by Jungle Safari India, Visitors Can Book Safari For Jaway Leopard Safari, Devalia Safari Park and Kankai Nature Ride.</p>
-            </div>
-         </div>
-      </div>
-   </div>
-</div> --}}
-
     <div class="container-fluid container-xl d-flex align-items-center justify-content-between stickynav"
         id="navcontainer">
         <a href="{{ url('/') }}" class="logo d-flex align-items-center">
-            <img src="{{ asset('frontend/img/lpd.png') }}" alt="" />
+            <img src="{{ asset('frontend/img/lpd_logo.png') }}" alt="logo" />
         </a>
         <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
         <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>

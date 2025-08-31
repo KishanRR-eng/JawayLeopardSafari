@@ -1,5 +1,5 @@
 @extends('frontend.layout.main')
-@section('title', 'cancellation-policy - Jaway Leapord Safari')
+@section('title', 'cancellation-policy - Jawai Leapord Safari')
 @section('content')
 <!-- ======= Breadcrumbs ======= -->
 <div class="breadcrumbs_cancellation d-flex align-items-center">

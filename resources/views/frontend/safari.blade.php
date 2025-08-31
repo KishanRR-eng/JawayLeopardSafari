@@ -1,5 +1,5 @@
 @extends('frontend.layout.main')
-@section('title', 'Booking - Jaway Leapord Safari')
+@section('title', 'Booking - Jawai Leopard Safari')
 @section('content')
 <div class="breadcrumbs_gir d-flex align-items-center">
 </div>

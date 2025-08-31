@@ -1,5 +1,5 @@
 @extends('frontend.layout.main')
-@section('title', 'Jaway Leapord Safari')
+@section('title', 'Jawai Leopard Safari | Official Booking Website')
 @section('css')
     @vite(['node_modules/intl-tel-input/build/css/intlTelInput.min.css', 'node_modules/vanillajs-datepicker/dist/css/datepicker.min.css'])
     <style>
@@ -11,8 +11,8 @@
 @section('content')
     <!-- ======= Hero Section ======= -->
     <!-- Hero Section -->
-    <section id="hero" class="hero"
-        style="background-image: url('{{ asset('frontend/img/leopard.jpg') }}');
+    <section id="hero mb-hero" class="hero"
+        style="background-image: url('{{ asset('frontend/img/gallery/2.jpg') }}');
           background-size: cover;
           background-repeat: no-repeat;
           background-position: center;

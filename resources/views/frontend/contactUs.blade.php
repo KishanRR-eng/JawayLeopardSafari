@@ -1,5 +1,5 @@
 @extends('frontend.layout.main')
-@section('title', 'Contact Us - Jaway Leapord Safari')
+@section('title', 'Contact Us - Jawai Leopard Safari')
 @section('content')
 <div class="breadcrumbs d-flex align-items-center">
    <div class="container position-relative d-flex flex-column align-items-center">
@@ -11,7 +11,7 @@
 
     <!-- Declaration -->
     <div class="alert alert-warning mb-5 shadow-sm" style="background:#fff3cd; border-left:5px solid #c1782a;">
-      <strong>Declaration:</strong> Jaway Leopard Safari Booking would like to clarify that we work as a private travel agency.
+      <strong>Declaration:</strong> Jawai Leopard Safari Booking would like to clarify that we work as a private travel agency.
       We are not authorized by the Forest Department and do not claim affiliation. Our role is to assist with safari bookings
       and provide customer services independently. Prices may vary depending on demand and peak booking periods.
     </div>
@@ -25,7 +25,7 @@
           <p class="mb-3">
             <i class="bi bi-geo-alt-fill text-danger me-2"></i>
             <strong>Address:</strong><br>
-            GROUND, 00, C/O FULARAM S/O BHIMA RAM JI, <br>Bali Road, Shri Krishna Sweets and Restaurant,<br>Near Union Bank, Bali, Pali, Rajasthan, 306701.
+           Jawai Leopard Safari Booking,<br>Jawai safari pickup point, Jawai region, Sena,<br>Pali, Rajasthan 306126.
           </p>
           <p class="mb-3">
             <i class="bi bi-telephone-fill text-success me-2"></i>

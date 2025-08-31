@@ -1,5 +1,5 @@
 @extends('frontend.layout.main')
-@section('title', 'FAQ - Jaway Leapord Safari')
+@section('title', 'FAQ - Jawai Leopard Safari')
 @section('content')
 <!-- ======= Breadcrumbs ======= -->
 <div class="breadcrumbs_faq d-flex align-items-center">
