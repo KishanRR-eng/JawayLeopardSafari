@@ -38,9 +38,10 @@ Route::get('/booking-details/{id}', [FrontendController::class, 'bookingDetails'
 Route::get('/booking/{id}/payment', [FrontendController::class, 'bookingPayment'])->name('booking.payment');
 Route::post('/booking/{id}/callback', [FrontendController::class, 'bookingCallback'])->name('booking.callback');
 Route::post('/save-details/{id}', [FrontendController::class, 'saveDetails'])->name('details');
-Route::post('/inquiry', [FrontendController::class, 'inquiry'])->name('inquiry');
 Route::get('/blogs', [FrontendController::class, 'blogs'])->name('blogs');
 Route::get('/blogs/{id}', [FrontendController::class, 'blogDetails'])->name('blogDetails');
+Route::post('/booking-inquiry', [FrontendController::class, 'bookingInquiry'])->name('bookingInquiry');
+Route::post('/inquiry', [FrontendController::class, 'inquiry'])->name('inquiry');
 
 
 

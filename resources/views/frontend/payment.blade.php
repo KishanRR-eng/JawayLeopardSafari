@@ -62,7 +62,7 @@
             @if (@session('success') || isset($data->payment_id))
                 <div class="alert alert-info border-2 mt-5" role="alert">
                     <h4 class="alert-heading font-18 text-center">Payment Success</h4>
-                    <p class="text-center">Your booking has been successfully completed. Thank you for choosing Jaway Leopard Safari Booking.</p>
+                    <p class="text-center">Your booking has been successfully completed. Thank you for choosing Jawai Leopard Safari Booking.</p>
                 </div>
             @elseif (@session('error'))
                 <div class="alert alert-danger border-2 mt-5" role="alert">
@@ -90,7 +90,7 @@
                 key: "{{ env('RAZORPAY_KEY_ID') }}",
                 amount: "{{ $data->price * 100 }}", // Amount in paisa
                 currency: "INR",
-                name: "Jaway Leopard Safari",
+                name: "Jawai Leopard Safari",
                 description: "Booking Payment",
                 handler: function(response) {
                     // Handle successful payment here
@@ -98,7 +98,7 @@
                     $('form#paymentForm').submit();
                 },
                 prefill: {
-                    name: "Jaway Leopard Safari",
+                    name: "Jawai Leopard Safari",
                     email: "jawaijunglecamp2019@gmail.com",
                     contact: "+91 7339919554"
                 },

@@ -1,5 +1,5 @@
 @extends('frontend.layout.main')
-@section('title', 'About Us - Jaway Leapord Safari')
+@section('title', 'About Us - Jawai Leopard Safari')
 @section('content')
 <div class="breadcrumbs d-flex align-items-center">
    <div class="container position-relative d-flex flex-column align-items-center">

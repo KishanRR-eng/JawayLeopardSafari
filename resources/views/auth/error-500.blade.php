@@ -1,4 +1,4 @@
-@extends('layouts.auth', ['title' => 'Jaway Leopard Safari'])
+@extends('layouts.auth', ['title' => 'Jawai Leopard Safari'])
 
 @section('content')
 
@@ -10,7 +10,7 @@
                     <img src="/images/logo-sm.png" height="50" alt="logo" class="auth-logo">
                 </a>
                 <h4 class="mt-3 mb-1 fw-semibold text-white fs-18">Sorry! Unexpected Server Error</h4>
-                <p class="text-muted fw-medium mb-0">Back to dashboard of Jaway Leopard Safari</p>
+                <p class="text-muted fw-medium mb-0">Back to dashboard of Jawai Leopard Safari</p>
             </div>
         </div>
         <div class="card-body pt-0">

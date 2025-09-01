@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\BookingInquiryRequest;
 use App\Http\Requests\InquiryRequest;
 use App\Http\Requests\StoreBookingDetailRequest;
 use App\Http\Requests\StoreFormRequest;
@@ -10,15 +11,10 @@ use App\Models\Booking;
 use App\Models\BookingDetail;
 use App\Models\DisabledSlot;
 use App\Models\Package;
-use App\Models\TimeSlot;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Crypt;
-use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\Log;
-use Illuminate\Support\Facades\Storage;
 use PHPMailer\PHPMailer\PHPMailer;
-use Razorpay\Api\Api;
-use ZipArchive;
 
 class FrontendController
 {
@@ -216,7 +212,7 @@ class FrontendController
         }
     }
 
-    public function inquiry(InquiryRequest $request)
+    public function bookingInquiry(BookingInquiryRequest $request)
     {
         try {
             $request->mobile_no = preg_replace('/\s+/', "", $request->phone_code == '91' ? ltrim($request->mobile_no, '0') : $request->mobile_no);;
@@ -256,5 +252,45 @@ class FrontendController
             'email' => $request->email,
             'mobile_no' => $request->mobile_no,
         ]);
+    }
+
+    public function inquiry(InquiryRequest $request)
+    {
+        try {
+            $request->mobile_no = preg_replace('/\s+/', "", $request->phone_code == '91' ? ltrim($request->mobile_no, '0') : $request->mobile_no);
+            $request->email = $request->email ?? '-';
+            $request->message = $request->message ?? '-';
+
+            $mail = new PHPMailer(true);
+            $mail->SMTPDebug = 0;
+            $mail->isSMTP();
+            $mail->Host = config('mail.mailers.smtp.host');
+            $mail->SMTPAuth = true;
+            $mail->Username = config('mail.mailers.smtp.username');
+            $mail->Password = config('mail.mailers.smtp.password');
+            $mail->SMTPSecure = config('mail.mailers.smtp.encryption');
+            $mail->Port = config('mail.mailers.smtp.port');
+            $mail->setFrom(config('mail.from.address'), config('mail.from.name'));
+            $mail->addAddress($request->email);
+            $mail->addCC(config('app.env') == 'production' ? config('mail.from.address') : 'jeel@yopmail.com');
+            $mail->isHTML(true);
+            $mail->Subject = "Inquiry Has Been Generated";
+            $mail->Body = "
+                <div>
+                    <p>Inquiry Details : <p>
+                    <ul>
+                        <li><b>Name :</b> {$request->first_name} {$request->last_name}</li>
+                        <li><b>Phone Number :</b> +{$request->phone_code} {$request->mobile_no}</li>
+                        <li><b>Email :</b> {$request->email}</li>
+                        <li><b>Message :</b> {$request->message}</li>
+                    </ul>
+                </div>
+            ";
+            $mail->send();
+        } catch (\Throwable $th) {
+            //throw $th;
+            Log::critical($th);
+        }
+        return back();
     }
 }

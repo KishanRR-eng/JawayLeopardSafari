@@ -37,7 +37,7 @@
 
                 <!-- Right Side Inquiry Form -->
                 <div class="col-lg-5 col-md-12 offset-lg-1">
-                    <form class="firststep_form" method="POST" action="{{ route('inquiry') }}">
+                    <form class="firststep_form" method="POST" action="{{ route('bookingInquiry') }}">
                         @csrf
                         <h3 class="form-title text-white">Check Availability & Book</h3>
                         <div class="row">
@@ -232,7 +232,7 @@
         <div class="container">
             <div class="section-title text-center mb-5">
                 <h2 class="fw-bold">Latest Blogs</h2>
-                <p class="text-muted">Stay updated with the latest news and stories from Jaway Leapord Safari</p>
+                <p class="text-muted">Stay updated with the latest news and stories from Jawai Leopard Safari</p>
             </div>
             <div class="row g-4">
                 <!-- Blog Card -->

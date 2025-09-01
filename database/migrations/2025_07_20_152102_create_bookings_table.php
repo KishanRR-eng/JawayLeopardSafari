@@ -25,7 +25,6 @@ return new class extends Migration
             $table->integer('child')->default(0);
             $table->enum('tourist_type', [0, 1])->default(0)->comment("0-Indian,1-Foreigner");
             $table->enum('day_type', [0, 1])->default(0)->comment("0-Weekday,1-Weekend");
-            $table->enum('type', [0])->default(0)->comment("0-Jaway Leopard Safari");
             $table->date('booking_date');
             $table->string('payment_id')->unique()->nullable()->default(null);
             $table->timestamp('created_at')->useCurrent();

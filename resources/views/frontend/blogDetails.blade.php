@@ -22,8 +22,8 @@
                         <div class="blog-meta d-flex justify-content-between flex-wrap mb-4 text-muted small">
                             <span><i class="bi bi-person"></i> Author: <strong>{{ $data->created_by }}</strong></span>
                             <span><i class="bi bi-calendar"></i> {{ date('F d Y', strtotime($data->created_at)) }}</span>
-                            <span><i class="bi bi-tag"></i> Jaway Leapord Safari</span>
-                            <span><i class="bi bi-bookmark"></i> Jaway Leapord Safari</span>
+                            <span><i class="bi bi-tag"></i> Jawai Leopard Safari</span>
+                            <span><i class="bi bi-bookmark"></i> Jawai Leopard Safari</span>
                         </div>
 
                         <!-- Blog Content -->

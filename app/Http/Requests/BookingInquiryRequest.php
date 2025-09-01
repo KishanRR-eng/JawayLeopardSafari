@@ -5,7 +5,7 @@ namespace App\Http\Requests;
 use Illuminate\Foundation\Http\FormRequest;
 use Illuminate\Validation\Rule;
 
-class InquiryRequest extends FormRequest
+class BookingInquiryRequest extends FormRequest
 {
     /**
      * Determine if the user is authorized to make this request.
@@ -28,7 +28,6 @@ class InquiryRequest extends FormRequest
             'phone_code' => ['required', 'numeric'],
             'mobile_no' => ['required', 'string'],
             'email' => ['nullable', 'email:rfc,spoof,strict'],
-            'message' => ['nullable', 'string'],
         ];
     }
 }

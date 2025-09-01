@@ -8,7 +8,7 @@
                         <p class="text-muted mb-0">
                             ©
                             <script> document.write(new Date().getFullYear()) </script>
-                            Jaway Leopard Safari
+                            Jawai Leopard Safari
                             <span
                                 class="text-muted d-none d-sm-inline-block float-end">
                                 Design & Developed by Implies Technologies</span>

@@ -1,4 +1,4 @@
-@extends('layouts.auth', ['title' => 'Jaway Leopard Safari'])
+@extends('layouts.auth', ['title' => 'Jawai Leopard Safari'])
 
 @section('content')
 
