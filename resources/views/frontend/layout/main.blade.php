@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <title> @yield('title', 'Jawai Leopard Safari | Official Booking Website') </title>
+    <title> @yield('title', 'Jawai Leopard Safari Booking | Jawai Leopard Packages') </title>
     <link rel=" shortcut icon" type="image/png" sizes="16x16" href="{{ asset('frontend/img/gir_logo.png') }}">
     <!-- Meta Description -->
     <meta name="description" content="Jawai Leopard Safari with licensed jeeps & guides. Official bookings as per Rajasthan Forest Dept. rules. Safe, eco-friendly & best price guarantee.">
