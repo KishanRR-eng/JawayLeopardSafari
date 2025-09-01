@@ -56,7 +56,7 @@
                     </table>
                 </div>
                 <div class="col-md-12">
-                    <p class="text-danger"><strong>Note:</strong> Confirm your advance for Permit charges and rest payments payable at the location</p>
+                    <p class="text-danger"><strong>Note:</strong> Confirm your advance for permit and rest 2400/- payable at the location</p>
                 </div>
             </div>
             @if (@session('success') || isset($data->payment_id))

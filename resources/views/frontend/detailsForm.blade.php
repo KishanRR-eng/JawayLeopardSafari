@@ -35,7 +35,7 @@
                     <p><strong>Price:</strong> {{ $data->price }} /-</p>
                 </div>
                 <div class="col-md-12 mt-4">
-                    <p class="text-danger"><strong>Note:</strong> Confirm your advance for Permit charges and rest payments payable at the location</p>
+                    <p class="text-danger"><strong>Note:</strong> Confirm your advance for permit and rest 2400/- payable at the location</p>
                 </div>
             </div>
             <form action="{{ route('details', ['id' => request()->route('id')]) }}" method="POST" enctype="multipart/form-data">
