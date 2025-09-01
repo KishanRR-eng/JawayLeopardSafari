@@ -10,10 +10,10 @@
             <ul>
                 <li><a href="{{ url('/') }}">Home</a></li>
                 {{-- <li><a href="{{ route('about')}}">About Us</a></li> --}}
-                <li><a href="{{ request()->route()->getName() == 'root' ? '#checkForm' : route('safari') }}" class=""> Book Safari</a></li>
-                <li><a href="{{ request()->route()->getName() == 'root' ? '#checkForm' : route('gallery') }}" class="">gallery</a></li>
-                <li><a href="{{ request()->route()->getName() == 'root' ? '#checkForm' : route('blogs') }}" class="">Blog</a></li>
-                <li><a href="{{ request()->route()->getName() == 'root' ? '#checkForm' : route('contactUs') }}" class="">Contact us</a></li>
+                <li><a href="{{ route('safari') }}" class=""> Book Safari</a></li>
+                <li><a href="{{ route('gallery') }}" class="">gallery</a></li>
+                <li><a href="{{ route('blogs') }}" class="">Blog</a></li>
+                <li><a href="{{ route('contactUs') }}" class="">Contact us</a></li>
             </ul>
         </nav>
         <!-- .navbar -->

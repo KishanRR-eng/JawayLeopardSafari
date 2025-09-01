@@ -87,7 +87,7 @@
                     <p class="section-text">
                         Discover the thrill of the wild, the beauty of nature, and the soul of Rajasthan—all in one journey.
                     </p>
-                    <a href="{{ request()->route()->getName() == 'root' ? '#checkForm' : route('safari') }}" class="btn-book">Book Your Safari</a>
+                    <a href="{{ route('safari') }}" class="btn-book">Book Your Safari</a>
                 </div>
 
                 <!-- Right Side Image -->

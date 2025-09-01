@@ -1118,7 +1118,7 @@ img.rounded.shadow {
   position: relative;
   background: url('/frontend/img/jawai-leopard-safari-booking-desktop-banner.webp') center center/cover no-repeat;
   padding: 100px 0;
-  color: #fff;
+  /* color: #fff; */
 }
 
 .let-started .overlay {

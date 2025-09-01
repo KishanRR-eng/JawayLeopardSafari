@@ -27,26 +27,26 @@
             <div class="col-lg-3 col-md-4 footer-links">
                <h4>Information</h4>
                <ul>
-                  <li><a href="{{ request()->route()->getName() == 'root' ? '#checkForm' : route('dosdonts')}}">Do's & Don'ts</a></li>
-                  <li><a href="{{ request()->route()->getName() == 'root' ? '#checkForm' : route('howtoreach')}}">How to Reach</a></li>
-                  <li><a href="{{ request()->route()->getName() == 'root' ? '#checkForm' : route('faq')}}">FAQ</a></li>
+                  <li><a href="{{ route('dosdonts')}}">Do's & Don'ts</a></li>
+                  <li><a href="{{ route('howtoreach')}}">How to Reach</a></li>
+                  <li><a href="{{ route('faq')}}">FAQ</a></li>
                </ul>
             </div>
             <div class="col-lg-3 col-md-4 footer-links">
                <h4>QUICK LINKS</h4>
                <ul>
                   <li><a href="{{ route('root') }}">Home</a></li>
-                  <li><a href="{{ request()->route()->getName() == 'root' ? '#checkForm' : route('terms')}}">Terms of Use</a></li>
-                  <li><a href="{{ request()->route()->getName() == 'root' ? '#checkForm' : route('privacy')}}">Privacy Policy</a></li>
-                  <li><a href="{{ request()->route()->getName() == 'root' ? '#checkForm' : route('cancellationpolicy')}}">Cancellation & Refund</a></li>
+                  <li><a href="{{ route('terms')}}">Terms of Use</a></li>
+                  <li><a href="{{ route('privacy')}}">Privacy Policy</a></li>
+                  <li><a href="{{ route('cancellationpolicy')}}">Cancellation & Refund</a></li>
                </ul>
             </div>
             <!-- End footer links column-->
             <div class="col-lg-2 col-md-3 footer-links">
                <h4>EXPLORE SAFARI</h4>
                <ul>
-                  <li><a href="{{ request()->route()->getName() == 'root' ? '#checkForm' : route('gurentees') }}">Jawai Leopard Safari</a></li>
-                  <li><a href="{{ request()->route()->getName() == 'root' ? '#checkForm' : route('contactUs')}}">Contact Us</a></li>
+                  <li><a href="{{ route('gurentees') }}">Jawai Leopard Safari</a></li>
+                  <li><a href="{{ route('contactUs')}}">Contact Us</a></li>
                </ul>
                <div class="menu-image">
                   <img src="{{ asset('frontend/img/footer_secure.jpg') }}" alt="Jawai Leopard Safari" />
