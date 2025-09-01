@@ -17,7 +17,8 @@
                         <h4>Follow us on:</h4>
                         <a href="https://www.youtube.com/@JAWAILEOPARDSAFARI-007" target="_blank"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
                         <a href="https://www.instagram.com/jawaileopardsafari/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-                     </p>
+                        <a href="https://www.trustpilot.com/evaluate/jawaileopardsafaribooking.in" target="_blank"><i class="fa fa-star" aria-hidden="true"></i></a>
+                    </p>
                   </div>
 
                </div>
@@ -44,7 +45,7 @@
             <div class="col-lg-2 col-md-3 footer-links">
                <h4>EXPLORE SAFARI</h4>
               <ul>
-                <li><a href="{{ route('safari')}}">Jawai Leopard Safari</a></li>
+                <li><a href="{{route('gurentees')}}">Jawai Leopard Safari</a></li>
                 <li><a href="{{ route('contactUs')}}">Contact Us</a></li>
               </ul>
             <div class="menu-image">
