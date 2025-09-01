@@ -45,7 +45,7 @@
             <div class="col-lg-2 col-md-3 footer-links">
                <h4>EXPLORE SAFARI</h4>
                <ul>
-                  <li><a href="{{ route('gurentees') }}">Jawai Leopard Safari</a></li>
+                  <li><a href="{{ route('about') }}">About Us</a></li>
                   <li><a href="{{ route('contactUs')}}">Contact Us</a></li>
                </ul>
                <div class="menu-image">

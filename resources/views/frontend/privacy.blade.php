@@ -6,6 +6,7 @@
    <div class="container position-relative d-flex flex-column align-items-center" data-aos="fade"></div>
 </div>
 <!-- End Breadcrumbs -->
+
 <div class="section--sm section--top">
    <div class="container">
       <div class="row g-4">
@@ -14,82 +15,119 @@
                <li>
                   <div class="zoo-box">
                      <h5 class="mt-0">Privacy Policy</h5>
-                     <p class="mb-0">
-                        Wildlife Safari Tourism ("we," "our," or "us") values your privacy and is committed to protecting your personal information. This Privacy Policy explains how we collect, use, and safeguard your data when you visit or book our services on https://jawaileopardsafaribooking.in
+                     <p><b>Effective Date:</b> 01 Sept 2025</p>
+                     <p>
+                        At Jawai Leopard Safari Booking by Wildlife Safari Tourism, accessible at
+                        <a href="https://www.jawaileopardsafaribooking.in" target="_blank">www.jawaileopardsafaribooking.in</a>,
+                        we respect your trust and are committed to protecting your privacy. This Privacy Policy explains how we
+                        collect, use, and safeguard your personal information when you use our website or services.
                      </p>
                   </div>
                </li>
+
                <li>
                   <div class="zoo-box">
-                     <h5 class="mt-0">Information We Collect</h5>
+                     <h5 class="mt-0">1. Information We Collect</h5>
                      <ul class="list list--base" style="--gap: 0.5rem">
-                        <li>Personal Information: When you book a safari or contact us, we collect your name, email address, phone number, payment details, and other necessary information to provide our services</li>
-                        <li>Usage Data: We automatically collect information on how you use our website, including IP address, browser type, pages visited, and time spent on the site, through cookies and similar technologies.</li>
+                        <li>Personal details: Name, contact number, email address, and billing details.</li>
+                        <li>Booking information: Safari dates, number of travelers, and travel preferences.</li>
+                        <li>Payment details: Processed securely through trusted payment gateways (we do not store your full card details).</li>
+                        <li>Technical information: IP address, browser type, device information, and cookies to enhance your browsing experience.</li>
                      </ul>
                   </div>
                </li>
+
                <li>
                   <div class="zoo-box">
-                     <h5 class="mt-0">How We Use Your Information</h5>
+                     <h5 class="mt-0">2. How We Use Your Information</h5>
                      <ul class="list list--base" style="--gap: 0.5rem">
-                        <li>To process your safari bookings and payments efficiently</li>
-                        <li>To communicate with you about your bookings, inquiries, and updates.</li>
-                        <li>To improve our website, services, and customer experience.</li>
-                        <li>To send promotional offers or newsletters only if you opt-in.</li>
-                        <li>To comply with legal and regulatory requirements</li>
+                        <li>To confirm and manage your safari booking.</li>
+                        <li>To communicate booking details, updates, or offers.</li>
+                        <li>To improve our website and services.</li>
+                        <li>To comply with legal and regulatory obligations.</li>
                      </ul>
                   </div>
                </li>
+
                <li>
                   <div class="zoo-box">
-                     <h5 class="mt-0">Cookies and Tracking Technologies</h5>
-                     <p>
-                        Our website uses cookies to enhance user experience, analyze site traffic, and customize content. You can control cookie preferences via your browser settings, but disabling cookies may affect site functionality.
-                     </p>
+                     <h5 class="mt-0">3. Sharing of Information</h5>
+                     <ul class="list list--base" style="--gap: 0.5rem">
+                        <li>Safari guides and service providers to arrange your safari experience.</li>
+                        <li>Payment processors for secure transaction handling.</li>
+                        <li>Government authorities, if required by law.</li>
+                     </ul>
                   </div>
+               </li>
+
+               <li>
                   <div class="zoo-box">
-                     <h5 class="mt-0">Sharing Your Information</h5>
+                     <h5 class="mt-0">4. Data Protection & Security</h5>
                      <p>
-                        We do not sell, rent, or trade your personal information to third parties. We may share data with trusted service providers solely for booking facilitation and customer service, under strict confidentiality agreements.
-                     </p>
-                  </div>
-                  <div class="zoo-box">
-                     <h5 class="mt-0">Data Security</h5>
-                     <p>
-                        We implement appropriate technical and organizational measures to protect your personal data from unauthorized access, alteration, disclosure, or destruction.
-                     </p>
-                  </div>
-                  <div class="zoo-box">
-                     <h5 class="mt-0">Your Rights</h5>
-                     <p>
-                        You have the right to access, correct, or delete your personal information held by us. You may also unsubscribe from marketing communications at any time.
-                     </p>
-                  </div>
-                  <div class="zoo-box">
-                     <h5 class="mt-0">Children’s Privacy</h5>
-                     <p>
-                        Our services are not intended for individuals under 18 years of age. We do not knowingly collect personal data from minors.
-                     </p>
-                  </div>
-                  <div class="zoo-box">
-                     <h5 class="mt-0">Changes to This Privacy Policy</h5>
-                     <p>
-                        We may update this policy occasionally. The latest version will be posted on our website with the revision date.
-                     </p>
-                  </div>
-                  <div class="zoo-box">
-                     <h5 class="mt-0">Contact Us   </h5>
-                     <p>
-                        If you have any questions or concerns about this Privacy Policy, please contact us at:<br/>
-                        <b>Wildlife Safari Tourism</b>
-                        <br/>
-                        Registered Address: GROUND, 00, C/O FULARAM S/O BHIMA RAM JI, Bali Road,
-                        Shri Krishna Sweets and Restaurant, Near Union Bank, Bali, Pali, Rajasthan, 306701
-                        Email: info@jawaileopardsafaribooking.in
-                        Phone: +91-73399 19554
+                        We adopt industry-standard security measures to safeguard your personal data against unauthorized access, alteration, or misuse.
                      </p>
                   </div>
                </li>
+
+               <li>
+                  <div class="zoo-box">
+                     <h5 class="mt-0">5. Cookies</h5>
+                     <p>
+                        Our website uses cookies to provide a smooth browsing experience and analyze site performance.
+                        You can disable cookies through your browser settings, though some features may not function properly.
+                     </p>
+                  </div>
+               </li>
+
+               <li>
+                  <div class="zoo-box">
+                     <h5 class="mt-0">6. Your Rights</h5>
+                     <ul class="list list--base" style="--gap: 0.5rem">
+                        <li>Access the personal information we hold about you.</li>
+                        <li>Request corrections or updates to your details.</li>
+                        <li>Request deletion of your information, subject to booking or legal requirements.</li>
+                     </ul>
+                  </div>
+               </li>
+
+               <li>
+                  <div class="zoo-box">
+                     <h5 class="mt-0">7. Third-Party Links</h5>
+                     <p>
+                        Our website may contain links to third-party websites. We are not responsible for the privacy practices or content of these external sites.
+                     </p>
+                  </div>
+               </li>
+
+               <li>
+                  <div class="zoo-box">
+                     <h5 class="mt-0">8. Updates to This Policy</h5>
+                     <p>
+                        We may update this Privacy Policy from time to time. The updated version will be posted on this page with a revised effective date.
+                     </p>
+                  </div>
+               </li>
+
+               <li>
+                  <div class="zoo-box">
+                     <h5 class="mt-0">9. Contact Us</h5>
+                     <p>
+                        If you have any questions about this Privacy Policy, please contact us:<br><br>
+                        <b>Wildlife Safari Tourism</b><br>
+                        <b>Registered Office:</b><br>
+                        GROUND, 00, C/O FULARAM S/O BHIMA RAM JI,<br>
+                        Bali Road, Shri Krishna Sweets and Restaurant,<br>
+                        Near Union Bank, Bali, Pali, Rajasthan – 306701<br><br>
+                        <b>Safari Location:</b><br>
+                        Jawai Leopard Safari Booking,<br>
+                        Jawai Safari Pickup Point, Jawai Region, Sena,<br>
+                        Pali, Rajasthan – 306126<br><br>
+                        📞 Phone: <a href="tel:+917339919554">+91-73399 19554</a><br>
+                        📧 Email: <a href="mailto:info@jawaileopardsafaribooking.in">info@jawaileopardsafaribooking.in</a>
+                     </p>
+                  </div>
+               </li>
+
             </ul>
          </div>
       </div>

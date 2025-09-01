@@ -1,43 +1,74 @@
 @extends('frontend.layout.main')
-@section('title', 'About Us - Jawai Leopard Safari')
+@section('title', 'About Us – Jawai Leopard Safari Booking')
 @section('content')
-<div class="breadcrumbs d-flex align-items-center">
-   <div class="container position-relative d-flex flex-column align-items-center">
-   </div>
+<!-- ======= Breadcrumbs ======= -->
+<div class="breadcrumbs_privacy d-flex align-items-center">
+   <div class="container position-relative d-flex flex-column align-items-center" data-aos="fade"></div>
 </div>
-<div id="terms" class="terms">
+<!-- End Breadcrumbs -->
+<div class="section--sm section--top">
    <div class="container">
-      <h1>
-         ABOUT US :
-      </h1>
-      <p>
-         When people wish to experience the heavenly beauty and charm of the National Parks of India then they knock on the door of Jungle Safari India. We are one of the leading tour companies that offers various tour packages for different corners of India. We curate the best tour packages so that people can explore every corner of India without worrying about anything. Other than the Tour Packages we also provide other services including gypsy safari rides, canter safari rides, and elephant safari rides. Furthermore, you can also book nice and comfy hotels and resorts that are near the national parks from our website. From budget-friendly accommodations to luxurious stays, we have got it all.
-      </p>
-   </div>
-</div>
-<div class="my-4">
-   <div id="terms" class="terms">
-      <div class="container">
-         <h3>
-            Our Excellence:
-         </h3>
-         <p>
-            We specialize in curating tour packages for Gir National Park which is located in Gujarat, India. Other than the tour packages, we also provide safari bookings and hotel bookings near the Gir National Park. We have been providing Safari rides in Gir National Park for the past 10 years and our guides have good knowledge about the flora and fauna of the area. Our drivers know the park inside out and they know all the routes and other important rules related to safaris which ensures a nice trip. You can explore the beauty and wildness of the area without worrying about budget, convenience, or anything else.
-         </p>
+      <div class="row g-4">
+         <div class="col-md-12">
+            <ul class="list p-design">
+               <li>
+                  <div class="zoo-box">
+                     <h5 class="mt-0">About Us</h5>
+                     <p class="mb-0">
+                        Welcome to Jawai Leopard Safari Booking by Wildlife Safari Tourism, your trusted partner for exploring the wild beauty of Jawai, Rajasthan. We specialize in organizing safe, reliable, and memorable leopard safari experiences in the heart of the Jawai region, known worldwide for its unique harmony between humans and leopards.
+                     </p>
+                  </div>
+               </li>
+               <li>
+                  <div class="zoo-box">
+                     <p>
+                        Our aim is to provide travelers, wildlife enthusiasts, and photographers with a well-organized safari experience that connects them with nature, culture, and wildlife. From pickup to safari to local guidance, we ensure you enjoy a seamless journey into the wilderness.
+                     </p>
+                  </div>
+               </li>
+               <li>
+                  <div class="zoo-box">
+                     <p>We are a private safari booking and tourism service provider. Please note that we are not a government website or agency. All safari bookings, tours, and related services are operated by our registered tourism business under Wildlife Safari Tourism.</p>
+                  </div>
+               </li>
+               <li>
+                  <div class="zoo-box">
+                     <h5 class="mt-0">Why Choose Us?</h5>
+                     <p>
+                        Expert local drivers and guides with deep knowledge of the Jawai landscape.
+                     </p>
+                     <p>Well-maintained safari jeeps for safe and comfortable rides.
+</p>
+                     <p>Flexible booking options with dedicated customer support.
+</p>
+                     <p>Authentic experiences that go beyond safaris – including cultural insights and local village life</p>
+                     <p></p>
+                  </div>
+                  <div class="zoo-box">
+                     <h5 class="mt-0">Our registered office ensures transparency and accountability:</h5>
+                  </div>
+                  <div class="zoo-box">
+                     <h5 class="mt-0">Registered Office Address:</h5>
+                     <p>
+                        GROUND, 00, C/O FULARAM S/O BHIMA RAM JI, Bali Road, Shri Krishna Sweets and Restaurant, Near Union Bank, Bali, Pali, Rajasthan, 306701
+                     </p>
+                  </div>
+                  <div class="zoo-box">
+                     <h5 class="mt-0">Safari Location / Pickup Point:</h5>
+                     <p>
+                        Jawai Leopard Safari Booking, Jawai safari pickup point, Jawai region, Sena, Pali, Rajasthan 306126
+                     </p>
+                  </div>
+                  <div class="zoo-box">
+                     <h5 class="mt-0">GSTIN: 08EKKPS7156F1ZL</h5>
+                     <p>
+                        We invite you to be part of a once-in-a-lifetime adventure. Witness the wild leopards of Jawai in their natural habitat and experience the true essence of Rajasthan with Wildlife Safari Tourism.
+                     </p>
+                  </div>
+               </li>
+            </ul>
+         </div>
       </div>
    </div>
 </div>
-<div class="my-4">
-   <div id="terms" class="terms">
-      <div class="container">
-         <h3>
-            Best Service Provider :
-         </h3>
-         <p>
-            We provide our service in a systematic way which is very important for a good and memorable trip. First of all, you make a booking on our platform, and after that, you are given a voucher which has the coordinator's number. He can call you, or you can also call him to arrange your meeting. Once the meeting point is fixed with the coordinator or you can say your tour assistant, he will take you for the safari ride. Be ready to explore the thrilling area while gaining knowledge about the same.
-         </p>
-      </div>
-   </div>
-</div>
-
 @endsection
