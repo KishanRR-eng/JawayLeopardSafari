@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
@@ -10,9 +11,10 @@
     @yield('css')
     @include('frontend.layout.css')
     @if (config('app.env') == 'production')
+        <meta name="google-site-verification" content="mDJCF9GYWMRkULW45Ee1vIx7AEaCVFLnXiIYo7rBuu0"   />
         <!-- Google Tag Manager -->
         <script>
-            (function(w, d, s, l, i) {
+            (function (w, d, s, l, i) {
                 w[l] = w[l] || [];
                 w[l].push({
                     'gtm.start': new Date().getTime(),

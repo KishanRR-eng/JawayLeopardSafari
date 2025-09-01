@@ -11,14 +11,13 @@
 @section('content')
     <!-- ======= Hero Section ======= -->
     <!-- Hero Section -->
-    <section id="hero mb-hero" class="hero"
-        style="background-image: url('{{ asset('frontend/img/gallery/2.jpg') }}');
-          background-size: cover;
-          background-repeat: no-repeat;
-          background-position: center;
-          min-height: 100vh;
-          display: flex;
-          align-items: center; ">
+    <section id="hero mb-hero" class="hero" style="background-image: url('{{ asset('frontend/img/gallery/2.jpg') }}');
+              background-size: cover;
+              background-repeat: no-repeat;
+              background-position: center;
+              min-height: 100vh;
+              display: flex;
+              align-items: center; ">
         <div class="hero-overlay"></div>
         <div class="container">
             <div class="row align-items-center">
@@ -42,25 +41,20 @@
                         <h3 class="form-title text-white">Check Availability & Book</h3>
                         <div class="row">
                             <div class="col-md-6 mb-2">
-                                <input type="text" class="form-control" id="first_name" name="first_name"
-                                    placeholder="Enter First Name*" value="{{ old('first_name') ?? '' }}" required>
+                                <input type="text" class="form-control" id="first_name" name="first_name" placeholder="Enter First Name*" value="{{ old('first_name') ?? '' }}" required>
                                 <div class="text-sm text-danger">{{ $errors->first('first_name') ?? '' }}</div>
                             </div>
                             <div class="col-md-6 mb-2">
-                                <input type="text" class="form-control" id="last_name" name="last_name"
-                                    placeholder="Enter Last Name*" value="{{ old('last_name') ?? '' }}" required>
+                                <input type="text" class="form-control" id="last_name" name="last_name" placeholder="Enter Last Name*" value="{{ old('last_name') ?? '' }}" required>
                                 <div class="text-sm text-danger">{{ $errors->first('last_name') ?? '' }}</div>
                             </div>
                             <div class="col-md-12 mb-2">
-                                <input type="text" class="form-control" id="mobile_no" name="mobile_no"
-                                    value="{{ old('mobile_no') ?? '' }}" required>
-                                <input type="hidden" name="phone_code" id="phone_code"
-                                    value="{{ old('phone_code') ?? '91' }}">
+                                <input type="text" class="form-control" id="mobile_no" name="mobile_no" value="{{ old('mobile_no') ?? '' }}" required>
+                                <input type="hidden" name="phone_code" id="phone_code" value="{{ old('phone_code') ?? '91' }}">
                                 <div class="text-sm text-danger">{{ $errors->first('mobile_no') ?? '' }}</div>
                             </div>
                             <div class="col-md-12 mb-2">
-                                <input type="text" class="form-control" id="email" name="email"
-                                    placeholder="Enter Email" value="{{ old('email') ?? '' }}">
+                                <input type="text" class="form-control" id="email" name="email" placeholder="Enter Email" value="{{ old('email') ?? '' }}">
                                 <div class="text-sm text-danger">{{ $errors->first('email') ?? '' }}</div>
                             </div>
                             <div class="col-md-12 mb-2 text-center">
@@ -93,13 +87,12 @@
                     <p class="section-text">
                         Discover the thrill of the wild, the beauty of nature, and the soul of Rajasthan—all in one journey.
                     </p>
-                    <a href="{{ route('safari') }}" class="btn-book">Book Your Safari</a>
+                    <a href="{{ request()->route()->getName() == 'root' ? '#checkForm' : route('safari') }}" class="btn-book">Book Your Safari</a>
                 </div>
 
                 <!-- Right Side Image -->
                 <div class="col-lg-6 col-md-12 text-center">
-                    <img src="{{ asset('frontend/img/jawai-leopard-safari.jpg') }}" alt="Jawai Leopard Safari"
-                        class="img-fluid rounded shadow">
+                    <img src="{{ asset('frontend/img/jawai-leopard-safari.jpg') }}" alt="Jawai Leopard Safari" class="img-fluid rounded shadow">
                 </div>
             </div>
         </div>
@@ -175,58 +168,58 @@
 
     {{-- END how to book --}}
     <!-- ======= how to reach ======= -->
-   <section class="how-to-reach py-5 bg-light">
-  <div class="container">
-    <div class="section-heading text-center mb-5">
-      <h2 class="title">How to Reach Jawai</h2>
-      <p class="subtitle">Explore different travel options to comfortably reach Jawai</p>
-    </div>
+    <section class="how-to-reach py-5 bg-light">
+        <div class="container">
+            <div class="section-heading text-center mb-5">
+                <h2 class="title">How to Reach Jawai</h2>
+                <p class="subtitle">Explore different travel options to comfortably reach Jawai</p>
+            </div>
 
-    <div class="table-responsive">
-      <table class="table table-bordered table-hover align-middle text-center reach-table">
-        <thead class="table-primary">
-          <tr>
-            <th scope="col">Mode</th>
-            <th scope="col">Nearest Point</th>
-            <th scope="col">Distance</th>
-            <th scope="col">Connectivity</th>
-            <th scope="col">Travel Option</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td><strong>By Air</strong></td>
-            <td>Udaipur Maharana Pratap Airport (UDR)</td>
-            <td>140 km</td>
-            <td>Delhi, Mumbai, Jaipur (Direct Flights)</td>
-            <td>Taxis / Pre-arranged Transfers</td>
-          </tr>
-          <tr>
-            <td><strong>By Train</strong></td>
-            <td>
-              Jawai Bandh (20 km) <br>
-              Falna (30 km)
-            </td>
-            <td>20–30 km</td>
-            <td>Mumbai, Delhi, Ahmedabad, Jaipur</td>
-            <td>Local Taxis / Jeeps</td>
-          </tr>
-          <tr>
-            <td><strong>By Road</strong></td>
-            <td>
-              Udaipur – 140 km <br>
-              Jodhpur – 120 km <br>
-              Ahmedabad – 320 km
-            </td>
-            <td>3–7 hours</td>
-            <td>Highways, Scenic Drive</td>
-            <td>Private Taxis / Cars / Buses</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-  </div>
-</section>
+            <div class="table-responsive">
+                <table class="table table-bordered table-hover align-middle text-center reach-table">
+                    <thead class="table-primary">
+                        <tr>
+                            <th scope="col">Mode</th>
+                            <th scope="col">Nearest Point</th>
+                            <th scope="col">Distance</th>
+                            <th scope="col">Connectivity</th>
+                            <th scope="col">Travel Option</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>By Air</strong></td>
+                            <td>Udaipur Maharana Pratap Airport (UDR)</td>
+                            <td>140 km</td>
+                            <td>Delhi, Mumbai, Jaipur (Direct Flights)</td>
+                            <td>Taxis / Pre-arranged Transfers</td>
+                        </tr>
+                        <tr>
+                            <td><strong>By Train</strong></td>
+                            <td>
+                                Jawai Bandh (20 km) <br>
+                                Falna (30 km)
+                            </td>
+                            <td>20–30 km</td>
+                            <td>Mumbai, Delhi, Ahmedabad, Jaipur</td>
+                            <td>Local Taxis / Jeeps</td>
+                        </tr>
+                        <tr>
+                            <td><strong>By Road</strong></td>
+                            <td>
+                                Udaipur – 140 km <br>
+                                Jodhpur – 120 km <br>
+                                Ahmedabad – 320 km
+                            </td>
+                            <td>3–7 hours</td>
+                            <td>Highways, Scenic Drive</td>
+                            <td>Private Taxis / Cars / Buses</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
     <!-- how to reach -->
     <section class="blog-section py-5">
         <div class="container">
@@ -241,16 +234,14 @@
                         <div class="blog-card shadow-sm h-100">
                             <div class="blog-img">
                                 <a href="{{ route('blogDetails', ['id' => $blog->slug]) }}">
-                                    <img src="/storage/{{ storage_path($blog->primary_media_path) }}" alt="Blog"
-                                        class="img-fluid rounded-top w-100">
+                                    <img src="/storage/{{ storage_path($blog->primary_media_path) }}" alt="Blog" class="img-fluid rounded-top w-100">
                                 </a>
                             </div>
                             <div class="blog-content p-3">
                                 <a href="{{ route('blogDetails', ['id' => $blog->slug]) }}" class="text-decoration-none">
                                     <h5 class="fw-bold mb-2">{{ $blog->title }}</h5>
                                 </a>
-                                <a href="{{ route('blogDetails', ['id' => $blog->slug]) }}"
-                                    class="btn btn-outline-warning btn-sm">Read More</a>
+                                <a href="{{ route('blogDetails', ['id' => $blog->slug]) }}" class="btn btn-outline-warning btn-sm">Read More</a>
                             </div>
                         </div>
                     </div>
