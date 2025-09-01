@@ -11,7 +11,7 @@
     @yield('css')
     @include('frontend.layout.css')
     @if (config('app.env') == 'production')
-        <meta name="google-site-verification" content="mDJCF9GYWMRkULW45Ee1vIx7AEaCVFLnXiIYo7rBuu0"   />
+        <meta name="google-site-verification" content="mDJCF9GYWMRkULW45Ee1vIx7AEaCVFLnXiIYo7rBuu0" />
         <!-- Google Tag Manager -->
         <script>(function (w, d, s, l, i) {
                 w[l] = w[l] || []; w[l].push({
