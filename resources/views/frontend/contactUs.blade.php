@@ -98,3 +98,6 @@
     </div>
   </section>
 @endsection
+@section('script')
+    @vite(['resources/js/pages/forms-advanced.js'])
+@endsection

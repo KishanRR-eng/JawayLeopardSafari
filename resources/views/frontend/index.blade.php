@@ -36,7 +36,7 @@
                 </div>
 
                 <!-- Right Side Inquiry Form -->
-                <div class="col-lg-5 col-md-12 offset-lg-1">
+                <div class="col-lg-5 col-md-12 offset-lg-1" id="checkForm">
                     <form class="firststep_form" method="POST" action="{{ route('bookingInquiry') }}">
                         @csrf
                         <h3 class="form-title text-white">Check Availability & Book</h3>
