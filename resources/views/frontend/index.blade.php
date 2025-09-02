@@ -1,5 +1,5 @@
 @extends('frontend.layout.main')
-@section('title', 'Jawai Leopard Safari | Official Booking Website')
+@section('title', 'Jawai Leopard Safari | Private Booking Website')
 @section('css')
     @vite(['node_modules/intl-tel-input/build/css/intlTelInput.min.css', 'node_modules/vanillajs-datepicker/dist/css/datepicker.min.css'])
     <style>
