@@ -15,83 +15,70 @@
 
                <li>
                   <div class="zoo-box">
-                     <h5 class="mt-0">Refund & Cancellation Policy</h5>
+                     <h5 class="mt-0">Cancellation & Refund Policy</h5>
                      <p>
-                        At Wildlife Safari Tourism, we value your trust and are committed to providing a smooth and transparent booking experience for our Jawai Leopard Safari guests. This policy outlines the terms under which cancellations and refunds are handled. We strongly encourage you to read these conditions carefully before making a reservation.
+                        At Wildlife Safari Tourism, we strive to provide a smooth and transparent booking experience for all our guests. Since safari slots are limited and confirmed in coordination with local safari operators, cancellations and changes may be subject to certain conditions.
                      </p>
                   </div>
                </li>
 
                <li>
                   <div class="zoo-box">
-                     <h5 class="mt-0">1. Cancellation by Guests</h5>
+                     <h5 class="mt-0">1. Cancellation by Guest</h5>
                      <ul class="list list--base" style="--gap: 0.5rem">
-                        <li>72 hours or more before safari date – Full refund will be issued after deducting nominal transaction/processing charges.</li>
-                        <li>48 to 72 hours before safari date – 50% of the booking amount will be refunded.</li>
-                        <li>Less than 48 hours before safari date / No-show – No refund will be provided.</li>
+                        <li>Cancellations made 7 days or more before the scheduled safari date: 100% refund of the booking amount.</li>
+                        <li>Cancellations made between 3–6 days before the scheduled safari date: 50% refund of the booking amount.</li>
+                        <li>Cancellations made less than 72 hours before the scheduled safari date: No refund will be provided.</li>
                      </ul>
                   </div>
                </li>
 
                <li>
                   <div class="zoo-box">
-                     <h5 class="mt-0">2. Cancellation by Wildlife Safari Tourism</h5>
-                     <p>
-                        In the unlikely event that the safari is cancelled by us due to unforeseen circumstances such as extreme weather, natural calamities, or government restrictions, guests will receive a full refund or may reschedule their safari for another date (subject to availability).
-                     </p>
-                     <p>
-                        Wildlife Safari Tourism reserves the right to make necessary adjustments to safari timings, vehicles, or routes to ensure guest safety.
-                     </p>
-                  </div>
-               </li>
-
-               <li>
-                  <div class="zoo-box">
-                     <h5 class="mt-0">3. Refund Process</h5>
+                     <h5 class="mt-0">2. Rescheduling</h5>
                      <ul class="list list--base" style="--gap: 0.5rem">
-                        <li>All refunds will be processed through the original mode of payment used at the time of booking.</li>
-                        <li>Depending on your bank/payment provider, the refund may take 7–10 working days to reflect in your account.</li>
+                        <li>Guests may request to reschedule their safari date (subject to slot availability).</li>
+                        <li>Rescheduling requests should be made at least 72 hours in advance of the original booking.</li>
+                        <li>If rescheduling is not possible, the above cancellation terms will apply.</li>
                      </ul>
                   </div>
                </li>
 
                <li>
                   <div class="zoo-box">
-                     <h5 class="mt-0">4. Amendments & Rescheduling</h5>
+                     <h5 class="mt-0">3. Cancellation by Us</h5>
+                     <p>In rare cases, a safari may be cancelled due to:</p>
                      <ul class="list list--base" style="--gap: 0.5rem">
-                        <li>Guests may request a change in safari date/time at least 72 hours prior to the scheduled safari, subject to vehicle and seat availability.</li>
-                        <li>No rescheduling will be allowed within 48 hours of the safari.</li>
+                        <li>Unforeseen natural conditions (heavy rain, flooding, etc.)</li>
+                        <li>Safety concerns or restrictions by local authorities</li>
+                        <li>Unavailability of safari slots despite confirmed payment</li>
+                     </ul>
+                     <p>In such cases, guests will be offered the choice of:</p>
+                     <ul class="list list--base" style="--gap: 0.5rem">
+                        <li>Rescheduling to the next available slot, OR</li>
+                        <li>Full refund of the booking amount within 7–10 business days</li>
                      </ul>
                   </div>
                </li>
 
                <li>
                   <div class="zoo-box">
-                     <h5 class="mt-0">5. Special Notes</h5>
+                     <h5 class="mt-0">4. Refund Timelines</h5>
                      <ul class="list list--base" style="--gap: 0.5rem">
-                        <li>Safari bookings are subject to forest department permissions and vehicle availability.</li>
-                        <li>Once a safari has commenced, no partial refunds will be entertained for unused services.</li>
-                        <li>For group bookings (more than 10 persons), cancellation charges may vary and will be communicated at the time of booking.</li>
+                        <li>Approved refunds will be processed to the original payment method used at the time of booking.</li>
+                        <li>Refunds are typically credited within 7–10 business days, depending on your bank or payment provider.</li>
                      </ul>
                   </div>
                </li>
 
                <li>
                   <div class="zoo-box">
-                     <h5 class="mt-0">Contact Information</h5>
-                     <p>
-                        <b>Registered Office:</b><br>
-                        GROUND, 00, C/O FULARAM S/O BHIMA RAM JI,<br>
-                        Bali Road, Shri Krishna Sweets and Restaurant,<br>
-                        Near Union Bank, Bali, Pali, Rajasthan, 306701
-                     </p>
-                     <p><b>GSTIN:</b> 08EKKPS7156F1ZL</p>
-                     <p>
-                        <b>Safari Location:</b><br>
-                        Jawai Leopard Safari Booking,<br>
-                        Jawai Safari Pickup Point,<br>
-                        Jawai Region, Sena, Pali, Rajasthan – 306126
-                     </p>
+                     <h5 class="mt-0">5. Important Notes</h5>
+                     <ul class="list list--base" style="--gap: 0.5rem">
+                        <li>We are a private safari booking service (not a government agency). All bookings are managed under Wildlife Safari Tourism.</li>
+                        <li>Refunds will not be provided for “no-shows” (failure to arrive at the safari point on time).</li>
+                        <li>Any booking made through third-party travel portals must follow the respective portal’s cancellation policies.</li>
+                     </ul>
                   </div>
                </li>
 
@@ -100,4 +87,5 @@
       </div>
    </div>
 </div>
+
 @endsection

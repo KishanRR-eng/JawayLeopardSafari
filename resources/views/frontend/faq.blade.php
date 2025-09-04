@@ -15,7 +15,7 @@
                 <span class="icon"></span>How can I book a Jawai Leopard Safari online at www.jawaileopardsafaribooking.in?
             </label>
             <div class="accordion-item-desc">
-              You can easily book your Jawai Leopard Safari through our official website www.jawaileopardsafaribooking.in. Select your preferred safari slot (morning or evening), enter the number of guests, and complete the booking securely online.
+              You can easily book your Jawai Leopard Safari through our website www.jawaileopardsafaribooking.in. Select your preferred safari slot (morning or evening), enter the number of guests, and complete the booking securely online.
          </div>
          <div class="accordion-item">
             <input type="checkbox" id="accordion2">
@@ -23,7 +23,7 @@
             What is the cost of a Jawai Leopard Safari?
             </label>
             <div class="accordion-item-desc">
-              The cost of a Jawai Leopard Safari typically ranges from ₹4,000 to ₹6,000 per jeep. Each jeep can accommodate up to 6 people, making it affordable for families and groups.
+              The cost of a Jawai Leopard Safari typically ranges from ₹4,000 to ₹5,000 per jeep. Each jeep can accommodate up to 6 people, making it affordable for families and groups.
             </div>
          </div>
          <div class="accordion-item">
@@ -41,7 +41,7 @@
                Where is Jawai Leopard Safari located?
             </label>
             <div class="accordion-item-desc">
-               Jawai Leopard Safari is located in Bera, Pali District, Rajasthan. The area is famous for its leopard sightings near Jawai Dam and granite hills, and is accessible from Udaipur, Jodhpur, and Mount Abu.
+               Jawai Leopard Safari is located in sena, Pali District, Rajasthan. The area is famous for its leopard sightings near Jawai Dam and granite hills, and is accessible from Udaipur, Jodhpur, and Mount Abu.
             </div>
          </div>
          <div class="accordion-item">
@@ -86,7 +86,7 @@
                 Why should I book through www.jawaileopardsafaribooking.in?
             </label>
             <div class="accordion-item-desc">
-              By booking through www.jawaileopardsafaribooking.in, you get authentic safari experiences, verified local drivers, transparent pricing, and 24/7 booking support.
+              By booking through <a href="www.jawaileopardsafaribooking.in">www.jawaileopardsafaribooking.in</a> you get 24X7 booking support.
             </div>
          </div>
       </div>

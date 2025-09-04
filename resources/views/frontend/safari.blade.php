@@ -44,8 +44,10 @@
                      <tr>
                         <td>Note</td>
                         <td>
-                           Payment does not guarantee booking confirmation. Bookings depend on seat availability.
-                           If a slot is unavailable, we will reschedule (with your consent) or provide a full refund.
+                           Once the payment is done, we will issue confirmation by WhatsApp and mail. In case you want to change or reschedule you need to give us a confirmation call on 7339919554, which is only contact number for this site/firm.
+                           <br/>Regular rates for safari rates for weekday ₹4000 per jeep and ₹4500 for weekend for both Indian and Foreigners. Additional ₹1000 which makes ₹5000 for both India and Foreigner during Diwali (18oct-26oct) and New year (22Dec -31Dec) All rates are Inclusive of Permit, Gypsy, Guide Charges, Services & Taxes
+                           <br/>Online advance to be made is 1500 for weekday and 2000 for weekends. Remaining payment can be paid at Safari point in cash/online.
+                           <br/>Concern Person : Gajendra Singh (Aadhar Number 687131656651)
                         </td>
                      </tr>
                   </tbody>
@@ -141,7 +143,7 @@
             <ul>
                <li>Jeep & permits</li>
                <li>Expert guide</li>
-               <li>Lunch & cultural interaction</li>
+               <li>4X4 open jeep</li>
             </ul>
          </div>
       </div>
