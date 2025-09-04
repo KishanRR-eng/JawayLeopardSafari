@@ -380,7 +380,185 @@ section {
     overflow-x: auto; /* prevents breaking layout with large images */
     word-wrap: break-word;
 }
+/* google review css */
+.gmb-reviews{
+    background: var(--gmb-bg);
+    padding: clamp(24px, 4vw, 56px) 16px;
+  }
+  .gmb-container{
+    max-width: 1180px;
+    margin: 0 auto;
+  }
 
+  /* Header */
+  .gmb-header{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 18px;
+    align-items: center;
+    margin-bottom: 18px;
+  }
+  @media (min-width: 768px){
+    .gmb-header{
+      grid-template-columns: 1.3fr .7fr;
+      gap: 24px;
+      margin-bottom: 24px;
+    }
+  }
+
+  .gmb-brand{
+    display: flex;
+    align-items: center;
+    gap: 14px;
+  }
+  .gmb-g{
+    width: 42px;
+    height: 42px;
+    flex: 0 0 42px;
+  }
+  .gmb-title{
+    margin: 0;
+    font-size: clamp(20px, 2.2vw, 28px);
+    line-height: 1.2;
+    color: var(--gmb-text);
+    font-weight: 700;
+    letter-spacing: .2px;
+  }
+  .gmb-subtitle{
+    margin: 4px 0 0;
+    color: var(--gmb-muted);
+    font-size: 14px;
+  }
+
+  .gmb-aggregate{
+    justify-self: start;
+    background: var(--gmb-card);
+    border: 1px solid var(--gmb-border);
+    border-radius: var(--gmb-radius);
+    box-shadow: var(--gmb-shadow);
+    padding: 14px 16px;
+    display: grid;
+    gap: 6px;
+    width: 100%;
+  }
+  @media (min-width: 768px){
+    .gmb-aggregate{ justify-self: end; max-width: 360px; }
+  }
+  .gmb-score{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .gmb-score-number{
+    font-weight: 800;
+    font-size: 28px;
+    color: var(--gmb-text);
+  }
+  .gmb-score-stars .star{
+    font-size: 18px;
+    letter-spacing: 2px;
+    color: #e5e7eb;
+  }
+  .gmb-score-stars .filled{ color: #f59e0b; } /* gold */
+  .gmb-score-stars .half{
+    background: linear-gradient(90deg, #f59e0b 50%, #e5e7eb 50%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+  .gmb-count{
+    font-size: 13px;
+    color: var(--gmb-muted);
+  }
+  .gmb-btn{
+    margin-top: 4px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 999px;
+    padding: 10px 14px;
+    font-weight: 600;
+    text-decoration: none;
+    background: var(--color-primary) !important;
+    color: #fff;
+    border: 1px solid transparent;
+    transition: transform .15s ease, box-shadow .15s ease, background .15s ease;
+  }
+  .gmb-btn:hover{ transform: translateY(-1px); box-shadow: 0 8px 20px rgba(47,101,175,.25); }
+  .gmb-btn:active{ transform: translateY(0); }
+
+  /* Grid of reviews */
+  .gmb-grid{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 14px;
+    margin-top: 8px;
+  }
+  @media (min-width: 640px){
+    .gmb-grid{ grid-template-columns: repeat(2, 1fr); }
+  }
+  @media (min-width: 1024px){
+    .gmb-grid{ grid-template-columns: repeat(3, 1fr); }
+  }
+
+  .gmb-card{
+    background: #fff;
+    border: 1px solid #eee;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    padding: 16px;
+    display: grid;
+    gap: 10px;
+    min-height: 160px;
+  }
+  .gmb-card-head{
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    gap: 10px;
+    align-items: center;
+  }
+  .gmb-avatar{
+    width: 40px; height: 40px;
+    border-radius: 50%;
+    display: grid; place-items: center;
+    background: #e8eefb;
+    color: var(--gmb-primary);
+    font-weight: 800;
+  }
+  .gmb-user{ display: grid; gap: 4px; }
+  .gmb-name{
+    margin: 0; font-size: 15px; color: var(--gmb-text); font-weight: 700;
+  }
+  .gmb-stars{
+    font-size: 14px; color: #f59e0b; letter-spacing: 1px;
+  }
+  .gmb-time{
+    color: var(--gmb-muted);
+    font-size: 12px;
+  }
+  .gmb-text{
+    margin: 0;
+    color: var(--gmb-text);
+    font-size: 14px;
+    line-height: 1.55;
+    display: -webkit-box;
+    -webkit-line-clamp: 6;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+  .gmb-badge{
+    margin-top: -2px;
+    justify-self: start;
+    font-size: 12px;
+    color: var(--gmb-primary);
+    background: rgba(47,101,175,.08);
+    border: 1px solid rgba(47,101,175,.18);
+    padding: 4px 8px;
+    border-radius: 999px;
+    font-weight: 600;
+  }
+
+/* end */
 .menu-image img {
    width: 100%;              /* responsive */
    max-width: 1200px;        /* fixed max size for professionalism */

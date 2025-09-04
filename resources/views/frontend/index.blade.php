@@ -249,6 +249,107 @@
             </div>
         </div>
     </section>
+    <!-- ===== Google Reviews Section (HTML + CSS only) ===== -->
+<section class="gmb-reviews">
+  <div class="gmb-container">
+    <header class="gmb-header">
+      <div class="gmb-brand">
+        <!-- Google "G" logo (SVG) -->
+        <svg class="gmb-g" viewBox="0 0 48 48" aria-hidden="true">
+          <path fill="#FFC107" d="M43.6 20.5H42V20H24v8h11.3C33.6 31.7 29.3 35 24 35c-6.6 0-12-5.4-12-12S17.4 11 24 11c3 0 5.7 1.1 7.8 3l5.7-5.7C33.6 4.9 29.1 3 24 3 12.4 3 3 12.4 3 24s9.4 21 21 21c10.5 0 20-7.6 20-21 0-1.2-.1-2.3-.4-3.5z"/>
+          <path fill="#FF3D00" d="M6.3 14.7l6.6 4.8C14.4 16.2 18.8 13 24 13c3 0 5.7 1.1 7.8 3l5.7-5.7C33.6 4.9 29.1 3 24 3 16 3 9.2 7.3 6.3 14.7z"/>
+          <path fill="#4CAF50" d="M24 45c5 0 9.6-1.9 13-5.1l-6-4.9c-2 1.4-4.6 2.2-7 2.2-5.2 0-9.6-3.3-11.1-7.9l-6.6 5.1C9.2 40.7 16 45 24 45z"/>
+          <path fill="#1976D2" d="M43.6 20.5H42V20H24v8h11.3c-1.3 3.7-4.8 7-11.3 7-5.2 0-9.6-3.3-11.1-7.9l-6.6 5.1C9.2 40.7 16 45 24 45c10.5 0 20-7.6 20-21 0-1.2-.1-2.3-.4-3.5z"/>
+        </svg>
+        <div>
+          <h2 class="gmb-title">What customers say</h2>
+          <p class="gmb-subtitle">Verified Google reviews</p>
+        </div>
+      </div>
+
+      <div class="gmb-aggregate">
+        <div class="gmb-score">
+          <span class="gmb-score-number">5.0</span>
+          <span class="gmb-score-stars" aria-label="4.8 out of 5 stars">
+            <!-- 5 stars -->
+            <span class="star filled">★</span>
+            <span class="star filled">★</span>
+            <span class="star filled">★</span>
+            <span class="star filled">★</span>
+            <span class="star half">★</span>
+          </span>
+        </div>
+        <div class="gmb-count">Based on 64 Google reviews</div>
+        <a class="gmb-btn" href="https://share.google/Q9PS6o4iCYbIu0aqE" target="_blank" rel="noopener">
+          View on Google
+        </a>
+      </div>
+    </header>
+
+    <div class="gmb-grid">
+      <!-- Review Card 1 -->
+      <article class="gmb-card">
+        <div class="gmb-card-head">
+          <div class="gmb-avatar" aria-hidden="true">H</div>
+          <div class="gmb-user">
+            <h3 class="gmb-name">Hitesh Sharma</h3>
+            <div class="gmb-stars" aria-label="5 out of 5 stars">
+              <span>★★★★★</span>
+            </div>
+          </div>
+          <time class="gmb-time">sept 2025</time>
+        </div>
+        <p class="gmb-text">
+          Beutiful property with decent atmosphere staff is too good and supportive we enjoyed it a lot
+        </p>
+        <div class="gmb-badge">From Google</div>
+      </article>
+
+      <!-- Review Card 2 -->
+      <article class="gmb-card">
+        <div class="gmb-card-head">
+          <div class="gmb-avatar">N</div>
+          <div class="gmb-user">
+            <h3 class="gmb-name">Nishpal singh sonigra</h3>
+            <div class="gmb-stars" aria-label="5 out of 5 stars">
+              <span>★★★★★</span>
+            </div>
+          </div>
+          <time class="gmb-time">Sept 2025</time>
+        </div>
+        <p class="gmb-text">
+          "The drive is unbelievable. To be able to sight one or more leopards is only a bonus. The ride is once in a lifetime experience." 👌🏻👍🏻
+        </p>
+        <div class="gmb-badge">From Google</div>
+      </article>
+
+      <!-- Review Card 3 -->
+      <article class="gmb-card">
+        <div class="gmb-card-head">
+          <div class="gmb-avatar">B</div>
+          <div class="gmb-user">
+            <h3 class="gmb-name">Bhagwan Singh</h3>
+            <div class="gmb-stars" aria-label="5 out of 5 stars">
+              <span>★★★★★</span>
+            </div>
+          </div>
+          <time class="gmb-time">Sept 2025</time>
+        </div>
+        <p class="gmb-text">
+          Very good experience with safari in Jawai
+Thanks to Gajendra for helping with guide and more exploring in Jawai Rajasthan
+        </p>
+        <div class="gmb-badge">From Google</div>
+      </article>
+
+      <!-- Add more cards as needed -->
+    </div>
+  </div>
+</section>
+
+
+
+
 @endsection
 @section('script')
     @vite(['resources/js/pages/forms-advanced.js'])
