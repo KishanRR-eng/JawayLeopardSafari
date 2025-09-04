@@ -369,6 +369,17 @@ section {
    margin-top: 15px; /* space between menu & image */
    text-align: center; /* center align */
 }
+/* Make images inside ql-editor responsive */
+.ql-editor img {
+    max-width: 100%;
+    height: auto;
+    display: block; /* prevents inline spacing issues */
+    margin: 0 auto; /* optional: center align images */
+}
+.ql-editor {
+    overflow-x: auto; /* prevents breaking layout with large images */
+    word-wrap: break-word;
+}
 
 .menu-image img {
    width: 100%;              /* responsive */
