@@ -104,10 +104,10 @@ BANK, Bali<br>Pali, Rajasthan, 306701
         </div>
       </div>
     </div>
-    <div style="margin-top:15px;">
+    {{-- <div style="margin-top:15px;">
       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3614.0930898222123!2d73.20587499999999!3d25.064833800000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3942bd1c9caa424f%3A0x2a42dd7ae42c6059!2sJawai%20Leopard%20Safari%20Booking!5e0!3m2!1sen!2sin!4v1756376533979!5m2!1sen!2sin" width="100%" height="450" style="border:0; border-radius:8px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
       </iframe>
-    </div>
+    </div> --}}
   </section>
 @endsection
 @section('script')

@@ -250,7 +250,7 @@
         </div>
     </section>
     <!-- ===== Google Reviews Section (HTML + CSS only) ===== -->
-<section class="gmb-reviews">
+{{-- <section class="gmb-reviews">
   <div class="gmb-container">
     <header class="gmb-header">
       <div class="gmb-brand">
@@ -345,7 +345,7 @@ Thanks to Gajendra for helping with guide and more exploring in Jawai Rajasthan
       <!-- Add more cards as needed -->
     </div>
   </div>
-</section>
+</section> --}}
 
 
 
