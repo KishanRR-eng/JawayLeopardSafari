@@ -280,7 +280,7 @@
           </span>
         </div>
         <div class="gmb-count">Based on 64 Google reviews</div>
-        <a class="gmb-btn" href="https://share.google/Q9PS6o4iCYbIu0aqE" target="_blank" rel="noopener">
+        <a class="gmb-btn" href="https://www.google.com/search?sca_esv=a46a1b8edd07c513&hl=en&gl=in&si=AMgyJEtREmoPL4P1I5IDCfuA8gybfVI2d5Uj7QMwYCZHKDZ-E2dILliPLY0UItDZpgViht4860cyPNTQPWz8fuE13dUJCtzFwjWt6RaqzoDJtKhFFhF-9rwzpxHNtzRIoRruHSPpatFkvptXTXoSKLiAKjDStKYpog%3D%3D&q=Jawai+Leopard+Safari+Booking+Reviews&sa=X&ved=2ahUKEwjh0o79x76PAxW9yDgGHTORN8gQ0bkNegQIIhAE&biw=1280&bih=593&dpr=1.5" target="_blank" rel="noopener">
           View on Google
         </a>
       </div>
