@@ -63,7 +63,7 @@
 </div>
 <!-- End Get Started Section -->
 <!-- ======= Services Section ======= -->
-<section class="packages-section">
+<section class="packages-section" id="safari-pack">
    <h2 class="packages-heading">Safari Packages</h2>
    <div class="packages-grid">
       <!-- Morning Safari -->
@@ -150,7 +150,7 @@
    </div>
 </section>
 <!-- What to Pack Section -->
-<section class="safari-pack">
+<section class="safari-pack" id="safari-pack">
    <div class="container">
       <h2 class="section-title">What to Pack for Jawai Safari</h2>
       <p class="section-description">Be well-prepared for your safari experience with these essentials for comfort, safety, and unforgettable memories.</p>

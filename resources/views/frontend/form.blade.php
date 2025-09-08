@@ -6,7 +6,7 @@
         }
     </style>
 @endsection
-<form class="firststep_form new_forms" method="POST" action="{{ route('booking') }}">
+<form class="firststep_form new_forms" id="#safari-pack" method="POST" action="{{ route('booking') }}">
     @csrf
     <h3 class="text-center">Check availability & Book</h3>
     <div class="row gy-3 tab-pane fade show active">

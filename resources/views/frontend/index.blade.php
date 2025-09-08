@@ -58,7 +58,7 @@
                                 <div class="text-sm text-danger">{{ $errors->first('email') ?? '' }}</div>
                             </div>
                             <div class="col-md-12 mb-2 text-center">
-                                <button class="button-29" type="submit">Book Now</button>
+                                <button class="button-29" type="submit">Check availablity</button>
                             </div>
                         </div>
                     </form>
@@ -87,7 +87,7 @@
                     <p class="section-text">
                         Discover the thrill of the wild, the beauty of nature, and the soul of Rajasthan—all in one journey.
                     </p>
-                    <a href="{{ route('safari') }}" class="btn-book">Book Your Safari</a>
+                    <a href="#checkForm" class="btn-book">Book Your Safari</a>
                 </div>
 
                 <!-- Right Side Image -->
