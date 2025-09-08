@@ -35,7 +35,8 @@
             <div class="col-lg-3 col-md-4 footer-links">
                <h4>QUICK LINKS</h4>
                <ul>
-                  <li><a href="{{ route('root') }}">Home</a></li>
+                  <li><a href="{{ route('root') }}">Home<Safari/a></li>
+                  <li><a href="{{ route('safari')}}">Book Safari</a></li>
                   <li><a href="{{ route('terms')}}">Terms of Use</a></li>
                   <li><a href="{{ route('privacy')}}">Privacy Policy</a></li>
                   <li><a href="{{ route('cancellationpolicy')}}">Cancellation & Refund</a></li>
