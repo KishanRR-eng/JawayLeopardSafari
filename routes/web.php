@@ -49,6 +49,10 @@ Route::post('/inquiry', [FrontendController::class, 'inquiry'])->name('inquiry')
 
 Route::group(['prefix' => '/backend', 'middleware' => 'auth', 'as' => 'backend.'], function () {
 
+    Route::get('/php-info', function () {
+        return phpinfo();
+    });
+
     Route::group(['prefix' => '/disabled-slots', 'as' => 'disabled.slot.'], function () {
         Route::get('/', [DisabledSlotController::class, 'index'])->name('index');
         Route::get('/create', [DisabledSlotController::class, 'create'])->name('create');
