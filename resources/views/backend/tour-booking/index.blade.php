@@ -36,7 +36,7 @@
                                 <th>Time Slot</th>
                                 <th>Details</th>
                                 <th>Payment</th>
-                                <th width="11%">Action</th>
+                                <th width="12%">Action</th>
                             </tr>
                         </thead>
                         <tbody>

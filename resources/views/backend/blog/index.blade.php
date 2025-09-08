@@ -29,7 +29,7 @@
                                 <th>Primary Media</th>
                                 <th>Created By</th>
                                 <th>Visibility</th>
-                                <th width="11%">Action</th>
+                                <th width="12%">Action</th>
                             </tr>
                         </thead>
                         <tbody>
