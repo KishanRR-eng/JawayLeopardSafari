@@ -5,6 +5,7 @@ use App\Http\Controllers\BookingController;
 use App\Http\Controllers\DisabledSlotController;
 use App\Http\Controllers\FrontendController;
 use App\Http\Controllers\PackageController;
+use Illuminate\Support\Facades\Artisan;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -48,6 +49,14 @@ Route::post('/inquiry', [FrontendController::class, 'inquiry'])->name('inquiry')
 
 
 Route::group(['prefix' => '/backend', 'middleware' => 'auth', 'as' => 'backend.'], function () {
+
+    Route::get('/php-info', function () {
+        return phpinfo();
+    });
+
+     Route::get('/storage-link', function () {
+        Artisan::call('storage:link');
+    });
 
     Route::group(['prefix' => '/disabled-slots', 'as' => 'disabled.slot.'], function () {
         Route::get('/', [DisabledSlotController::class, 'index'])->name('index');

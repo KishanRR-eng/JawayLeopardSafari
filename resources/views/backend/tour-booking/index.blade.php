@@ -36,7 +36,7 @@
                                 <th>Time Slot</th>
                                 <th>Details</th>
                                 <th>Payment</th>
-                                <th width="11%">Action</th>
+                                <th width="12%">Action</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -50,13 +50,9 @@
                                     <td>{{ $value->timeSlot->name }}</td>
                                     <td>
                                         <ul>
-                                            <li>
-                                                {{ $value->price }}
-                                                <ul>
-                                                    <li>Adults : {{ $value->adult }}</li>
-                                                    <li>Children : {{ $value->child }}</li>
-                                                </ul>
-                                            </li>
+                                            <li>Price : {{ $value->price }}</li>
+                                            <li>Adults : {{ $value->adult }}</li>
+                                            <li>Children : {{ $value->child }}</li>
                                         </ul>
                                     </td>
                                     <td>
@@ -113,11 +109,11 @@
                 headers: {
                     'X-CSRF-TOKEN': "{{ csrf_token() }}"
                 },
-                success: function(data) {
+                success: function (data) {
                     $('div#bookingDetailsModal .modal-body').html(data.html);
                     $('div#bookingDetailsModal').modal('show')
                 },
-                error: function(data) {
+                error: function (data) {
                     toastr.error('Something went wrong.', 'Error')
                 }
             });
@@ -139,11 +135,11 @@
                         headers: {
                             'X-CSRF-TOKEN': "{{ csrf_token() }}"
                         },
-                        success: function(data) {
+                        success: function (data) {
                             toastr.success('Removed Successfully.', 'Success')
                             location.reload();
                         },
-                        error: function(data) {
+                        error: function (data) {
                             if (data.responseJSON && data.responseJSON.message && data.responseJSON.message.length > 0) {
                                 toastr.error(data.responseJSON.message, 'Warning');
                                 return;

@@ -30,7 +30,7 @@
                                 <th>Price</th>
                                 <th>Time Slots</th>
                                 <th>Status</th>
-                                <th width="11%">Action</th>
+                                <th width="12%">Action</th>
                             </tr>
                         </thead>
                         <tbody>
