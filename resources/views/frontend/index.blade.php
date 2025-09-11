@@ -87,12 +87,22 @@
                     <p class="section-text">
                         Discover the thrill of the wild, the beauty of nature, and the soul of Rajasthan—all in one journey.
                     </p>
+                    <p class="section-text">
+                        No hidden charges – all prices are transparently displayed.
+
+Leopard sightings are not guaranteed, as they depend on natural conditions.
+                    </p>
                     <a href="#checkForm" class="btn-book">Book Your Safari</a>
                 </div>
 
                 <!-- Right Side Image -->
                 <div class="col-lg-6 col-md-12 text-center">
-                    <img src="{{ asset('frontend/img/jawai-leopard-safari.jpg') }}" alt="Jawai Leopard Safari" class="img-fluid rounded shadow">
+                    <video class="img-fluid rounded shadow" autoplay muted loop playsinline controls>
+    <source src="{{ asset('frontend/img/home_video.mp4') }}" type="video/mp4">
+    Your browser does not support the video tag.
+</video>
+
+                    {{-- <img src="{{ asset('frontend/img/home_video.mp4') }}" alt="Jawai Leopard Safari" > --}}
                 </div>
             </div>
         </div>

@@ -8,7 +8,7 @@
                   <h4>Information</h4>
                   <div style="margin-bottom:15px !important; color:white !important;" id="footer-notice">
                      <p class="text-light" style="font-size: 14px; margin-top:15px;">
-                        <i class="fa-solid fa-phone"></i> Tel: +91-73399 19554 <br />
+                        <i class="fa-solid fa-phone"></i> Tel: +91 73399 19554 <br />
                         <i class="fa-solid fa-envelope"></i> Email: info@jawaileopardsafaribooking.in <br />
                         <i class="fa-solid fa-location-dot"></i> Address: GROUND, 00, C/O FULARAM S/O BHIMA RAM JI, Bali Road, Shri Krishna Sweets and Restaurant, NEAR UNION BANK, Bali, Pali, Rajasthan, 306701
                      </p>
