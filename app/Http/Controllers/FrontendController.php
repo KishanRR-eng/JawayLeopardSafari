@@ -72,7 +72,10 @@ class FrontendController
     {
         return view('frontend.dosdonts');
     }
-
+    public function jawaisafari()
+    {
+        return view('frontend.jawaisafari');
+    }
     public function privacy()
     {
         return view('frontend.privacy');
@@ -81,6 +84,10 @@ class FrontendController
     public function cancellationpolicy()
     {
         return view('frontend.cancellationpolicy');
+    }
+    public function packages()
+    {
+        return view('frontend.packages');
     }
     public function blogs()
     {

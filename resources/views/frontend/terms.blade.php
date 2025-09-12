@@ -188,9 +188,26 @@
                      </p>
                   </div>
                </li>
+               <li>
+                <div class="zoo-box">
+                    <div class="row text-center">
+                        <div class="col-md-6 col-12 mb-3">
+                            <img src="{{ asset('frontend/img/imageterms1.jpg') }}"
+                                alt="terms"
+                                class="img-fluid rounded shadow">
+                        </div>
+                        <div class="col-md-6 col-12 mb-3">
+                            <img src="{{ asset('frontend/img/imageterms2.jpg') }}"
+                                alt="terms"
+                                class="img-fluid rounded shadow">
+                        </div>
+                    </div>
+                </div>
+            </li>
             </ul>
          </div>
       </div>
    </div>
 </div>
+
 @endsection

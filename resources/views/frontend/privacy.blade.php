@@ -17,7 +17,7 @@
                   <div class="zoo-box">
                      <h5 class="mt-0">Privacy Policy</h5>
                      <p>
-                        This Privacy Policy explains how Wildlife Safari Tourism (“we,” “our,” or “us”) collects, uses, and protects your personal information when you use
+                        This Privacy Policy explains how Journey to Gujarat (“we,” “our,” or “us”) collects, uses, and protects your personal information when you use
                         <a href="https://www.jawaileopardsafaribooking.in" target="_blank">www.jawaileopardsafaribooking.in</a> (“Website”).
                         By accessing or using our Website, you agree to the practices described in this Privacy Policy.
                      </p>
@@ -125,7 +125,7 @@
                      <h5 class="mt-0">10. Contact Us</h5>
                      <p>
                         For any questions about this Privacy Policy or how your data is handled, please contact us:<br><br>
-                        <b>Wildlife Safari Tourism</b><br>
+                        <b>Journey to Gujarat</b><br>
                         <b>Owner:</b> Gajendra Singh<br>
                         📧 Email: <a href="mailto:info@jawaileopardsafaribooking.in">info@jawaileopardsafaribooking.in</a><br>
                         📞 Phone: <a href="tel:+917339919554">+91 73399 19554</a><br><br>
@@ -142,5 +142,6 @@
       </div>
    </div>
 </div>
+
 
 @endsection

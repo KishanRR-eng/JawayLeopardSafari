@@ -28,7 +28,8 @@ Route::get('/safari', [FrontendController::class, 'safari'])->name('safari');
 Route::get('/contact-us', [FrontendController::class, 'contactUs'])->name('contactUs');
 Route::get('/about-us', [FrontendController::class, 'about'])->name('about');
 Route::get('/Gurentees', [FrontendController::class, 'gurentees'])->name('gurentees');
-
+route::get('/jawaisafari', [FrontendController::class,'jawaisafari'])->name('jawaisafari');
+route::get('/packages', [FrontendController::class,'packages'])->name('packages');
 Route::get('/Gallery', [FrontendController::class, 'gallery'])->name('gallery');
 Route::get('/privacy-policy', [FrontendController::class, 'privacy'])->name('privacy');
 Route::get('/faq', [FrontendController::class, 'faq'])->name('faq');

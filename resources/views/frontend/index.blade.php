@@ -26,11 +26,8 @@
                 <div class="col-lg-6 col-md-12 text-white text-center text-lg-start mb-5 mb-lg-0">
                     <h3 class="text-left text-white">Updates</h3>
                     <ul class="updates mt-2">
-                        <li><span>Innovative Conservation Through Community and Culture: Safeguarding Leopards in Jawai</span></li>
-                        <li><span>Exploring the Natural Palette of Jawai’s Granite Hills and Rivers</span></li>
-                        <li><span>World Leopard Day: Celebrating the Mystique of Jawai’s Spotted Predator</span></li>
-                        <li><span>The Unexpected Encounter: Leopards and Shepherds Sharing the Same Landscape</span></li>
-                        <li><span>Early Discoveries into Jawai’s Unique Coexistence of Leopards, Birds, and Crocodiles</span></li>
+                        <li><span>No hidden charges – all prices are transparently displayed.</span></li>
+                        <li><span>Leopard sightings are not guaranteed, as they depend on natural conditions.</span></li>
                     </ul>
                 </div>
 
@@ -88,9 +85,7 @@
                         Discover the thrill of the wild, the beauty of nature, and the soul of Rajasthan—all in one journey.
                     </p>
                     <p class="section-text">
-                        No hidden charges – all prices are transparently displayed.
-
-Leopard sightings are not guaranteed, as they depend on natural conditions.
+                        <b>Video Credit:</b> Rahul Prajapat
                     </p>
                     <a href="#checkForm" class="btn-book">Book Your Safari</a>
                 </div>

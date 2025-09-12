@@ -13,11 +13,12 @@
          <div class="col-md-12">
             <ul class="list p-design" style="--gap: 2rem">
 
+               <!-- Cancellation & Refund Policy -->
                <li>
                   <div class="zoo-box">
                      <h5 class="mt-0">Cancellation & Refund Policy</h5>
                      <p>
-                        At Wildlife Safari Tourism, we strive to provide a smooth and transparent booking experience for all our guests. Since safari slots are limited and confirmed in coordination with local safari operators, cancellations and changes may be subject to certain conditions.
+                        At Journey to Gujarat, we strive to provide a smooth and transparent booking experience for all our guests. Since safari slots are limited and confirmed in coordination with local safari operators, cancellations and changes may be subject to certain conditions.
                      </p>
                   </div>
                </li>
@@ -75,7 +76,7 @@
                   <div class="zoo-box">
                      <h5 class="mt-0">5. Important Notes</h5>
                      <ul class="list list--base" style="--gap: 0.5rem">
-                        <li>We are a private safari booking service (not a government agency). All bookings are managed under Wildlife Safari Tourism.</li>
+                        <li>We are a private safari booking service (not a government agency). All bookings are managed under Journey to Gujarat.</li>
                         <li>Refunds will not be provided for “no-shows” (failure to arrive at the safari point on time).</li>
                         <li>Any booking made through third-party travel portals must follow the respective portal’s cancellation policies.</li>
                      </ul>
@@ -87,5 +88,6 @@
       </div>
    </div>
 </div>
+
 
 @endsection

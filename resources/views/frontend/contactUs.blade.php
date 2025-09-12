@@ -19,11 +19,7 @@
 
       <!-- Declaration -->
       <div class="alert alert-warning mb-5 shadow-sm" style="background:#fff3cd; border-left:5px solid #c1782a;">
-        <strong>Declaration:</strong> Jawai Leopard Safari Booking would like to clarify that we work as a private
-        travel agency.
-        We are not authorized by the Forest Department and do not claim affiliation. Our role is to assist with
-        safari bookings
-        and provide customer services independently. Prices may vary depending on demand and peak booking periods.
+        <strong>Declaration:</strong> Journey to Gujarat would like to clarify that we work as a private travel agency. We are not authorized by the Forest Department and do not claim affiliation. Our role is to assist with safari bookings, tour packages, and hotel bookings, providing customer services independently. Prices may vary depending on demand and peak booking periods.
       </div>
 
       <div class="row g-4">
@@ -31,7 +27,7 @@
         <!-- Contact Info -->
         <div class="col-lg-5 d-flex">
           <div class="info-box w-100 p-4 shadow-sm rounded bg-white">
-            <h4 class="mb-4 text-uppercase fw-bold" style="color:#c1782a;">Jawai Leopard Safari Booking by Wildlife Safari Tourism </h4>
+            <h4 class="mb-4 text-uppercase fw-bold" style="color:#c1782a;">Jawai Leopard Safari Booking by Journey to Gujarat</h4>
             <p class="mb-3">
               <i class="bi bi-geo-alt-fill text-danger me-2"></i>
               <strong>Address:</strong><br>
@@ -61,8 +57,11 @@ BANK, Bali<br>Pali, Rajasthan, 306701
             </p>
             <p>
                 <i class="bi bi-geo-alt-fill text-danger me-2"></i>
-                <strong>Safari Location:</strong>
-                <span class="text-dark">Jawai Leopard Safari Booking, Jawai safari pickup point, Jawai region, Sena, Pali, Rajasthan 306126</span>
+                <strong>Safari Point:</strong>
+                <span class="text-dark">Jawai Leopard Safari Booking,
+Jawai Safari Pickup Point,
+Jawai Region, Sena, Pali, Rajasthan – 306126
+</span>
             </p>
           </div>
         </div>
