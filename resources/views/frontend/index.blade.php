@@ -118,8 +118,8 @@
                 <div class="step">
                     <div class="step-circle">1</div>
                     <div class="step-content">
-                        <h3>Choose Your Safari</h3>
-                        <p>Morning or Evening, Private or Group Jeep Safari.</p>
+                        <h3>Fill details</h3>
+                        <p>Fill your name, mail and mobile</p>
                     </div>
                 </div>
                 <div class="arrow">➔</div>
@@ -128,8 +128,8 @@
                 <div class="step">
                     <div class="step-circle">2</div>
                     <div class="step-content">
-                        <h3>Check Dates</h3>
-                        <p>Tell us your travel date so we can confirm availability.</p>
+                        <h3>Select  date and slot</h3>
+                        <p>Select date and slot you want </p>
                     </div>
                 </div>
                 <div class="arrow">➔</div>
@@ -138,8 +138,8 @@
                 <div class="step">
                     <div class="step-circle">3</div>
                     <div class="step-content">
-                        <h3>Get Price & Details</h3>
-                        <p>We share the ticket price, timings, and safari info.</p>
+                        <h3>Fill the details of persons travelling </h3>
+                        <p>Fill name age gender</p>
                     </div>
                 </div>
                 <div class="arrow">➔</div>
@@ -148,8 +148,8 @@
                 <div class="step">
                     <div class="step-circle">4</div>
                     <div class="step-content">
-                        <h3>Confirm & Pay</h3>
-                        <p>Reserve your seat online or through WhatsApp/Call.</p>
+                        <h3>confirm and pay</h3>
+                        <p>Confirm the payment through payment gateway. (Final payment + payment gateway charges extra)</p>
                     </div>
                 </div>
                 <div class="arrow">➔</div>
@@ -158,8 +158,8 @@
                 <div class="step">
                     <div class="step-circle">5</div>
                     <div class="step-content">
-                        <h3>Enjoy the Safari</h3>
-                        <p>Meet at the starting point and explore the wild with our expert local guide.</p>
+                        <h3>Enjoy the safari </h3>
+                        <p>Get confirmation on mail and WhatsApp/ meet at safari point and enjoy the safari</p>
                     </div>
                 </div>
             </div>
