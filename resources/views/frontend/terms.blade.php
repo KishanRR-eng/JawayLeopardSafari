@@ -15,8 +15,7 @@
                   <div class="zoo-box">
                      <h5 class="mt-0">Terms of Use</h5>
                      <p>
-                        Welcome to <b>www.jawaileopardsafaribooking.in</b> (the “Website”). These Terms of Use (“Terms”) govern your use of this Website and the services offered by Wildlife Safari Tourism. By accessing, browsing, or using this Website, you agree to be bound by these Terms. If you do not agree, please do not use this Website.
-                     </p>
+                        Welcome to www.jawaileopardsafaribooking.in (the “Website”). These Terms of Use (“Terms”) govern your use of this Website and the services offered by Journey to Gujarat. By accessing, browsing, or using this Website, you agree to be bound by these Terms. If you do not agree, please do not use this Website.
                   </div>
                </li>
 
@@ -25,7 +24,7 @@
                      <h5 class="mt-0">1. Business Information</h5>
                      <ul class="list list--base" style="--gap: 0.5rem">
                         <li>Owner: Gajendra Singh</li>
-                        <li>Firm Name: Wildlife Safari Tourism</li>
+                        <li>Firm Name: Journey to Gujarat</li>
                         <li>GSTIN: 08EKKPS7156F1ZL</li>
                         <li>Registered Office Address:<br>
                            Ground, 00, C/O Fularam S/O Bhima Ram Ji,<br>
@@ -122,7 +121,7 @@
                   <div class="zoo-box">
                      <h5 class="mt-0">9. Limitation of Liability</h5>
                      <ul class="list list--base" style="--gap: 0.5rem">
-                        <li>Wildlife Safari Tourism is not responsible for cancellations or delays caused by natural conditions, government restrictions, or unforeseen events.</li>
+                        <li>Journey to Gujarat is not responsible for cancellations or delays caused by natural conditions, government restrictions, or unforeseen events.</li>
                         <li>We are not liable for personal injury, loss, or damage unless caused by our proven negligence.</li>
                         <li>We are not responsible for services booked through third-party platforms beyond our control.</li>
                      </ul>
@@ -132,7 +131,7 @@
                <li>
                   <div class="zoo-box">
                      <h5 class="mt-0">10. Intellectual Property</h5>
-                     <p>All content on this Website, including text, images, logos, and designs, is the property of Wildlife Safari Tourism. You may not copy, reproduce, or use our content without prior written permission.</p>
+                     <p>All content on this Website, including text, images, logos, and designs, is the property of Journey to Gujarat. You may not copy, reproduce, or use our content without prior written permission.</p>
                   </div>
                </li>
 
@@ -165,7 +164,7 @@
                   <div class="zoo-box">
                      <h5 class="mt-0">14. Contact Information</h5>
                      <p>
-                        Wildlife Safari Tourism<br>
+                       Journey to Gujarat<br>
                         Owner: Gajendra Singh<br>
                         Email: info@jawaileopardsafaribooking.in<br>
                         Phone: +91-73399 19554<br>
@@ -178,7 +177,7 @@
                   <div class="zoo-box">
                      <h5 class="mt-0">15. Payment and Security</h5>
                      <p>
-                        At Wildlife Safari Tourism, your payment security is our top priority. All online transactions on <b>www.jawaileopardsafaribooking.in</b> are processed securely through Razorpay, one of India’s leading and most trusted payment gateways. We accept payments via Credit Cards, Debit Cards, Net Banking, UPI, and popular Wallets through Razorpay.
+                        AtJourney to Gujarat, your payment security is our top priority. All online transactions on <b>www.jawaileopardsafaribooking.in</b> are processed securely through Razorpay, one of India’s leading and most trusted payment gateways. We accept payments via Credit Cards, Debit Cards, Net Banking, UPI, and popular Wallets through Razorpay.
                      </p>
                      <p>
                         All transactions are encrypted using SSL (Secure Socket Layer) technology to protect your financial information. We do not store your card or banking details on our servers. All sensitive payment information is handled directly by Razorpay in compliance with PCI-DSS standards.
@@ -191,13 +190,18 @@
                <li>
                 <div class="zoo-box">
                     <div class="row text-center">
-                        <div class="col-md-6 col-12 mb-3">
+                        <div class="col-md-4 col-12 mb-3">
                             <img src="{{ asset('frontend/img/imageterms1.jpg') }}"
                                 alt="terms"
                                 class="img-fluid rounded shadow">
                         </div>
-                        <div class="col-md-6 col-12 mb-3">
+                        <div class="col-md-4 col-12 mb-3">
                             <img src="{{ asset('frontend/img/imageterms2.jpg') }}"
+                                alt="terms"
+                                class="img-fluid rounded shadow">
+                        </div>
+                         <div class="col-md-4 col-12 mb-3">
+                            <img src="{{ asset('frontend/img/imageterms3.jpg') }}"
                                 alt="terms"
                                 class="img-fluid rounded shadow">
                         </div>
