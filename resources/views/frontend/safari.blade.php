@@ -41,16 +41,45 @@
                            Varies by weekends, number of persons, festivals, and holidays.
                         </td>
                      </tr>
-                     <tr>
-                        <td>Note</td>
-                        <td>
-                           Once the payment is done, we will issue confirmation by WhatsApp and mail. In case you want to change or reschedule you need to give us a confirmation call on 7339919554, which is only contact number for this site/firm.
-                           <br/>Regular rates for safari rates for weekday ₹4000 per jeep and ₹4500 for weekend for both Indian and Foreigners. Additional ₹1000 which makes ₹5000 for both India and Foreigner during Diwali (18oct-26oct) and New year (22Dec -31Dec) All rates are Inclusive of Permit, Gypsy, Guide Charges, Services & Taxes
-                           <br/>Online advance to be made is 1500 for weekday and 2000 for weekends. Remaining payment can be paid at Safari point in cash/online.
-                           <br/>Concern Person : Gajendra Singh (Aadhar Number 687131656651)
-                           <br/>We are a private safari booking agency. This is not the official government portal. All safaris are operated with gypsies and trained local guides.
-                        </td>
-                     </tr>
+                    <tr>
+  <td>Note</td>
+  <td>
+    Once the payment is made, you will receive confirmation by WhatsApp and email.
+    <br/>If you wish to change or reschedule, please call us at <b>+91-7339919554</b> (our official booking number).
+    <br/><br/>
+
+    <b>Safari Rates</b><br/>
+    Weekdays: ₹4,000 per jeep<br/>
+    Weekends: ₹4,500 per jeep<br/>
+    Peak season (Diwali: 18–26 Oct, New Year: 22–31 Dec): ₹5,000 per jeep<br/>
+    <i>All rates are inclusive of permit, gypsy, guide charges, services, and taxes.</i>
+    <br/><br/>
+
+    <b>Advance Payment</b><br/>
+    ₹1,500 for weekdays<br/>
+    ₹2,000 for weekends<br/>
+    Remaining balance can be paid at the safari starting point (cash/online).
+    <br/><br/>
+
+    <b>Contact</b><br/>
+    Concern Person: Gajendra Singh (Owner)<br/>
+    📞 Phone: +91-7339919554<br/>
+    📧 Email: <a href="mailto:info@jawaileopardsafaribooking.in">info@jawaileopardsafaribooking.in</a><br/>
+    🌐 Website: <a href="https://www.jawaileopardsafaribooking.in" target="_blank">www.jawaileopardsafaribooking.in</a>
+    <br/><br/>
+
+    <b>Disclaimer</b><br/>
+    We are a private safari booking agency. This is not an official government portal.<br/>
+    All safaris are operated with licensed gypsies and trained local guides.
+    <br/><br/>
+
+    <b>Please review our policies before booking:</b><br/>
+    <a href="/terms-of-use" target="_blank">Terms of Use</a><br/>
+    <a href="/privacy-policy" target="_blank">Privacy Policy</a><br/>
+    <a href="/cancellation-policy" target="_blank">Cancellation Policy</a>
+  </td>
+</tr>
+
                   </tbody>
                </table>
             </div>
