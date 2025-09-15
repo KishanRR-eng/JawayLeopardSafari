@@ -74,9 +74,9 @@
     <br/><br/>
 
     <b>Please review our policies before booking:</b><br/>
-    <a href="/terms-of-use" target="_blank">Terms of Use</a><br/>
-    <a href="/privacy-policy" target="_blank">Privacy Policy</a><br/>
-    <a href="/cancellation-policy" target="_blank">Cancellation Policy</a>
+    <a href="{{ route('terms')}}" target="_blank">Terms of Use</a><br/>
+    <a href="{{ route('privacy')}}" target="_blank">Privacy Policy</a><br/>
+    <a href="{{ route('cancellationpolicy')}}" target="_blank">Cancellation Policy</a>
   </td>
 </tr>
 

@@ -173,7 +173,7 @@
 
     {{-- END how to book --}}
     <!-- ======= how to reach ======= -->
-    <section class="how-to-reach py-5 bg-light">
+    {{-- <section class="how-to-reach py-5 bg-light">
         <div class="container">
             <div class="section-heading text-center mb-5">
                 <h2 class="title">How to Reach Jawai</h2>
@@ -224,7 +224,7 @@
                 </table>
             </div>
         </div>
-    </section>
+    </section> --}}
     <!-- how to reach -->
     <section class="blog-section py-5">
         <div class="container">
