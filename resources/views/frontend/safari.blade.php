@@ -48,6 +48,7 @@
                            <br/>Regular rates for safari rates for weekday ₹4000 per jeep and ₹4500 for weekend for both Indian and Foreigners. Additional ₹1000 which makes ₹5000 for both India and Foreigner during Diwali (18oct-26oct) and New year (22Dec -31Dec) All rates are Inclusive of Permit, Gypsy, Guide Charges, Services & Taxes
                            <br/>Online advance to be made is 1500 for weekday and 2000 for weekends. Remaining payment can be paid at Safari point in cash/online.
                            <br/>Concern Person : Gajendra Singh (Aadhar Number 687131656651)
+                           <br/>We are a private safari booking agency. This is not the official government portal. All safaris are operated with gypsies and trained local guides.
                         </td>
                      </tr>
                   </tbody>
