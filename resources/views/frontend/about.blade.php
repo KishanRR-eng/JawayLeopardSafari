@@ -15,7 +15,7 @@
                   <div class="zoo-box">
                      <h5 class="mt-0">About Us – Journey to Gujarat</h5>
                      <p class="mb-0">
-                        At Journey to Gujarat, we offer safari experiences in the Jawai region of Rajasthan. Founded and operated by Gajendra Singh, we provide visitors with the opportunity to explore the landscapes where humans and wildlife coexist.
+                        At Journey to Gujarat, we offer safari experiences in the Jawai region of Rajasthan. Jawai Leopard Safari Booking is a unit of Journey to Gujarat.
                      </p>
                   </div>
                </li>

@@ -72,7 +72,7 @@
       <div class="container">
          <div class="copyright">
             &copy; Copyright <strong><span> Jawai Leopard Safari </span></strong>All
-            Rights Reserved | We are a private safari booking and tourism service provider. Please note that we are not a government website or agency.
+            Rights Reserved | Jawai Leopard Safari Booking is a unit of Journey to Gujarat.
          </div>
       </div>
    </div>

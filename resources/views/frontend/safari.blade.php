@@ -10,7 +10,7 @@
    <div class="container position-relative">
       <div class="section-title text-center mb-5 text-white">
          <h2 class="fw-bold" style="color: #C98A45;">Safari Booking – Jawai Leopard Safari</h2>
-         <p class="text-light">Secure your seat and get closer to the majestic leopards of Jawai</p>
+         {{-- <p class="text-light">Secure your seat and get closer to the majestic leopards of Jawai</p> --}}
       </div>
       <div class="row justify-content-between">
          <!-- Tariff Table -->
